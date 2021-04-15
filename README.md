@@ -1,2 +1,2 @@
-# BanubaSdkServicing-iOS
-BanubaSdkServicing is framework which contains interface for BanubaCameraModule
+# BanubaSDKServicing-iOS
+BanubaSDKServicing is framework which contains interface for BanubaCameraModule
