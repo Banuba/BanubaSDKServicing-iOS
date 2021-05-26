@@ -211,21 +211,27 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # pragma pop_macro("any")
 #endif
 
+@class NSNumber;
 @class NSURL;
-enum RenderBehaviorAdapter : NSInteger;
-enum PIPShapeTypeAdapter : NSInteger;
+@class PIPSwitchLayoutSetting;
+@class PIPPlayerLayoutSetting;
+@class PIPCameraLayoutSetting;
 
 SWIFT_PROTOCOL("_TtP18BanubaSDKServicing15SDKPIPServicing_")
 @protocol SDKPIPServicing
-@property (nonatomic, readonly) CGSize pipRenderSize;
+@property (nonatomic) BOOL isPIPSession;
+@property (nonatomic, copy) NSURL * _Nullable pipVideoURL;
+@property (nonatomic, strong) PIPSwitchLayoutSetting * _Nullable pipSwitchSetting;
+@property (nonatomic, strong) PIPPlayerLayoutSetting * _Nullable pipPlayerSetting;
+@property (nonatomic, strong) PIPCameraLayoutSetting * _Nullable pipCameraSetting;
 - (void)seekPIPPlayerTo:(NSTimeInterval)time;
-- (void)resetPIPShape;
-- (void)createPIPPlayerWithVideoURL:(NSURL * _Nonnull)url completion:(void (^ _Nullable)(void))completion;
 - (void)startPIPPlayer;
 - (void)stopPIPPlayer;
-- (void)setPIPPlayerWithRenderBehaviour:(enum RenderBehaviorAdapter)renderBehaviour;
-- (void)setPIPPlayerWithShapeType:(enum PIPShapeTypeAdapter)type;
-- (void)setPIPPlayerWithCenterPoint:(CGPoint)point;
+- (void)setupPIPSessionWithVideoURL:(NSURL * _Nonnull)url;
+- (void)startPIPSessionIfNeeded;
+- (void)applyPIPCameraSettingIfNeeded:(PIPCameraLayoutSetting * _Nonnull)setting;
+- (void)applyPIPPlayerSettingIfNeeded:(PIPPlayerLayoutSetting * _Nonnull)setting;
+- (void)applyPIPSwitchSettingIfNeeded:(PIPSwitchLayoutSetting * _Nonnull)setting;
 @end
 
 @class NSString;
@@ -243,7 +249,6 @@ SWIFT_PROTOCOL("_TtP18BanubaSDKServicing27SDKMaskPostprocessServicing_")
 - (void)postprocessDraw;
 @end
 
-@class NSNumber;
 
 SWIFT_PROTOCOL("_TtP18BanubaSDKServicing23SDKBeautyEffectManaging_")
 @protocol SDKBeautyEffectManaging
@@ -286,7 +291,7 @@ SWIFT_PROTOCOL("_TtP18BanubaSDKServicing18SDKOutputServicing_")
 @property (nonatomic, readonly) BOOL isRecording;
 @property (nonatomic, readonly) BOOL isEnoughDiskSpaceForRecording;
 - (void)startVideoCapturingWithFileURL:(NSURL * _Nullable)fileURL progress:(void (^ _Nonnull)(CMTime))progress completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
-- (void)startVideoCapturingWithFileURL:(NSURL * _Nullable)fileURL progress:(void (^ _Nonnull)(CMTime))progress periodicProgressTimeInterval:(NSTimeInterval)periodicProgressTimeInterval boundaryTimes:(NSArray<NSValue *> * _Nonnull)boundaryTimes boundaryHandler:(void (^ _Nonnull)(CMTime))boundaryHandler totalDuration:(NSTimeInterval)totalDuration completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+- (void)startVideoCapturingWithFileURL:(NSURL * _Nullable)fileURL progress:(void (^ _Nonnull)(CMTime))progress didStart:(void (^ _Nullable)(void))didStart periodicProgressTimeInterval:(NSTimeInterval)periodicProgressTimeInterval boundaryTimes:(NSArray<NSValue *> * _Nonnull)boundaryTimes boundaryHandler:(void (^ _Nonnull)(CMTime))boundaryHandler totalDuration:(NSTimeInterval)totalDuration completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 - (void)stopVideoCapturingWithCancel:(BOOL)cancel;
 @end
 
@@ -353,10 +358,105 @@ SWIFT_PROTOCOL("_TtP18BanubaSDKServicing39EffectSubtypeModificationsEventListene
 - (void)didInitiateEffectSubtype:(NSString * _Nonnull)subtypeName;
 @end
 
-typedef SWIFT_ENUM(NSInteger, PIPShapeTypeAdapter, open) {
-  PIPShapeTypeAdapterNone = 0,
-  PIPShapeTypeAdapterOval = 1,
-  PIPShapeTypeAdapterCircle = 2,
+enum PIPCameraLayoutSettings : NSInteger;
+
+SWIFT_CLASS("_TtC18BanubaSDKServicing22PIPCameraLayoutSetting")
+@interface PIPCameraLayoutSetting : NSObject
+@property (nonatomic, readonly) enum PIPCameraLayoutSettings setting;
+- (nonnull instancetype)initWithSetting:(enum PIPCameraLayoutSettings)setting OBJC_DESIGNATED_INITIALIZER;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PIPCameraLayoutSetting * _Nonnull round;)
++ (PIPCameraLayoutSetting * _Nonnull)round SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PIPCameraLayoutSetting * _Nonnull square;)
++ (PIPCameraLayoutSetting * _Nonnull)square SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PIPCameraLayoutSetting * _Nonnull original;)
++ (PIPCameraLayoutSetting * _Nonnull)original SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PIPCameraLayoutSetting * _Nonnull centered;)
++ (PIPCameraLayoutSetting * _Nonnull)centered SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+typedef SWIFT_ENUM(NSInteger, PIPCameraLayoutSettings, open) {
+  PIPCameraLayoutSettingsRound = 0,
+  PIPCameraLayoutSettingsSquare = 1,
+  PIPCameraLayoutSettingsOriginal = 2,
+  PIPCameraLayoutSettingsCentered = 3,
+};
+
+enum PIPPlayerLayoutSettings : NSInteger;
+
+SWIFT_CLASS("_TtC18BanubaSDKServicing22PIPPlayerLayoutSetting")
+@interface PIPPlayerLayoutSetting : NSObject
+@property (nonatomic, readonly) enum PIPPlayerLayoutSettings setting;
+- (nonnull instancetype)initWithSetting:(enum PIPPlayerLayoutSettings)setting OBJC_DESIGNATED_INITIALIZER;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PIPPlayerLayoutSetting * _Nonnull floating;)
++ (PIPPlayerLayoutSetting * _Nonnull)floating SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PIPPlayerLayoutSetting * _Nonnull topBottom;)
++ (PIPPlayerLayoutSetting * _Nonnull)topBottom SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PIPPlayerLayoutSetting * _Nonnull react;)
++ (PIPPlayerLayoutSetting * _Nonnull)react SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PIPPlayerLayoutSetting * _Nonnull leftRight;)
++ (PIPPlayerLayoutSetting * _Nonnull)leftRight SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+typedef SWIFT_ENUM(NSInteger, PIPPlayerLayoutSettings, open) {
+  PIPPlayerLayoutSettingsFloating = 0,
+  PIPPlayerLayoutSettingsTopBottom = 1,
+  PIPPlayerLayoutSettingsReact = 2,
+  PIPPlayerLayoutSettingsLeftRight = 3,
+};
+
+typedef SWIFT_ENUM(NSInteger, PIPShapeAdapter, open) {
+  PIPShapeAdapterNone = 0,
+  PIPShapeAdapterOval = 1,
+  PIPShapeAdapterCircle = 2,
+  PIPShapeAdapterRoundRect = 3,
+  PIPShapeAdapterRoundSquare = 4,
+};
+
+
+SWIFT_CLASS("_TtC18BanubaSDKServicing19PIPShapeTypeAdapter")
+@interface PIPShapeTypeAdapter : NSObject
+@property (nonatomic, readonly) enum PIPShapeAdapter setting;
+@property (nonatomic, readonly) CGFloat radius;
+- (nonnull instancetype)initWithSetting:(enum PIPShapeAdapter)setting radius:(CGFloat)radius OBJC_DESIGNATED_INITIALIZER;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PIPShapeTypeAdapter * _Nonnull none;)
++ (PIPShapeTypeAdapter * _Nonnull)none SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PIPShapeTypeAdapter * _Nonnull oval;)
++ (PIPShapeTypeAdapter * _Nonnull)oval SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PIPShapeTypeAdapter * _Nonnull circle;)
++ (PIPShapeTypeAdapter * _Nonnull)circle SWIFT_WARN_UNUSED_RESULT;
++ (PIPShapeTypeAdapter * _Nonnull)roundRectWithRadius:(CGFloat)radius SWIFT_WARN_UNUSED_RESULT;
++ (PIPShapeTypeAdapter * _Nonnull)roundSquareWithRadius:(CGFloat)radius SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+enum PIPSwitchLayoutSettings : NSInteger;
+
+SWIFT_CLASS("_TtC18BanubaSDKServicing22PIPSwitchLayoutSetting")
+@interface PIPSwitchLayoutSetting : NSObject
+@property (nonatomic, readonly) enum PIPSwitchLayoutSettings setting;
+- (nonnull instancetype)initWithSetting:(enum PIPSwitchLayoutSettings)setting OBJC_DESIGNATED_INITIALIZER;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PIPSwitchLayoutSetting * _Nonnull switchVerticallyUP;)
++ (PIPSwitchLayoutSetting * _Nonnull)switchVerticallyUP SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PIPSwitchLayoutSetting * _Nonnull switchVerticallyDown;)
++ (PIPSwitchLayoutSetting * _Nonnull)switchVerticallyDown SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PIPSwitchLayoutSetting * _Nonnull switchHorizontalRight;)
++ (PIPSwitchLayoutSetting * _Nonnull)switchHorizontalRight SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PIPSwitchLayoutSetting * _Nonnull switchHorizontalLeft;)
++ (PIPSwitchLayoutSetting * _Nonnull)switchHorizontalLeft SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+typedef SWIFT_ENUM(NSInteger, PIPSwitchLayoutSettings, open) {
+  PIPSwitchLayoutSettingsSwitchVerticallyUP = 0,
+  PIPSwitchLayoutSettingsSwitchVerticallyDown = 1,
+  PIPSwitchLayoutSettingsSwitchHorizontalRight = 2,
+  PIPSwitchLayoutSettingsSwitchHorizontalLeft = 3,
 };
 
 typedef SWIFT_ENUM(NSInteger, RenderBehaviorAdapter, open) {

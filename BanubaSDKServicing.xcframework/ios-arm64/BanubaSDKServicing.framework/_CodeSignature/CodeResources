@@ -4,25 +4,25 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>Headers/BanubaCameraModuleSDK.h</key>
+		<key>Headers/BanubaSDKServicing-Swift.h</key>
+		<data>
+		10cdm+3uUP9qZNWyEHlA6+jyTQk=
+		</data>
+		<key>Headers/BanubaSDKServicing.h</key>
 		<data>
 		bXuPD9a+/JKi8z3/V/xRP9TrbjE=
 		</data>
-		<key>Headers/BanubaSDKServicing-Swift.h</key>
-		<data>
-		fRDewhXEORLWLSCA71495bAJzVM=
-		</data>
 		<key>Info.plist</key>
 		<data>
-		RnpmOUkYzlJoPpSw0oN0m8r+Qoo=
+		QKZY9MxgX/DmX3IzrLfbJiJ1H7Q=
 		</data>
 		<key>Modules/BanubaSDKServicing.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		GT099l6EnRyAd4dOUOLXJHxq/7I=
+		2n+YiqG2CslTyfC63NB53VbkGU8=
 		</data>
 		<key>Modules/BanubaSDKServicing.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<data>
-		GT099l6EnRyAd4dOUOLXJHxq/7I=
+		2n+YiqG2CslTyfC63NB53VbkGU8=
 		</data>
 		<key>Modules/BanubaSDKServicing.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Modules/BanubaSDKServicing.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		4ics7Syn2uAmRGB5uK9AGudG4sI=
+		L24BuuiRSpZSvN/SNVtZECU0smI=
 		</data>
 		<key>Modules/BanubaSDKServicing.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		xQCSb5T213+HENoxhqyruxCHUDw=
+		tOiCWu65mObRSSluZHgIYaz1ll0=
 		</data>
 		<key>Modules/BanubaSDKServicing.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -42,45 +42,45 @@
 		</data>
 		<key>Modules/BanubaSDKServicing.swiftmodule/arm64.swiftinterface</key>
 		<data>
-		4ics7Syn2uAmRGB5uK9AGudG4sI=
+		L24BuuiRSpZSvN/SNVtZECU0smI=
 		</data>
 		<key>Modules/BanubaSDKServicing.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		xQCSb5T213+HENoxhqyruxCHUDw=
+		tOiCWu65mObRSSluZHgIYaz1ll0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		6CWfHv0mh28J7rixc+wrmB6wYAw=
+		53qLEOQnL9MeAN0I27laZ4RV94U=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>Headers/BanubaCameraModuleSDK.h</key>
+		<key>Headers/BanubaSDKServicing-Swift.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Ox2ifyPj7bGlN0jW4OX7NW77eOZA5T0tWm8w6s82xMo=
+			</data>
+		</dict>
+		<key>Headers/BanubaSDKServicing.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			JTWxR9v5O2An9PmR2q+CPdAFjaOL3+WtEyqHpUX9/lY=
 			</data>
 		</dict>
-		<key>Headers/BanubaSDKServicing-Swift.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			bswQtH2yTlrVibkUq9Czyw8TOCY2ngeTlVxyKKcOhr4=
-			</data>
-		</dict>
 		<key>Modules/BanubaSDKServicing.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			420fyC/kbIEQFjmW7O64VJHrdhrQaZyKdIiuL1veiog=
+			+FAGwQjc2ND0hH0ivrfeweI1e2MoHaSmojydcQkwYHs=
 			</data>
 		</dict>
 		<key>Modules/BanubaSDKServicing.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			420fyC/kbIEQFjmW7O64VJHrdhrQaZyKdIiuL1veiog=
+			+FAGwQjc2ND0hH0ivrfeweI1e2MoHaSmojydcQkwYHs=
 			</data>
 		</dict>
 		<key>Modules/BanubaSDKServicing.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -94,14 +94,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			y+DtKVTpiMFgFTNR+Yi8lSRV8PFP9yEZKONqvtdNsyw=
+			+65biQZC9QTB28ie65NecshqQTPv3/FHtWQ23G8HbLE=
 			</data>
 		</dict>
 		<key>Modules/BanubaSDKServicing.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			L1+uKrwMA0tXf5xYO70X3rLaOdnvjDocZMsockEy13E=
+			gfrnRPW0WSVq4ORiUCcEZFPKMhPfdYyLAFv+LrG0Ybg=
 			</data>
 		</dict>
 		<key>Modules/BanubaSDKServicing.swiftmodule/arm64.swiftdoc</key>
@@ -115,21 +115,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			y+DtKVTpiMFgFTNR+Yi8lSRV8PFP9yEZKONqvtdNsyw=
+			+65biQZC9QTB28ie65NecshqQTPv3/FHtWQ23G8HbLE=
 			</data>
 		</dict>
 		<key>Modules/BanubaSDKServicing.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			L1+uKrwMA0tXf5xYO70X3rLaOdnvjDocZMsockEy13E=
+			gfrnRPW0WSVq4ORiUCcEZFPKMhPfdYyLAFv+LrG0Ybg=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			kaTszBZ0XigmHQpEQie5xG3jRUEx4w3AbmNs3XX5sdA=
+			ln++96io7xvo2mkRFrO3aHFtGvsMAokNJEKtVRz6ogU=
 			</data>
 		</dict>
 	</dict>

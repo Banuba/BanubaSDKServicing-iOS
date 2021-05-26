@@ -4,25 +4,25 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>Headers/BanubaCameraModuleSDK.h</key>
+		<key>Headers/BanubaSDKServicing-Swift.h</key>
+		<data>
+		10cdm+3uUP9qZNWyEHlA6+jyTQk=
+		</data>
+		<key>Headers/BanubaSDKServicing.h</key>
 		<data>
 		bXuPD9a+/JKi8z3/V/xRP9TrbjE=
 		</data>
-		<key>Headers/BanubaSDKServicing-Swift.h</key>
-		<data>
-		fRDewhXEORLWLSCA71495bAJzVM=
-		</data>
 		<key>Info.plist</key>
 		<data>
-		DNp5ohcmVSudVsLQ9KRREZN4LDM=
+		v3EQODifRwWyZ85JyDeojZtivdU=
 		</data>
 		<key>Modules/BanubaSDKServicing.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		616YaX7+Pw1HFq8PxrEq/HCu9Nk=
+		RNTtJ+1WS211oLDN2lBGR7K2c9Y=
 		</data>
 		<key>Modules/BanubaSDKServicing.swiftmodule/Project/x86_64.swiftsourceinfo</key>
 		<data>
-		616YaX7+Pw1HFq8PxrEq/HCu9Nk=
+		RNTtJ+1WS211oLDN2lBGR7K2c9Y=
 		</data>
 		<key>Modules/BanubaSDKServicing.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Modules/BanubaSDKServicing.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		/M+AuDS6AqBCztd5n1YV30ibenA=
+		OH2Yd1AQmYmfZrYY7emny6fbiMo=
 		</data>
 		<key>Modules/BanubaSDKServicing.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		zlHpiHrifH9mkUqZSB+nrPipyto=
+		wqWBGmDXmHs9RcOVW/8jHULt6t8=
 		</data>
 		<key>Modules/BanubaSDKServicing.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -42,45 +42,45 @@
 		</data>
 		<key>Modules/BanubaSDKServicing.swiftmodule/x86_64.swiftinterface</key>
 		<data>
-		/M+AuDS6AqBCztd5n1YV30ibenA=
+		OH2Yd1AQmYmfZrYY7emny6fbiMo=
 		</data>
 		<key>Modules/BanubaSDKServicing.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		zlHpiHrifH9mkUqZSB+nrPipyto=
+		wqWBGmDXmHs9RcOVW/8jHULt6t8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		6CWfHv0mh28J7rixc+wrmB6wYAw=
+		53qLEOQnL9MeAN0I27laZ4RV94U=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>Headers/BanubaCameraModuleSDK.h</key>
+		<key>Headers/BanubaSDKServicing-Swift.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Ox2ifyPj7bGlN0jW4OX7NW77eOZA5T0tWm8w6s82xMo=
+			</data>
+		</dict>
+		<key>Headers/BanubaSDKServicing.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			JTWxR9v5O2An9PmR2q+CPdAFjaOL3+WtEyqHpUX9/lY=
 			</data>
 		</dict>
-		<key>Headers/BanubaSDKServicing-Swift.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			bswQtH2yTlrVibkUq9Czyw8TOCY2ngeTlVxyKKcOhr4=
-			</data>
-		</dict>
 		<key>Modules/BanubaSDKServicing.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			g2nyBK/XaC8tv0DcejeaR+tMdxwPpf4KEnJ+ImAOIs8=
+			qNHtWmCSU6iBzlZ7xsboOXiokPAqop//BNEcjY2gtuc=
 			</data>
 		</dict>
 		<key>Modules/BanubaSDKServicing.swiftmodule/Project/x86_64.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			g2nyBK/XaC8tv0DcejeaR+tMdxwPpf4KEnJ+ImAOIs8=
+			qNHtWmCSU6iBzlZ7xsboOXiokPAqop//BNEcjY2gtuc=
 			</data>
 		</dict>
 		<key>Modules/BanubaSDKServicing.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -94,14 +94,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			jIOfc0sXTAmwnsF0zZ+yrjY2c1HWUeu3Hb09LYO46t8=
+			avNWnaIfetOzrdy0p7H58P3YOBO6pImRE9Bm3YJJVgA=
 			</data>
 		</dict>
 		<key>Modules/BanubaSDKServicing.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			KqB4x9SlLKBNUAUl3OVJM6SgF9qGaiU4lIqKd/ez60c=
+			3UF+VfIsFEA/Onbbs6MSE+iQ19HbDGPT17k/GpK+d4Q=
 			</data>
 		</dict>
 		<key>Modules/BanubaSDKServicing.swiftmodule/x86_64.swiftdoc</key>
@@ -115,21 +115,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			jIOfc0sXTAmwnsF0zZ+yrjY2c1HWUeu3Hb09LYO46t8=
+			avNWnaIfetOzrdy0p7H58P3YOBO6pImRE9Bm3YJJVgA=
 			</data>
 		</dict>
 		<key>Modules/BanubaSDKServicing.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			KqB4x9SlLKBNUAUl3OVJM6SgF9qGaiU4lIqKd/ez60c=
+			3UF+VfIsFEA/Onbbs6MSE+iQ19HbDGPT17k/GpK+d4Q=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			kaTszBZ0XigmHQpEQie5xG3jRUEx4w3AbmNs3XX5sdA=
+			ln++96io7xvo2mkRFrO3aHFtGvsMAokNJEKtVRz6ogU=
 			</data>
 		</dict>
 	</dict>

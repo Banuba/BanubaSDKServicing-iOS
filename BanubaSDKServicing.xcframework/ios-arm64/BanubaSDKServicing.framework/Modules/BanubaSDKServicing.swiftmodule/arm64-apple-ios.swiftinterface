@@ -4,6 +4,7 @@
 import ARKit
 import AVFoundation
 import AVKit
+@_exported import BanubaSDKServicing
 import CoreMedia
 import Foundation
 import Swift
@@ -50,7 +51,7 @@ public class BeautyEffectManager : BanubaSDKServicing.BeautyEffectManaging {
   @objc var isRecording: Swift.Bool { get }
   @objc var isEnoughDiskSpaceForRecording: Swift.Bool { get }
   @objc func startVideoCapturing(fileURL: Foundation.URL?, progress: @escaping (CoreMedia.CMTime) -> Swift.Void, completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
-  @objc func startVideoCapturing(fileURL: Foundation.URL?, progress: @escaping (CoreMedia.CMTime) -> Swift.Void, periodicProgressTimeInterval: Foundation.TimeInterval, boundaryTimes: [Foundation.NSValue], boundaryHandler: @escaping (CoreMedia.CMTime) -> Swift.Void, totalDuration: Foundation.TimeInterval, completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
+  @objc func startVideoCapturing(fileURL: Foundation.URL?, progress: @escaping (CoreMedia.CMTime) -> Swift.Void, didStart: (() -> Swift.Void)?, periodicProgressTimeInterval: Foundation.TimeInterval, boundaryTimes: [Foundation.NSValue], boundaryHandler: @escaping (CoreMedia.CMTime) -> Swift.Void, totalDuration: Foundation.TimeInterval, completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
   @objc func stopVideoCapturing(cancel: Swift.Bool)
 }
 public protocol BeautyEffectManaging {
@@ -65,10 +66,33 @@ public protocol RenderEffect : AnyObject {
   func unload()
   func apply(params: Swift.Dictionary<Swift.String, Swift.String>)
 }
-@objc public enum PIPShapeTypeAdapter : Swift.Int {
-  case none
-  case oval
-  case circle
+@objc public enum PIPSwitchLayoutSettings : Swift.Int {
+  case switchVerticallyUP
+  case switchVerticallyDown
+  case switchHorizontalRight
+  case switchHorizontalLeft
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum PIPCameraLayoutSettings : Swift.Int {
+  case round
+  case square
+  case original
+  case centered
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum PIPPlayerLayoutSettings : Swift.Int {
+  case floating
+  case topBottom
+  case react
+  case leftRight
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
@@ -88,16 +112,108 @@ public protocol RenderEffect : AnyObject {
     get
   }
 }
+@objc public enum PIPShapeAdapter : Swift.Int {
+  case none
+  case oval
+  case circle
+  case roundRect
+  case roundSquare
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public class PIPSwitchLayoutSetting : ObjectiveC.NSObject {
+  @objc final public let setting: BanubaSDKServicing.PIPSwitchLayoutSettings
+  @objc public init(setting: BanubaSDKServicing.PIPSwitchLayoutSettings)
+  @objc public static var switchVerticallyUP: BanubaSDKServicing.PIPSwitchLayoutSetting {
+    @objc get
+  }
+  @objc public static var switchVerticallyDown: BanubaSDKServicing.PIPSwitchLayoutSetting {
+    @objc get
+  }
+  @objc public static var switchHorizontalRight: BanubaSDKServicing.PIPSwitchLayoutSetting {
+    @objc get
+  }
+  @objc public static var switchHorizontalLeft: BanubaSDKServicing.PIPSwitchLayoutSetting {
+    @objc get
+  }
+  public static func == (lhs: BanubaSDKServicing.PIPSwitchLayoutSetting, rhs: BanubaSDKServicing.PIPSwitchLayoutSetting) -> Swift.Bool
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc public class PIPCameraLayoutSetting : ObjectiveC.NSObject {
+  @objc final public let setting: BanubaSDKServicing.PIPCameraLayoutSettings
+  @objc public init(setting: BanubaSDKServicing.PIPCameraLayoutSettings)
+  @objc public static var round: BanubaSDKServicing.PIPCameraLayoutSetting {
+    @objc get
+  }
+  @objc public static var square: BanubaSDKServicing.PIPCameraLayoutSetting {
+    @objc get
+  }
+  @objc public static var original: BanubaSDKServicing.PIPCameraLayoutSetting {
+    @objc get
+  }
+  @objc public static var centered: BanubaSDKServicing.PIPCameraLayoutSetting {
+    @objc get
+  }
+  public static func == (lhs: BanubaSDKServicing.PIPCameraLayoutSetting, rhs: BanubaSDKServicing.PIPCameraLayoutSetting) -> Swift.Bool
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc public class PIPPlayerLayoutSetting : ObjectiveC.NSObject {
+  @objc final public let setting: BanubaSDKServicing.PIPPlayerLayoutSettings
+  @objc public init(setting: BanubaSDKServicing.PIPPlayerLayoutSettings)
+  @objc public static var floating: BanubaSDKServicing.PIPPlayerLayoutSetting {
+    @objc get
+  }
+  @objc public static var topBottom: BanubaSDKServicing.PIPPlayerLayoutSetting {
+    @objc get
+  }
+  @objc public static var react: BanubaSDKServicing.PIPPlayerLayoutSetting {
+    @objc get
+  }
+  @objc public static var leftRight: BanubaSDKServicing.PIPPlayerLayoutSetting {
+    @objc get
+  }
+  public static func == (lhs: BanubaSDKServicing.PIPPlayerLayoutSetting, rhs: BanubaSDKServicing.PIPPlayerLayoutSetting) -> Swift.Bool
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc public class PIPShapeTypeAdapter : ObjectiveC.NSObject {
+  @objc final public let setting: BanubaSDKServicing.PIPShapeAdapter
+  @objc final public let radius: CoreGraphics.CGFloat
+  @objc public init(setting: BanubaSDKServicing.PIPShapeAdapter, radius: CoreGraphics.CGFloat = .zero)
+  @objc public static var none: BanubaSDKServicing.PIPShapeTypeAdapter {
+    @objc get
+  }
+  @objc public static var oval: BanubaSDKServicing.PIPShapeTypeAdapter {
+    @objc get
+  }
+  @objc public static var circle: BanubaSDKServicing.PIPShapeTypeAdapter {
+    @objc get
+  }
+  @objc public static func roundRect(radius: CoreGraphics.CGFloat) -> BanubaSDKServicing.PIPShapeTypeAdapter
+  @objc public static func roundSquare(radius: CoreGraphics.CGFloat) -> BanubaSDKServicing.PIPShapeTypeAdapter
+  public static func == (lhs: BanubaSDKServicing.PIPShapeTypeAdapter, rhs: BanubaSDKServicing.PIPShapeTypeAdapter) -> Swift.Bool
+  @objc override dynamic public init()
+  @objc deinit
+}
 @objc public protocol SDKPIPServicing {
-  @objc var pipRenderSize: CoreGraphics.CGSize { get }
+  @objc var isPIPSession: Swift.Bool { get set }
+  @objc var pipVideoURL: Foundation.URL? { get set }
+  @objc var pipSwitchSetting: BanubaSDKServicing.PIPSwitchLayoutSetting? { get set }
+  @objc var pipPlayerSetting: BanubaSDKServicing.PIPPlayerLayoutSetting? { get set }
+  @objc var pipCameraSetting: BanubaSDKServicing.PIPCameraLayoutSetting? { get set }
   @objc func seekPIPPlayer(to time: Foundation.TimeInterval)
-  @objc func resetPIPShape()
-  @objc func createPIPPlayer(withVideoURL url: Foundation.URL, completion: (() -> Swift.Void)?)
   @objc func startPIPPlayer()
   @objc func stopPIPPlayer()
-  @objc func setPIPPlayer(renderBehaviour: BanubaSDKServicing.RenderBehaviorAdapter)
-  @objc func setPIPPlayer(shapeType type: BanubaSDKServicing.PIPShapeTypeAdapter)
-  @objc func setPIPPlayer(centerPoint point: CoreGraphics.CGPoint)
+  @objc func setupPIPSession(withVideoURL url: Foundation.URL)
+  @objc func startPIPSessionIfNeeded()
+  @objc func applyPIPCameraSettingIfNeeded(_ setting: BanubaSDKServicing.PIPCameraLayoutSetting)
+  @objc func applyPIPPlayerSettingIfNeeded(_ setting: BanubaSDKServicing.PIPPlayerLayoutSetting)
+  @objc func applyPIPSwitchSettingIfNeeded(_ setting: BanubaSDKServicing.PIPSwitchLayoutSetting)
 }
 @objc public enum CameraModuleSessionType : Swift.Int {
   case frontVideo
