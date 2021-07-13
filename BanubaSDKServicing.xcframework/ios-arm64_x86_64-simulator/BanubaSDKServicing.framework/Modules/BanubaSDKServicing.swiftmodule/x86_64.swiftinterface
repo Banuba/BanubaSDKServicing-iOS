@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.4 (swiftlang-1205.0.26.9 clang-1205.0.19.55)
+// swift-compiler-version: Apple Swift version 5.4.2 (swiftlang-1205.0.28.2 clang-1205.0.19.57)
 // swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name BanubaSDKServicing
 import ARKit
 import AVFoundation
@@ -201,6 +201,7 @@ public protocol RenderEffect : AnyObject {
   @objc deinit
 }
 @objc public protocol SDKPIPServicing {
+  @objc var isPIPSessionAlreadySetup: Swift.Bool { get set }
   @objc var isPIPSession: Swift.Bool { get set }
   @objc var pipVideoURL: Foundation.URL? { get set }
   @objc var pipSwitchSetting: BanubaSDKServicing.PIPSwitchLayoutSetting? { get set }
@@ -210,10 +211,11 @@ public protocol RenderEffect : AnyObject {
   @objc func startPIPPlayer()
   @objc func stopPIPPlayer()
   @objc func setupPIPSession(withVideoURL url: Foundation.URL)
-  @objc func startPIPSessionIfNeeded()
-  @objc func applyPIPCameraSettingIfNeeded(_ setting: BanubaSDKServicing.PIPCameraLayoutSetting)
-  @objc func applyPIPPlayerSettingIfNeeded(_ setting: BanubaSDKServicing.PIPPlayerLayoutSetting)
-  @objc func applyPIPSwitchSettingIfNeeded(_ setting: BanubaSDKServicing.PIPSwitchLayoutSetting)
+  @objc func startPIPSessionIfNeeded(completion: (() -> Swift.Void)?)
+  @objc func applyPIPCameraSettingIfNeeded(_ setting: BanubaSDKServicing.PIPCameraLayoutSetting, restoreSession: Swift.Bool)
+  @objc func applyPIPPlayerSettingIfNeeded(_ setting: BanubaSDKServicing.PIPPlayerLayoutSetting, restoreSession: Swift.Bool)
+  @objc func applyPIPSwitchSettingIfNeeded(_ setting: BanubaSDKServicing.PIPSwitchLayoutSetting, restoreSession: Swift.Bool)
+  @objc func setPIPPlayerVolume(_ volume: Swift.Float)
 }
 @objc public enum CameraModuleSessionType : Swift.Int {
   case frontVideo
@@ -251,23 +253,19 @@ public struct CameraModuleDefaults {
   @objc func getRendererView() -> UIKit.UIView
 }
 @objc public class EffectModel : ObjectiveC.NSObject {
+  public var id: Swift.UInt
   public var url: Foundation.URL?
   public var name: Swift.String?
-  public init(url: Foundation.URL)
-  public init(name: Swift.String)
+  public init(id: Swift.UInt, url: Foundation.URL)
+  public init(id: Swift.UInt, name: Swift.String)
   @objc override dynamic public init()
   @objc deinit
 }
 @objc public protocol SDKMaskPostprocessServicing {
   @objc func postprocessProcessVideoFrame(_ from: CoreVideo.CVPixelBuffer, to: CoreVideo.CVPixelBuffer, time: CoreMedia.CMTime)
-  @objc func postprocessStopVideoProcessing()
-  @objc func postprocessPlaybackStop()
-  @objc func postprocessSurfaceDestroyed()
   @objc func postprocessSurfaceCreated(with size: CoreGraphics.CGSize)
   @objc func postprocessSetEffectSize(_ size: CoreGraphics.CGSize)
   @objc func postprocessLoadEffect(path: Swift.String)
-  @objc func postprocessStartVideoProcessing(with size: CoreGraphics.CGSize)
-  @objc func postprocessDraw()
 }
 public enum OutputServiceError : Swift.Error {
   case notEnoughSpace
