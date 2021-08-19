@@ -236,16 +236,6 @@ SWIFT_PROTOCOL("_TtP18BanubaSDKServicing15SDKPIPServicing_")
 - (void)setPIPPlayerVolume:(float)volume;
 @end
 
-@class NSString;
-
-SWIFT_PROTOCOL("_TtP18BanubaSDKServicing27SDKMaskPostprocessServicing_")
-@protocol SDKMaskPostprocessServicing
-- (void)postprocessProcessVideoFrame:(CVPixelBufferRef _Nonnull)from to:(CVPixelBufferRef _Nonnull)to time:(CMTime)time;
-- (void)postprocessSurfaceCreatedWith:(CGSize)size;
-- (void)postprocessSetEffectSize:(CGSize)size;
-- (void)postprocessLoadEffectWithPath:(NSString * _Nonnull)path;
-@end
-
 
 SWIFT_PROTOCOL("_TtP18BanubaSDKServicing23SDKBeautyEffectManaging_")
 @protocol SDKBeautyEffectManaging
@@ -263,6 +253,7 @@ SWIFT_PROTOCOL("_TtP18BanubaSDKServicing26SDKEffectsTextureServicing_")
 - (void)unloadEffectTexture;
 @end
 
+@class NSString;
 @class EffectModel;
 @protocol EffectSubtypeModificationsEventListener;
 
@@ -319,7 +310,7 @@ SWIFT_PROTOCOL("_TtP18BanubaSDKServicing17SDKInputServicing_")
 @class UIView;
 
 SWIFT_PROTOCOL("_TtP18BanubaSDKServicing12CameraModule_")
-@protocol CameraModule <SDKBeautyEffectManaging, SDKEffectsServicing, SDKInputServicing, SDKMaskPostprocessServicing, SDKOutputServicing, SDKPIPServicing>
+@protocol CameraModule <SDKBeautyEffectManaging, SDKEffectsServicing, SDKInputServicing, SDKOutputServicing, SDKPIPServicing>
 @property (nonatomic, readonly) BOOL isLoaded;
 @property (nonatomic) BOOL allowProcessing;
 @property (nonatomic, readonly) CGSize playerViewSize;
@@ -487,6 +478,14 @@ SWIFT_PROTOCOL("_TtP18BanubaSDKServicing25SDKInputServicingDelegate_")
 - (void)willOutputWithPixelBuffer:(CVPixelBufferRef _Nonnull)pixelBuffer;
 @end
 
+
+SWIFT_PROTOCOL("_TtP18BanubaSDKServicing27SDKMaskPostprocessServicing_")
+@protocol SDKMaskPostprocessServicing
+- (void)postprocessProcessVideoFrame:(CVPixelBufferRef _Nonnull)from to:(CVPixelBufferRef _Nonnull)to time:(CMTime)time;
+- (void)postprocessSurfaceCreatedWith:(CGSize)size;
+- (void)postprocessSetEffectSize:(CGSize)size;
+- (void)postprocessLoadEffectWithPath:(NSString * _Nonnull)path;
+@end
 
 
 
