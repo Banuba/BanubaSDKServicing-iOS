@@ -285,7 +285,6 @@ SWIFT_PROTOCOL("_TtP18BanubaSDKServicing18SDKOutputServicing_")
 
 enum CameraModuleSessionType : NSInteger;
 @protocol SDKInputServicingDelegate;
-@protocol SDKARInputServicingDelegate;
 
 SWIFT_PROTOCOL("_TtP18BanubaSDKServicing17SDKInputServicing_")
 @protocol SDKInputServicing
@@ -293,7 +292,6 @@ SWIFT_PROTOCOL("_TtP18BanubaSDKServicing17SDKInputServicing_")
 @property (nonatomic, readonly) float zoomFactor;
 @property (nonatomic, readonly) enum CameraModuleSessionType currentCameraSessionType;
 @property (nonatomic, strong) id <SDKInputServicingDelegate> _Nullable inputDelegate;
-@property (nonatomic, strong) id <SDKARInputServicingDelegate> _Nullable inputARDelegate;
 - (void)configureExposureSettings:(CGPoint)point useContinuousDetection:(BOOL)useContinuousDetection;
 - (void)configureFocusSettings:(CGPoint)point useContinuousDetection:(BOOL)useContinuousDetection;
 - (float)setZoomFactor:(float)zoomFactor SWIFT_WARN_UNUSED_RESULT;
@@ -455,18 +453,6 @@ typedef SWIFT_ENUM(NSInteger, RenderBehaviorAdapter, open) {
   RenderBehaviorAdapterHorizontalSplitRight = 4,
   RenderBehaviorAdapterPip = 5,
 };
-
-@class ARFrame;
-@class ARSession;
-@class ARAnchor;
-
-SWIFT_PROTOCOL("_TtP18BanubaSDKServicing27SDKARInputServicingDelegate_")
-@protocol SDKARInputServicingDelegate
-- (void)didUpdateWithArFrame:(ARFrame * _Nonnull)arFrame session:(ARSession * _Nonnull)session;
-- (void)didAddWithAnchors:(NSArray<ARAnchor *> * _Nonnull)anchors session:(ARSession * _Nonnull)session;
-- (void)didUpdateWithAnchors:(NSArray<ARAnchor *> * _Nonnull)anchors session:(ARSession * _Nonnull)session;
-- (void)didRemoveWithDidRemove:(NSArray<ARAnchor *> * _Nonnull)anchors session:(ARSession * _Nonnull)session;
-@end
 
 
 

@@ -1,7 +1,6 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 5.4.2 (swiftlang-1205.0.28.2 clang-1205.0.19.57)
 // swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name BanubaSDKServicing
-import ARKit
 import AVFoundation
 import AVKit
 @_exported import BanubaSDKServicing
@@ -282,18 +281,11 @@ public enum OutputServiceError : Swift.Error {
 @objc public protocol SDKInputServicingDelegate {
   @objc func willOutput(pixelBuffer: CoreVideo.CVPixelBuffer)
 }
-@objc public protocol SDKARInputServicingDelegate {
-  @objc func didUpdate(arFrame: ARKit.ARFrame, session: ARKit.ARSession)
-  @objc func didAdd(anchors: [ARKit.ARAnchor], session: ARKit.ARSession)
-  @objc func didUpdate(anchors: [ARKit.ARAnchor], session: ARKit.ARSession)
-  @objc func didRemove(didRemove anchors: [ARKit.ARAnchor], session: ARKit.ARSession)
-}
 @objc public protocol SDKInputServicing {
   @objc var isFrontCamera: Swift.Bool { get }
   @objc var zoomFactor: Swift.Float { get }
   @objc var currentCameraSessionType: BanubaSDKServicing.CameraModuleSessionType { get }
   @objc var inputDelegate: BanubaSDKServicing.SDKInputServicingDelegate? { get set }
-  @objc var inputARDelegate: BanubaSDKServicing.SDKARInputServicingDelegate? { get set }
   @objc func configureExposureSettings(_ point: CoreGraphics.CGPoint, useContinuousDetection: Swift.Bool)
   @objc func configureFocusSettings(_ point: CoreGraphics.CGPoint, useContinuousDetection: Swift.Bool)
   @objc func setZoomFactor(_ zoomFactor: Swift.Float) -> Swift.Float
