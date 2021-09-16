@@ -13,6 +13,5 @@ FOUNDATION_EXPORT double BanubaSDKServicingVersionNumber;
 //! Project version string for BanubaSDKServicing.
 FOUNDATION_EXPORT const unsigned char BanubaSDKServicingVersionString[];
 
-// In this header, you should import all the public headers of your framework using statements like #import <BanubaSDKServicing/PublicHeader.h>
-
-
+#import <BanubaSDKServicing/RecorderSettings.h>
+#import <BanubaSDKServicing/OutputSettings.h>

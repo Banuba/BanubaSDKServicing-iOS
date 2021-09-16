@@ -256,7 +256,7 @@ SWIFT_PROTOCOL("_TtP18BanubaSDKServicing26SDKEffectsTextureServicing_")
 @end
 
 @class NSString;
-@class EffectModel;
+@protocol RenderEffect;
 @protocol EffectSubtypeModificationsEventListener;
 
 SWIFT_PROTOCOL("_TtP18BanubaSDKServicing19SDKEffectsServicing_")
@@ -268,8 +268,8 @@ SWIFT_PROTOCOL("_TtP18BanubaSDKServicing19SDKEffectsServicing_")
 - (void)effectDidChangeState;
 - (void)unloadMask;
 - (void)removeAllFilters;
-- (void)applyFilter:(EffectModel * _Nonnull)filter;
-- (void)removeFilter:(EffectModel * _Nonnull)filter;
+- (void)applyFilter:(id <RenderEffect> _Nonnull)filter;
+- (void)removeFilter:(id <RenderEffect> _Nonnull)filter;
 - (void)setEffectSubtypeModificationsEventListener:(id <EffectSubtypeModificationsEventListener> _Nonnull)listener;
 - (NSArray<NSString *> * _Nonnull)effectsPathsWithIncludeBeautyEffect:(BOOL)includeBeautyEffect SWIFT_WARN_UNUSED_RESULT;
 @end
@@ -455,6 +455,17 @@ typedef SWIFT_ENUM(NSInteger, RenderBehaviorAdapter, open) {
   RenderBehaviorAdapterHorizontalSplitRight = 4,
   RenderBehaviorAdapterPip = 5,
 };
+
+
+SWIFT_PROTOCOL("_TtP18BanubaSDKServicing12RenderEffect_")
+@protocol RenderEffect
+@property (nonatomic, readonly, copy) NSString * _Nonnull name;
+@property (nonatomic, readonly) BOOL isLoaded;
+@property (nonatomic) BOOL isActive;
+- (void)loadWithSize:(CGSize)size;
+- (void)unload;
+- (void)applyWithParams:(NSDictionary<NSString *, NSString *> * _Nonnull)params;
+@end
 
 
 
@@ -740,7 +751,7 @@ SWIFT_PROTOCOL("_TtP18BanubaSDKServicing26SDKEffectsTextureServicing_")
 @end
 
 @class NSString;
-@class EffectModel;
+@protocol RenderEffect;
 @protocol EffectSubtypeModificationsEventListener;
 
 SWIFT_PROTOCOL("_TtP18BanubaSDKServicing19SDKEffectsServicing_")
@@ -752,8 +763,8 @@ SWIFT_PROTOCOL("_TtP18BanubaSDKServicing19SDKEffectsServicing_")
 - (void)effectDidChangeState;
 - (void)unloadMask;
 - (void)removeAllFilters;
-- (void)applyFilter:(EffectModel * _Nonnull)filter;
-- (void)removeFilter:(EffectModel * _Nonnull)filter;
+- (void)applyFilter:(id <RenderEffect> _Nonnull)filter;
+- (void)removeFilter:(id <RenderEffect> _Nonnull)filter;
 - (void)setEffectSubtypeModificationsEventListener:(id <EffectSubtypeModificationsEventListener> _Nonnull)listener;
 - (NSArray<NSString *> * _Nonnull)effectsPathsWithIncludeBeautyEffect:(BOOL)includeBeautyEffect SWIFT_WARN_UNUSED_RESULT;
 @end
@@ -939,6 +950,17 @@ typedef SWIFT_ENUM(NSInteger, RenderBehaviorAdapter, open) {
   RenderBehaviorAdapterHorizontalSplitRight = 4,
   RenderBehaviorAdapterPip = 5,
 };
+
+
+SWIFT_PROTOCOL("_TtP18BanubaSDKServicing12RenderEffect_")
+@protocol RenderEffect
+@property (nonatomic, readonly, copy) NSString * _Nonnull name;
+@property (nonatomic, readonly) BOOL isLoaded;
+@property (nonatomic) BOOL isActive;
+- (void)loadWithSize:(CGSize)size;
+- (void)unload;
+- (void)applyWithParams:(NSDictionary<NSString *, NSString *> * _Nonnull)params;
+@end
 
 
 

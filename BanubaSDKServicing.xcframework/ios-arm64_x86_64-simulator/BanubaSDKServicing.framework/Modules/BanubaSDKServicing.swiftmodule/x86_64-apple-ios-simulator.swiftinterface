@@ -25,8 +25,8 @@ import UIKit
   @objc func effectDidChangeState()
   @objc func unloadMask()
   @objc func removeAllFilters()
-  @objc func applyFilter(_ filter: BanubaSDKServicing.EffectModel)
-  @objc func removeFilter(_ filter: BanubaSDKServicing.EffectModel)
+  @objc func applyFilter(_ filter: BanubaSDKServicing.RenderEffect)
+  @objc func removeFilter(_ filter: BanubaSDKServicing.RenderEffect)
   @objc func setEffectSubtypeModificationsEventListener(_ listener: BanubaSDKServicing.EffectSubtypeModificationsEventListener)
   @objc func effectsPaths(includeBeautyEffect: Swift.Bool) -> [Swift.String]
 }
@@ -57,13 +57,13 @@ public protocol BeautyEffectManaging {
   var enabled: Swift.Bool { get set }
   var applyHandler: ((Swift.String?) -> Swift.Void)? { get set }
 }
-public protocol RenderEffect : AnyObject {
-  var name: Swift.String { get }
-  var isLoaded: Swift.Bool { get }
-  var isActive: Swift.Bool { get set }
-  func load(size: CoreGraphics.CGSize)
-  func unload()
-  func apply(params: Swift.Dictionary<Swift.String, Swift.String>)
+@objc public protocol RenderEffect {
+  @objc var name: Swift.String { get }
+  @objc var isLoaded: Swift.Bool { get }
+  @objc var isActive: Swift.Bool { get set }
+  @objc func load(size: CoreGraphics.CGSize)
+  @objc func unload()
+  @objc func apply(params: Swift.Dictionary<Swift.String, Swift.String>)
 }
 @objc public enum PIPSwitchLayoutSettings : Swift.Int {
   case switchVerticallyUP
