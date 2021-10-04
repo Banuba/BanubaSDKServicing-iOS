@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.4.2 (swiftlang-1205.0.28.2 clang-1205.0.19.57)
+// swift-compiler-version: Apple Swift version 5.5 (swiftlang-1300.0.31.1 clang-1300.0.29.1)
 // swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name BanubaSDKServicing
 import AVFoundation
 import AVKit
@@ -8,6 +8,7 @@ import CoreMedia
 import Foundation
 import Swift
 import UIKit
+import _Concurrency
 @objc public protocol EffectSubtypeModificationsEventListener {
   @objc func didChangeEffectSubtype(_ subtypeName: Swift.String)
   @objc func didInitiateEffectSubtype(_ subtypeName: Swift.String)
@@ -55,7 +56,7 @@ public class BeautyEffectManager : BanubaSDKServicing.BeautyEffectManaging {
 }
 public protocol BeautyEffectManaging {
   var enabled: Swift.Bool { get set }
-  var applyHandler: ((Swift.String?) -> Swift.Void)? { get set }
+  var applyHandler: ((_ mask: Swift.String?) -> Swift.Void)? { get set }
 }
 @objc public protocol RenderEffect {
   @objc var name: Swift.String { get }
@@ -139,7 +140,6 @@ public protocol BeautyEffectManaging {
     @objc get
   }
   public static func == (lhs: BanubaSDKServicing.PIPSwitchLayoutSetting, rhs: BanubaSDKServicing.PIPSwitchLayoutSetting) -> Swift.Bool
-  @objc override dynamic public init()
   @objc deinit
 }
 @objc public class PIPCameraLayoutSetting : ObjectiveC.NSObject {
@@ -158,7 +158,6 @@ public protocol BeautyEffectManaging {
     @objc get
   }
   public static func == (lhs: BanubaSDKServicing.PIPCameraLayoutSetting, rhs: BanubaSDKServicing.PIPCameraLayoutSetting) -> Swift.Bool
-  @objc override dynamic public init()
   @objc deinit
 }
 @objc public class PIPPlayerLayoutSetting : ObjectiveC.NSObject {
@@ -177,7 +176,6 @@ public protocol BeautyEffectManaging {
     @objc get
   }
   public static func == (lhs: BanubaSDKServicing.PIPPlayerLayoutSetting, rhs: BanubaSDKServicing.PIPPlayerLayoutSetting) -> Swift.Bool
-  @objc override dynamic public init()
   @objc deinit
 }
 @objc public class PIPShapeTypeAdapter : ObjectiveC.NSObject {
@@ -196,7 +194,6 @@ public protocol BeautyEffectManaging {
   @objc public static func roundRect(radius: CoreGraphics.CGFloat) -> BanubaSDKServicing.PIPShapeTypeAdapter
   @objc public static func roundSquare(radius: CoreGraphics.CGFloat) -> BanubaSDKServicing.PIPShapeTypeAdapter
   public static func == (lhs: BanubaSDKServicing.PIPShapeTypeAdapter, rhs: BanubaSDKServicing.PIPShapeTypeAdapter) -> Swift.Bool
-  @objc override dynamic public init()
   @objc deinit
 }
 @objc public protocol SDKPIPServicing {
@@ -257,7 +254,6 @@ public struct CameraModuleDefaults {
   public var name: Swift.String?
   public init(id: Swift.UInt, url: Foundation.URL)
   public init(id: Swift.UInt, name: Swift.String)
-  @objc override dynamic public init()
   @objc deinit
 }
 @objc public protocol SDKMaskPostprocessServicing {
