@@ -313,6 +313,7 @@ SWIFT_PROTOCOL("_TtP18BanubaSDKServicing12CameraModule_")
 @property (nonatomic) BOOL allowProcessing;
 @property (nonatomic, readonly) CGSize playerViewSize;
 @property (nonatomic) BOOL autoStart;
+@property (nonatomic) BOOL isCameraEnabled;
 - (void)setupWithPostproccessContext:(EAGLContext * _Nonnull)postproccessContext;
 - (void)destroy;
 - (void)startWithCompletion:(void (^ _Nonnull)(void))completion;

@@ -239,6 +239,7 @@ public struct CameraModuleDefaults {
   @objc var allowProcessing: Swift.Bool { get set }
   @objc var playerViewSize: CoreGraphics.CGSize { get }
   @objc var autoStart: Swift.Bool { get set }
+  @objc var isCameraEnabled: Swift.Bool { get set }
   @objc func setup(postproccessContext: OpenGLES.EAGLContext)
   @objc func destroy()
   @objc func start(completion: @escaping () -> Swift.Void)
