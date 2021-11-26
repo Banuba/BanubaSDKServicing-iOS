@@ -1,9 +1,10 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.5 (swiftlang-1300.0.31.1 clang-1300.0.29.1)
+// swift-compiler-version: Apple Swift version 5.5.1 (swiftlang-1300.0.31.4 clang-1300.0.29.6)
 // swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name BanubaSDKServicing
 import AVFoundation
 import AVKit
 @_exported import BanubaSDKServicing
+import BanubaUtilities
 import CoreMedia
 import Foundation
 import Swift
@@ -71,6 +72,8 @@ public protocol BeautyEffectManaging {
   case switchVerticallyDown
   case switchHorizontalRight
   case switchHorizontalLeft
+  case switchCameraPiP
+  case switchVideoPiP
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
@@ -137,6 +140,12 @@ public protocol BeautyEffectManaging {
     @objc get
   }
   @objc public static var switchHorizontalLeft: BanubaSDKServicing.PIPSwitchLayoutSetting {
+    @objc get
+  }
+  @objc public static var switchCameraPip: BanubaSDKServicing.PIPSwitchLayoutSetting {
+    @objc get
+  }
+  @objc public static var switchVideoPip: BanubaSDKServicing.PIPSwitchLayoutSetting {
     @objc get
   }
   public static func == (lhs: BanubaSDKServicing.PIPSwitchLayoutSetting, rhs: BanubaSDKServicing.PIPSwitchLayoutSetting) -> Swift.Bool
@@ -240,7 +249,9 @@ public struct CameraModuleDefaults {
   @objc var playerViewSize: CoreGraphics.CGSize { get }
   @objc var autoStart: Swift.Bool { get set }
   @objc var isCameraEnabled: Swift.Bool { get set }
+  @objc var renderQueue: Dispatch.DispatchQueue { get }
   @objc func setup(postproccessContext: OpenGLES.EAGLContext)
+  @objc func setMaxFaces(facesCount: Swift.Int32)
   @objc func destroy()
   @objc func start(completion: @escaping () -> Swift.Void)
   @objc func stop(completion: (() -> Swift.Void)?)
@@ -248,6 +259,8 @@ public struct CameraModuleDefaults {
   @objc func removeRenderTarget()
   @objc func takeSnapshot(handler: @escaping (UIKit.UIImage?) -> Swift.Void)
   @objc func getRendererView() -> UIKit.UIView
+  @objc func startRenderLoop()
+  @objc func stopRenderLoop()
 }
 @objc public class EffectModel : ObjectiveC.NSObject {
   public var id: Swift.UInt
@@ -270,6 +283,13 @@ public enum OutputServiceError : Swift.Error {
   public var hashValue: Swift.Int {
     get
   }
+}
+public protocol SDKEffectTextureServicing {
+  var selectedGalleryItemTexture: BanubaUtilities.GalleryItem? { get }
+  func effectAddImageTexture(image: UIKit.UIImage, galleryItem: BanubaUtilities.GalleryItem)
+  func effectAddVideoTexture(asset: AVFoundation.AVURLAsset, galleryItem: BanubaUtilities.GalleryItem)
+  func reloadCurrentTexture()
+  func unloadEffectTexture()
 }
 @objc public protocol SDKBeautyEffectManaging {
   @objc var isBeautificationEnabled: Swift.Bool { get set }
