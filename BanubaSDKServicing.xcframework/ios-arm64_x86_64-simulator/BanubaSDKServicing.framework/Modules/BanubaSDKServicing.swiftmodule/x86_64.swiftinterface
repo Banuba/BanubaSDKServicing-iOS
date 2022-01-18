@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.5.1 (swiftlang-1300.0.31.4 clang-1300.0.29.6)
+// swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
 // swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name BanubaSDKServicing
 import AVFoundation
 import AVKit
@@ -63,9 +63,9 @@ public protocol BeautyEffectManaging {
   @objc var name: Swift.String { get }
   @objc var isLoaded: Swift.Bool { get }
   @objc var isActive: Swift.Bool { get set }
-  @objc func load(size: CoreGraphics.CGSize)
+  @objc func load()
   @objc func unload()
-  @objc func apply(params: Swift.Dictionary<Swift.String, Swift.String>)
+  @objc func apply(pixelBuffer: CoreVideo.CVPixelBuffer)
 }
 @objc public enum PIPSwitchLayoutSettings : Swift.Int {
   case switchVerticallyUP
@@ -216,7 +216,7 @@ public protocol BeautyEffectManaging {
   @objc func startPIPPlayer()
   @objc func stopPIPPlayer()
   @objc func setupPIPSession(withVideoURL url: Foundation.URL)
-  @objc func startPIPSessionIfNeeded(completion: (() -> Swift.Void)?)
+  @objc func startPIPSessionIfNeeded(withSetting setting: BanubaSDKServicing.PIPPlayerLayoutSetting, completion: (() -> Swift.Void)?)
   @objc func applyPIPCameraSettingIfNeeded(_ setting: BanubaSDKServicing.PIPCameraLayoutSetting, restoreSession: Swift.Bool)
   @objc func applyPIPPlayerSettingIfNeeded(_ setting: BanubaSDKServicing.PIPPlayerLayoutSetting, restoreSession: Swift.Bool)
   @objc func applyPIPSwitchSettingIfNeeded(_ setting: BanubaSDKServicing.PIPSwitchLayoutSetting, restoreSession: Swift.Bool)
@@ -250,7 +250,7 @@ public struct CameraModuleDefaults {
   @objc var autoStart: Swift.Bool { get set }
   @objc var isCameraEnabled: Swift.Bool { get set }
   @objc var renderQueue: Dispatch.DispatchQueue { get }
-  @objc func setup(postproccessContext: OpenGLES.EAGLContext)
+  @objc func setup()
   @objc func setMaxFaces(facesCount: Swift.Int32)
   @objc func destroy()
   @objc func start(completion: @escaping () -> Swift.Void)
