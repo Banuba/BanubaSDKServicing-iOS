@@ -26,11 +26,11 @@
 		</data>
 		<key>Modules/BanubaSDKServicing.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		M5L/yWKmS31VMIAxqs2ayhfGWCs=
+		G2GXTUB9sRwW2Ft1T4VjFeKz8SM=
 		</data>
 		<key>Modules/BanubaSDKServicing.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<data>
-		M5L/yWKmS31VMIAxqs2ayhfGWCs=
+		G2GXTUB9sRwW2Ft1T4VjFeKz8SM=
 		</data>
 		<key>Modules/BanubaSDKServicing.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -42,7 +42,7 @@
 		</data>
 		<key>Modules/BanubaSDKServicing.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		u4VbhcR1+glWPbi4ZPFeEh2KY+Y=
+		UIo665qoyff+8kKUPIKt6+7OxBI=
 		</data>
 		<key>Modules/BanubaSDKServicing.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Modules/BanubaSDKServicing.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		u4VbhcR1+glWPbi4ZPFeEh2KY+Y=
+		UIo665qoyff+8kKUPIKt6+7OxBI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -95,14 +95,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			6HRiqXmlAHCZv30CDza97XgBOeZbQjSBc+lJFrPEUTQ=
+			WKh3R/CMoN8bCR8xdXFN+vxXJk6E4iAr2laAEOJwI00=
 			</data>
 		</dict>
 		<key>Modules/BanubaSDKServicing.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			6HRiqXmlAHCZv30CDza97XgBOeZbQjSBc+lJFrPEUTQ=
+			WKh3R/CMoN8bCR8xdXFN+vxXJk6E4iAr2laAEOJwI00=
 			</data>
 		</dict>
 		<key>Modules/BanubaSDKServicing.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -123,7 +123,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			CeOm9PtDHa/x2PtBs18ppSamp+k0DXZ3o/09NqP321E=
+			BqJaPA9q6G69hmYsMxkigZbcFfUBg3tYL2e4ivyVh8M=
 			</data>
 		</dict>
 		<key>Modules/BanubaSDKServicing.swiftmodule/arm64.swiftdoc</key>
@@ -144,7 +144,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			CeOm9PtDHa/x2PtBs18ppSamp+k0DXZ3o/09NqP321E=
+			BqJaPA9q6G69hmYsMxkigZbcFfUBg3tYL2e4ivyVh8M=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
