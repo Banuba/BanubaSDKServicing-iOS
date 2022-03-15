@@ -48,11 +48,18 @@ public class BeautyEffectManager : BanubaSDKServicing.BeautyEffectManaging {
   public func disable()
   @objc deinit
 }
+@objc public class ExternalAudioConfiguration : ObjectiveC.NSObject {
+  @objc final public let url: Foundation.URL
+  @objc final public let offset: Foundation.TimeInterval
+  @objc final public let preferredVolume: CoreGraphics.CGFloat
+  public init(url: Foundation.URL, offset: Foundation.TimeInterval, preferredVolume: CoreGraphics.CGFloat)
+  @objc deinit
+}
 @objc public protocol SDKOutputServicing {
   @objc var isRecording: Swift.Bool { get }
   @objc var isEnoughDiskSpaceForRecording: Swift.Bool { get }
   @objc func startVideoCapturing(fileURL: Foundation.URL?, progress: @escaping (CoreMedia.CMTime) -> Swift.Void, completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
-  @objc func startVideoCapturing(fileURL: Foundation.URL?, progress: @escaping (CoreMedia.CMTime) -> Swift.Void, didStart: (() -> Swift.Void)?, periodicProgressTimeInterval: Foundation.TimeInterval, boundaryTimes: [Foundation.NSValue], boundaryHandler: @escaping (CoreMedia.CMTime) -> Swift.Void, totalDuration: Foundation.TimeInterval, completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
+  @objc func startVideoCapturing(fileURL: Foundation.URL?, externalAudioConfiguration: BanubaSDKServicing.ExternalAudioConfiguration?, progress: @escaping (CoreMedia.CMTime) -> Swift.Void, didStart: (() -> Swift.Void)?, periodicProgressTimeInterval: Foundation.TimeInterval, boundaryTimes: [Foundation.NSValue], boundaryHandler: @escaping (CoreMedia.CMTime) -> Swift.Void, totalDuration: Foundation.TimeInterval, completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
   @objc func stopVideoCapturing(cancel: Swift.Bool)
 }
 public protocol BeautyEffectManaging {
@@ -215,7 +222,7 @@ public protocol BeautyEffectManaging {
   @objc func seekPIPPlayer(to time: Foundation.TimeInterval)
   @objc func startPIPPlayer()
   @objc func stopPIPPlayer()
-  @objc func setupPIPSession(withVideoURL url: Foundation.URL)
+  @objc func setupPIPSession(withVideoURL url: Foundation.URL, playerSetting: BanubaSDKServicing.PIPPlayerLayoutSetting, cameraSetting: BanubaSDKServicing.PIPCameraLayoutSetting, switchSetting: BanubaSDKServicing.PIPSwitchLayoutSetting)
   @objc func startPIPSessionIfNeeded(withSetting setting: BanubaSDKServicing.PIPPlayerLayoutSetting, completion: (() -> Swift.Void)?)
   @objc func applyPIPCameraSettingIfNeeded(_ setting: BanubaSDKServicing.PIPCameraLayoutSetting, restoreSession: Swift.Bool)
   @objc func applyPIPPlayerSettingIfNeeded(_ setting: BanubaSDKServicing.PIPPlayerLayoutSetting, restoreSession: Swift.Bool)

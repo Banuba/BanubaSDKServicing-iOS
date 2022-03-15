@@ -229,7 +229,7 @@ SWIFT_PROTOCOL("_TtP18BanubaSDKServicing15SDKPIPServicing_")
 - (void)seekPIPPlayerTo:(NSTimeInterval)time;
 - (void)startPIPPlayer;
 - (void)stopPIPPlayer;
-- (void)setupPIPSessionWithVideoURL:(NSURL * _Nonnull)url;
+- (void)setupPIPSessionWithVideoURL:(NSURL * _Nonnull)url playerSetting:(PIPPlayerLayoutSetting * _Nonnull)playerSetting cameraSetting:(PIPCameraLayoutSetting * _Nonnull)cameraSetting switchSetting:(PIPSwitchLayoutSetting * _Nonnull)switchSetting;
 - (void)startPIPSessionIfNeededWithSetting:(PIPPlayerLayoutSetting * _Nonnull)setting completion:(void (^ _Nullable)(void))completion;
 - (void)applyPIPCameraSettingIfNeeded:(PIPCameraLayoutSetting * _Nonnull)setting restoreSession:(BOOL)restoreSession;
 - (void)applyPIPPlayerSettingIfNeeded:(PIPPlayerLayoutSetting * _Nonnull)setting restoreSession:(BOOL)restoreSession;
@@ -273,6 +273,7 @@ SWIFT_PROTOCOL("_TtP18BanubaSDKServicing19SDKEffectsServicing_")
 - (NSArray<NSString *> * _Nonnull)effectsPathsWithIncludeBeautyEffect:(BOOL)includeBeautyEffect SWIFT_WARN_UNUSED_RESULT;
 @end
 
+@class ExternalAudioConfiguration;
 @class NSValue;
 
 SWIFT_PROTOCOL("_TtP18BanubaSDKServicing18SDKOutputServicing_")
@@ -280,7 +281,7 @@ SWIFT_PROTOCOL("_TtP18BanubaSDKServicing18SDKOutputServicing_")
 @property (nonatomic, readonly) BOOL isRecording;
 @property (nonatomic, readonly) BOOL isEnoughDiskSpaceForRecording;
 - (void)startVideoCapturingWithFileURL:(NSURL * _Nullable)fileURL progress:(void (^ _Nonnull)(CMTime))progress completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
-- (void)startVideoCapturingWithFileURL:(NSURL * _Nullable)fileURL progress:(void (^ _Nonnull)(CMTime))progress didStart:(void (^ _Nullable)(void))didStart periodicProgressTimeInterval:(NSTimeInterval)periodicProgressTimeInterval boundaryTimes:(NSArray<NSValue *> * _Nonnull)boundaryTimes boundaryHandler:(void (^ _Nonnull)(CMTime))boundaryHandler totalDuration:(NSTimeInterval)totalDuration completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+- (void)startVideoCapturingWithFileURL:(NSURL * _Nullable)fileURL externalAudioConfiguration:(ExternalAudioConfiguration * _Nullable)externalAudioConfiguration progress:(void (^ _Nonnull)(CMTime))progress didStart:(void (^ _Nullable)(void))didStart periodicProgressTimeInterval:(NSTimeInterval)periodicProgressTimeInterval boundaryTimes:(NSArray<NSValue *> * _Nonnull)boundaryTimes boundaryHandler:(void (^ _Nonnull)(CMTime))boundaryHandler totalDuration:(NSTimeInterval)totalDuration completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 - (void)stopVideoCapturingWithCancel:(BOOL)cancel;
 @end
 
@@ -347,6 +348,20 @@ SWIFT_PROTOCOL("_TtP18BanubaSDKServicing39EffectSubtypeModificationsEventListene
 @protocol EffectSubtypeModificationsEventListener
 - (void)didChangeEffectSubtype:(NSString * _Nonnull)subtypeName;
 - (void)didInitiateEffectSubtype:(NSString * _Nonnull)subtypeName;
+@end
+
+
+/// Setups adding external audio asset to result asset as audio track
+SWIFT_CLASS("_TtC18BanubaSDKServicing26ExternalAudioConfiguration")
+@interface ExternalAudioConfiguration : NSObject
+/// Audio asset url
+@property (nonatomic, readonly, copy) NSURL * _Nonnull url;
+/// Offset inside audio asset
+@property (nonatomic, readonly) NSTimeInterval offset;
+/// Preferred audio track volume
+@property (nonatomic, readonly) CGFloat preferredVolume;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 enum PIPCameraLayoutSettings : NSInteger;
