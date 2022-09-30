@@ -6,6 +6,6 @@ framework module BanubaSDKServicing {
 }
 
 module BanubaSDKServicing.Swift {
-    header "BanubaSDKServicing-Swift.h"
-    requires objc
+  header "BanubaSDKServicing-Swift.h"
+  requires objc
 }
