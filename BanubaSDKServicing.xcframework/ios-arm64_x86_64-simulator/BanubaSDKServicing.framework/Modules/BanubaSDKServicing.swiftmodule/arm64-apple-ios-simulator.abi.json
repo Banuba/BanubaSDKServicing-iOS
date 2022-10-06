@@ -1547,7 +1547,7 @@
           {
             "kind": "Function",
             "name": "startVideoCapturing",
-            "printedName": "startVideoCapturing(fileURL:startTimeForVideoTexture:externalAudioConfiguration:progress:didStart:periodicProgressTimeInterval:boundaryTimes:boundaryHandler:totalDuration:itemDuration:completion:)",
+            "printedName": "startVideoCapturing(fileURL:startTimeForVideoTexture:externalAudioConfiguration:progress:didStart:shouldSkipFrame:periodicProgressTimeInterval:boundaryTimes:boundaryHandler:totalDuration:itemDuration:completion:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1620,6 +1620,32 @@
                         "kind": "TypeNominal",
                         "name": "Void",
                         "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(() -> Swift.Bool)?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "() -> Swift.Bool",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
                       },
                       {
                         "kind": "TypeNominal",
@@ -1722,8 +1748,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@BanubaSDKServicing@objc(pl)SDKOutputServicing(im)startVideoCapturingWithFileURL:startTimeForVideoTexture:externalAudioConfiguration:progress:didStart:periodicProgressTimeInterval:boundaryTimes:boundaryHandler:totalDuration:itemDuration:completion:",
-            "mangledName": "$s18BanubaSDKServicing18SDKOutputServicingP19startVideoCapturing7fileURL0e7TimeForF7Texture26externalAudioConfiguration8progress8didStart016periodicProgressJ8Interval13boundaryTimes0V7Handler13totalDuration04itemZ010completiony10Foundation0I0VSg_SdAA08ExternalnO0CSgySo6CMTimeacyycSgSdSaySo7NSValueCGyAXcS2dySb_s5Error_pSgtctF",
+            "usr": "c:@M@BanubaSDKServicing@objc(pl)SDKOutputServicing(im)startVideoCapturingWithFileURL:startTimeForVideoTexture:externalAudioConfiguration:progress:didStart:shouldSkipFrame:periodicProgressTimeInterval:boundaryTimes:boundaryHandler:totalDuration:itemDuration:completion:",
+            "mangledName": "$s18BanubaSDKServicing18SDKOutputServicingP19startVideoCapturing7fileURL0e7TimeForF7Texture26externalAudioConfiguration8progress8didStart15shouldSkipFrame016periodicProgressJ8Interval13boundaryTimes0Y7Handler13totalDuration12itemDuration10completiony10Foundation0I0VSg_SdAA08ExternalnO0CSgySo6CMTimeacyycSgSbycSgSdSaySo7NSValueCGyAYcS2dySb_s5Error_pSgtctF",
             "moduleName": "BanubaSDKServicing",
             "genericSig": "<τ_0_0 where τ_0_0 : BanubaSDKServicing.SDKOutputServicing>",
             "sugared_genericSig": "<Self where Self : BanubaSDKServicing.SDKOutputServicing>",
@@ -5966,6 +5992,54 @@
                 ],
                 "reqNewWitnessTableEntry": true,
                 "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isPIPPlayerReadyToProvideData",
+            "printedName": "isPIPPlayerReadyToProvideData",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@BanubaSDKServicing@objc(pl)SDKPIPServicing(py)isPIPPlayerReadyToProvideData",
+            "mangledName": "$s18BanubaSDKServicing15SDKPIPServicingP29isPIPPlayerReadyToProvideDataSbvp",
+            "moduleName": "BanubaSDKServicing",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BanubaSDKServicing@objc(pl)SDKPIPServicing(im)isPIPPlayerReadyToProvideData",
+                "mangledName": "$s18BanubaSDKServicing15SDKPIPServicingP29isPIPPlayerReadyToProvideDataSbvg",
+                "moduleName": "BanubaSDKServicing",
+                "genericSig": "<τ_0_0 where τ_0_0 : BanubaSDKServicing.SDKPIPServicing>",
+                "sugared_genericSig": "<Self where Self : BanubaSDKServicing.SDKPIPServicing>",
+                "protocolReq": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
               }
             ]
           },

@@ -63,7 +63,7 @@ public class BeautyEffectManager : BanubaSDKServicing.BeautyEffectManaging {
   @objc var isRecording: Swift.Bool { get }
   @objc var isEnoughDiskSpaceForRecording: Swift.Bool { get }
   @objc func startVideoCapturing(fileURL: Foundation.URL?, progress: @escaping (CoreMedia.CMTime) -> Swift.Void, completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
-  @objc func startVideoCapturing(fileURL: Foundation.URL?, startTimeForVideoTexture: Swift.Double, externalAudioConfiguration: BanubaSDKServicing.ExternalAudioConfiguration?, progress: @escaping (CoreMedia.CMTime) -> Swift.Void, didStart: (() -> Swift.Void)?, periodicProgressTimeInterval: Foundation.TimeInterval, boundaryTimes: [Foundation.NSValue], boundaryHandler: @escaping (CoreMedia.CMTime) -> Swift.Void, totalDuration: Foundation.TimeInterval, itemDuration: Foundation.TimeInterval, completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
+  @objc func startVideoCapturing(fileURL: Foundation.URL?, startTimeForVideoTexture: Swift.Double, externalAudioConfiguration: BanubaSDKServicing.ExternalAudioConfiguration?, progress: @escaping (CoreMedia.CMTime) -> Swift.Void, didStart: (() -> Swift.Void)?, shouldSkipFrame: (() -> Swift.Bool)?, periodicProgressTimeInterval: Foundation.TimeInterval, boundaryTimes: [Foundation.NSValue], boundaryHandler: @escaping (CoreMedia.CMTime) -> Swift.Void, totalDuration: Foundation.TimeInterval, itemDuration: Foundation.TimeInterval, completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
   @objc func stopVideoCapturing(cancel: Swift.Bool)
 }
 public protocol BeautyEffectManaging {
@@ -219,6 +219,7 @@ public protocol BeautyEffectManaging {
 @objc public protocol SDKPIPServicing {
   @objc var isPIPSessionAlreadySetup: Swift.Bool { get set }
   @objc var isPIPSession: Swift.Bool { get set }
+  @objc var isPIPPlayerReadyToProvideData: Swift.Bool { get }
   @objc var pipVideoURL: Foundation.URL? { get set }
   @objc var pipSwitchSetting: BanubaSDKServicing.PIPSwitchLayoutSetting? { get set }
   @objc var pipPlayerSetting: BanubaSDKServicing.PIPPlayerLayoutSetting? { get set }

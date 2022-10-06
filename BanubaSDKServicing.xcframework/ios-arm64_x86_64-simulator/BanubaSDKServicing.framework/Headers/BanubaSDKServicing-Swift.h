@@ -266,6 +266,7 @@ SWIFT_PROTOCOL("_TtP18BanubaSDKServicing15SDKPIPServicing_")
 @protocol SDKPIPServicing
 @property (nonatomic) BOOL isPIPSessionAlreadySetup;
 @property (nonatomic) BOOL isPIPSession;
+@property (nonatomic, readonly) BOOL isPIPPlayerReadyToProvideData;
 @property (nonatomic, copy) NSURL * _Nullable pipVideoURL;
 @property (nonatomic, strong) PIPSwitchLayoutSetting * _Nullable pipSwitchSetting;
 @property (nonatomic, strong) PIPPlayerLayoutSetting * _Nullable pipPlayerSetting;
@@ -327,7 +328,7 @@ SWIFT_PROTOCOL("_TtP18BanubaSDKServicing18SDKOutputServicing_")
 @property (nonatomic, readonly) BOOL isRecording;
 @property (nonatomic, readonly) BOOL isEnoughDiskSpaceForRecording;
 - (void)startVideoCapturingWithFileURL:(NSURL * _Nullable)fileURL progress:(void (^ _Nonnull)(CMTime))progress completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
-- (void)startVideoCapturingWithFileURL:(NSURL * _Nullable)fileURL startTimeForVideoTexture:(double)startTimeForVideoTexture externalAudioConfiguration:(ExternalAudioConfiguration * _Nullable)externalAudioConfiguration progress:(void (^ _Nonnull)(CMTime))progress didStart:(void (^ _Nullable)(void))didStart periodicProgressTimeInterval:(NSTimeInterval)periodicProgressTimeInterval boundaryTimes:(NSArray<NSValue *> * _Nonnull)boundaryTimes boundaryHandler:(void (^ _Nonnull)(CMTime))boundaryHandler totalDuration:(NSTimeInterval)totalDuration itemDuration:(NSTimeInterval)itemDuration completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+- (void)startVideoCapturingWithFileURL:(NSURL * _Nullable)fileURL startTimeForVideoTexture:(double)startTimeForVideoTexture externalAudioConfiguration:(ExternalAudioConfiguration * _Nullable)externalAudioConfiguration progress:(void (^ _Nonnull)(CMTime))progress didStart:(void (^ _Nullable)(void))didStart shouldSkipFrame:(BOOL (^ _Nullable)(void))shouldSkipFrame periodicProgressTimeInterval:(NSTimeInterval)periodicProgressTimeInterval boundaryTimes:(NSArray<NSValue *> * _Nonnull)boundaryTimes boundaryHandler:(void (^ _Nonnull)(CMTime))boundaryHandler totalDuration:(NSTimeInterval)totalDuration itemDuration:(NSTimeInterval)itemDuration completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 - (void)stopVideoCapturingWithCancel:(BOOL)cancel;
 @end
 
@@ -834,6 +835,7 @@ SWIFT_PROTOCOL("_TtP18BanubaSDKServicing15SDKPIPServicing_")
 @protocol SDKPIPServicing
 @property (nonatomic) BOOL isPIPSessionAlreadySetup;
 @property (nonatomic) BOOL isPIPSession;
+@property (nonatomic, readonly) BOOL isPIPPlayerReadyToProvideData;
 @property (nonatomic, copy) NSURL * _Nullable pipVideoURL;
 @property (nonatomic, strong) PIPSwitchLayoutSetting * _Nullable pipSwitchSetting;
 @property (nonatomic, strong) PIPPlayerLayoutSetting * _Nullable pipPlayerSetting;
@@ -895,7 +897,7 @@ SWIFT_PROTOCOL("_TtP18BanubaSDKServicing18SDKOutputServicing_")
 @property (nonatomic, readonly) BOOL isRecording;
 @property (nonatomic, readonly) BOOL isEnoughDiskSpaceForRecording;
 - (void)startVideoCapturingWithFileURL:(NSURL * _Nullable)fileURL progress:(void (^ _Nonnull)(CMTime))progress completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
-- (void)startVideoCapturingWithFileURL:(NSURL * _Nullable)fileURL startTimeForVideoTexture:(double)startTimeForVideoTexture externalAudioConfiguration:(ExternalAudioConfiguration * _Nullable)externalAudioConfiguration progress:(void (^ _Nonnull)(CMTime))progress didStart:(void (^ _Nullable)(void))didStart periodicProgressTimeInterval:(NSTimeInterval)periodicProgressTimeInterval boundaryTimes:(NSArray<NSValue *> * _Nonnull)boundaryTimes boundaryHandler:(void (^ _Nonnull)(CMTime))boundaryHandler totalDuration:(NSTimeInterval)totalDuration itemDuration:(NSTimeInterval)itemDuration completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+- (void)startVideoCapturingWithFileURL:(NSURL * _Nullable)fileURL startTimeForVideoTexture:(double)startTimeForVideoTexture externalAudioConfiguration:(ExternalAudioConfiguration * _Nullable)externalAudioConfiguration progress:(void (^ _Nonnull)(CMTime))progress didStart:(void (^ _Nullable)(void))didStart shouldSkipFrame:(BOOL (^ _Nullable)(void))shouldSkipFrame periodicProgressTimeInterval:(NSTimeInterval)periodicProgressTimeInterval boundaryTimes:(NSArray<NSValue *> * _Nonnull)boundaryTimes boundaryHandler:(void (^ _Nonnull)(CMTime))boundaryHandler totalDuration:(NSTimeInterval)totalDuration itemDuration:(NSTimeInterval)itemDuration completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 - (void)stopVideoCapturingWithCancel:(BOOL)cancel;
 @end
 
