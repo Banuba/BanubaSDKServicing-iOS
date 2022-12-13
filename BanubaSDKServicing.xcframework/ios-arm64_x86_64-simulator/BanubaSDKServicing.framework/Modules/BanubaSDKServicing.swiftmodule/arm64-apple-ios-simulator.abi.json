@@ -9875,378 +9875,378 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKEffectServicing.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKEffectServicing.swift",
       "kind": "StringLiteral",
       "offset": 1371,
       "length": 15,
       "value": "\"BeautyEffects\""
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKEffectServicing.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKEffectServicing.swift",
       "kind": "BooleanLiteral",
       "offset": 1521,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKOutputServicing.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKOutputServicing.swift",
       "kind": "StringLiteral",
       "offset": 221,
       "length": 26,
       "value": "\"BanubaSDKServicing.ExternalAudioConfiguration\""
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
       "kind": "IntegerLiteral",
       "offset": 267,
       "length": 20,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
       "kind": "IntegerLiteral",
       "offset": 295,
       "length": 21,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
       "kind": "IntegerLiteral",
       "offset": 324,
       "length": 20,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
       "kind": "IntegerLiteral",
       "offset": 352,
       "length": 15,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
       "kind": "IntegerLiteral",
       "offset": 375,
       "length": 14,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
       "kind": "IntegerLiteral",
       "offset": 267,
       "length": 20,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
       "kind": "IntegerLiteral",
       "offset": 295,
       "length": 21,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
       "kind": "IntegerLiteral",
       "offset": 324,
       "length": 20,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
       "kind": "IntegerLiteral",
       "offset": 352,
       "length": 15,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
       "kind": "IntegerLiteral",
       "offset": 375,
       "length": 14,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
       "kind": "IntegerLiteral",
       "offset": 497,
       "length": 6,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
       "kind": "IntegerLiteral",
       "offset": 511,
       "length": 8,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
       "kind": "IntegerLiteral",
       "offset": 527,
       "length": 8,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
       "kind": "IntegerLiteral",
       "offset": 497,
       "length": 6,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
       "kind": "IntegerLiteral",
       "offset": 511,
       "length": 8,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
       "kind": "IntegerLiteral",
       "offset": 527,
       "length": 8,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
       "kind": "IntegerLiteral",
       "offset": 646,
       "length": 9,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
       "kind": "IntegerLiteral",
       "offset": 663,
       "length": 5,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
       "kind": "IntegerLiteral",
       "offset": 676,
       "length": 9,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
       "kind": "IntegerLiteral",
       "offset": 646,
       "length": 9,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
       "kind": "IntegerLiteral",
       "offset": 663,
       "length": 5,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
       "kind": "IntegerLiteral",
       "offset": 676,
       "length": 9,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
       "kind": "IntegerLiteral",
       "offset": 794,
       "length": 15,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
       "kind": "IntegerLiteral",
       "offset": 817,
       "length": 17,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
       "kind": "IntegerLiteral",
       "offset": 842,
       "length": 19,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
       "kind": "IntegerLiteral",
       "offset": 869,
       "length": 20,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
       "kind": "IntegerLiteral",
       "offset": 897,
       "length": 3,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
       "kind": "IntegerLiteral",
       "offset": 794,
       "length": 15,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
       "kind": "IntegerLiteral",
       "offset": 817,
       "length": 17,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
       "kind": "IntegerLiteral",
       "offset": 842,
       "length": 19,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
       "kind": "IntegerLiteral",
       "offset": 869,
       "length": 20,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
       "kind": "IntegerLiteral",
       "offset": 897,
       "length": 3,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
       "kind": "IntegerLiteral",
       "offset": 991,
       "length": 4,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
       "kind": "IntegerLiteral",
       "offset": 1003,
       "length": 6,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
       "kind": "IntegerLiteral",
       "offset": 1017,
       "length": 9,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
       "kind": "IntegerLiteral",
       "offset": 1034,
       "length": 11,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
       "kind": "IntegerLiteral",
       "offset": 991,
       "length": 4,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
       "kind": "IntegerLiteral",
       "offset": 1003,
       "length": 6,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
       "kind": "IntegerLiteral",
       "offset": 1017,
       "length": 9,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
       "kind": "IntegerLiteral",
       "offset": 1034,
       "length": 11,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
       "kind": "StringLiteral",
       "offset": 1103,
       "length": 22,
       "value": "\"BanubaSDKServicing.PIPSwitchLayoutSetting\""
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
       "kind": "StringLiteral",
       "offset": 2288,
       "length": 22,
       "value": "\"BanubaSDKServicing.PIPCameraLayoutSetting\""
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
       "kind": "StringLiteral",
       "offset": 3111,
       "length": 22,
       "value": "\"BanubaSDKServicing.PIPPlayerLayoutSetting\""
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
       "kind": "StringLiteral",
       "offset": 3907,
       "length": 19,
       "value": "\"BanubaSDKServicing.PIPShapeTypeAdapter\""
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/CameraModule.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/CameraModule.swift",
       "kind": "IntegerLiteral",
       "offset": 230,
       "length": 9,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/CameraModule.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/CameraModule.swift",
       "kind": "IntegerLiteral",
       "offset": 247,
       "length": 10,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/CameraModule.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/CameraModule.swift",
       "kind": "IntegerLiteral",
       "offset": 265,
       "length": 9,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/CameraModule.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/CameraModule.swift",
       "kind": "IntegerLiteral",
       "offset": 230,
       "length": 9,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/CameraModule.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/CameraModule.swift",
       "kind": "IntegerLiteral",
       "offset": 247,
       "length": 10,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/CameraModule.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/CameraModule.swift",
       "kind": "IntegerLiteral",
       "offset": 265,
       "length": 9,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Models\/EffectModel.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Models\/EffectModel.swift",
       "kind": "StringLiteral",
       "offset": 130,
       "length": 11,
