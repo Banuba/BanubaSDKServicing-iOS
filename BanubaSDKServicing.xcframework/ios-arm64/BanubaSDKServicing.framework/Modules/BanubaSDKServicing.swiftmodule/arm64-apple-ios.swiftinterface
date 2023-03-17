@@ -19,6 +19,7 @@ import _StringProcessing
 @objc public protocol SDKEffectsTextureServicing {
   @objc func effectAddImageTexture(image: UIKit.UIImage)
   @objc func setupDefaultImageTexture()
+  @objc func stopVideoTextureIfNeeded()
   @objc func effectAddVideoTexture(asset: AVFoundation.AVURLAsset)
   @objc func effectReloadTexturePreview(startTime: Foundation.TimeInterval, endTime: Foundation.TimeInterval, itemDuration: Foundation.TimeInterval)
   @objc func unloadEffectTexture()
@@ -62,7 +63,7 @@ public class BeautyEffectManager : BanubaSDKServicing.BeautyEffectManaging {
 @objc public protocol SDKOutputServicing {
   @objc var isRecording: Swift.Bool { get }
   @objc var isEnoughDiskSpaceForRecording: Swift.Bool { get }
-  @objc func startVideoCapturing(fileURL: Foundation.URL?, startTimeForVideoTexture: Swift.Double, isMicrophoneEnabled: Swift.Bool, externalAudioConfiguration: BanubaSDKServicing.ExternalAudioConfiguration?, progress: @escaping (CoreMedia.CMTime) -> Swift.Void, didStart: (() -> Swift.Void)?, shouldSkipFrame: (() -> Swift.Bool)?, periodicProgressTimeInterval: Foundation.TimeInterval, boundaryTimes: [Foundation.NSValue], boundaryHandler: @escaping (CoreMedia.CMTime) -> Swift.Void, totalDuration: Foundation.TimeInterval, itemDuration: Foundation.TimeInterval, completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
+  @objc func startVideoCapturing(fileURL: Foundation.URL?, startTimeForVideoTexture: Swift.Double, externalAudioConfiguration: BanubaSDKServicing.ExternalAudioConfiguration?, progress: @escaping (CoreMedia.CMTime) -> Swift.Void, didStart: (() -> Swift.Void)?, shouldSkipFrame: (() -> Swift.Bool)?, periodicProgressTimeInterval: Foundation.TimeInterval, boundaryTimes: [Foundation.NSValue], boundaryHandler: @escaping (CoreMedia.CMTime) -> Swift.Void, totalDuration: Foundation.TimeInterval, itemDuration: Foundation.TimeInterval, completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
   @objc func stopVideoCapturing(cancel: Swift.Bool)
 }
 public protocol BeautyEffectManaging {
@@ -76,6 +77,11 @@ public protocol BeautyEffectManaging {
   @objc func load()
   @objc func unload()
   @objc func apply(pixelBuffer: CoreVideo.CVPixelBuffer)
+}
+@objc @_inheritsConvenienceInitializers public class SDKLogger : ObjectiveC.NSObject {
+  public static func debugPrint(_ text: Swift.String)
+  @objc override dynamic public init()
+  @objc deinit
 }
 @objc public enum PIPSwitchLayoutSettings : Swift.Int {
   case switchVerticallyUP
@@ -272,6 +278,7 @@ public struct CameraModuleDefaults {
   @objc func getRendererView() -> UIKit.UIView
   @objc func startRenderLoop()
   @objc func stopRenderLoop()
+  @objc func addFPSListener(_ listener: ((_ fpsInfo: Foundation.NSAttributedString) -> Swift.Void)?)
 }
 @objc public class EffectModel : ObjectiveC.NSObject {
   public var id: Swift.UInt
@@ -303,6 +310,7 @@ public protocol SDKEffectTextureServicing {
   func reloadTexturePreview(startTime: Foundation.TimeInterval, endTime: Foundation.TimeInterval, itemDuration: Foundation.TimeInterval)
   func reloadCurrentTexture(imageSize: CoreFoundation.CGSize)
   func setupDefaultImageTexture()
+  func stopVideoTextureIfNeeded()
 }
 @objc public protocol SDKBeautyEffectManaging {
   @objc var isBeautificationEnabled: Swift.Bool { get set }
@@ -316,8 +324,7 @@ public protocol SDKEffectTextureServicing {
   @objc var zoomFactor: Swift.Float { get }
   @objc var currentCameraSessionType: BanubaSDKServicing.CameraModuleSessionType { get }
   @objc var inputDelegate: BanubaSDKServicing.SDKInputServicingDelegate? { get set }
-  @objc func configureExposureSettings(_ point: CoreFoundation.CGPoint, useContinuousDetection: Swift.Bool)
-  @objc func configureFocusSettings(_ point: CoreFoundation.CGPoint, useContinuousDetection: Swift.Bool)
+  @objc func focus(at point: CoreFoundation.CGPoint, useContinuousDetection: Swift.Bool)
   @objc func setZoomFactor(_ zoomFactor: Swift.Float) -> Swift.Float
   @objc func toggleCamera(completion: @escaping () -> ())
   @objc func startCamera()

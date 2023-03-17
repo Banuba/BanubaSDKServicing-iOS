@@ -159,6 +159,30 @@
           },
           {
             "kind": "Function",
+            "name": "stopVideoTextureIfNeeded",
+            "printedName": "stopVideoTextureIfNeeded()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BanubaSDKServicing@objc(pl)SDKEffectsTextureServicing(im)stopVideoTextureIfNeeded",
+            "mangledName": "$s18BanubaSDKServicing26SDKEffectsTextureServicingP09stopVideoD8IfNeededyyF",
+            "moduleName": "BanubaSDKServicing",
+            "genericSig": "<τ_0_0 where τ_0_0 : BanubaSDKServicing.SDKEffectsTextureServicing>",
+            "sugared_genericSig": "<Self where Self : BanubaSDKServicing.SDKEffectsTextureServicing>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "effectAddVideoTexture",
             "printedName": "effectAddVideoTexture(asset:)",
             "children": [
@@ -1440,7 +1464,7 @@
           {
             "kind": "Function",
             "name": "startVideoCapturing",
-            "printedName": "startVideoCapturing(fileURL:startTimeForVideoTexture:isMicrophoneEnabled:externalAudioConfiguration:progress:didStart:shouldSkipFrame:periodicProgressTimeInterval:boundaryTimes:boundaryHandler:totalDuration:itemDuration:completion:)",
+            "printedName": "startVideoCapturing(fileURL:startTimeForVideoTexture:externalAudioConfiguration:progress:didStart:shouldSkipFrame:periodicProgressTimeInterval:boundaryTimes:boundaryHandler:totalDuration:itemDuration:completion:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1466,12 +1490,6 @@
                 "name": "Double",
                 "printedName": "Swift.Double",
                 "usr": "s:Sd"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
               },
               {
                 "kind": "TypeNominal",
@@ -1647,8 +1665,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@BanubaSDKServicing@objc(pl)SDKOutputServicing(im)startVideoCapturingWithFileURL:startTimeForVideoTexture:isMicrophoneEnabled:externalAudioConfiguration:progress:didStart:shouldSkipFrame:periodicProgressTimeInterval:boundaryTimes:boundaryHandler:totalDuration:itemDuration:completion:",
-            "mangledName": "$s18BanubaSDKServicing18SDKOutputServicingP19startVideoCapturing7fileURL0e7TimeForF7Texture19isMicrophoneEnabled26externalAudioConfiguration8progress8didStart15shouldSkipFrame016periodicProgressJ8Interval13boundaryTimes15boundaryHandler13totalDuration12itemDuration10completiony10Foundation0I0VSg_SdSbAA08ExternalqR0CSgySo6CMTimeacyycSgSbycSgSdSaySo7NSValueCGyAZcS2dySb_s5Error_pSgtctF",
+            "usr": "c:@M@BanubaSDKServicing@objc(pl)SDKOutputServicing(im)startVideoCapturingWithFileURL:startTimeForVideoTexture:externalAudioConfiguration:progress:didStart:shouldSkipFrame:periodicProgressTimeInterval:boundaryTimes:boundaryHandler:totalDuration:itemDuration:completion:",
+            "mangledName": "$s18BanubaSDKServicing18SDKOutputServicingP19startVideoCapturing7fileURL0e7TimeForF7Texture26externalAudioConfiguration8progress8didStart15shouldSkipFrame016periodicProgressJ8Interval13boundaryTimes0Y7Handler13totalDuration12itemDuration10completiony10Foundation0I0VSg_SdAA08ExternalnO0CSgySo6CMTimeacyycSgSbycSgSdSaySo7NSValueCGyAYcS2dySb_s5Error_pSgtctF",
             "moduleName": "BanubaSDKServicing",
             "genericSig": "<τ_0_0 where τ_0_0 : BanubaSDKServicing.SDKOutputServicing>",
             "sugared_genericSig": "<Self where Self : BanubaSDKServicing.SDKOutputServicing>",
@@ -2265,6 +2283,141 @@
         "declAttributes": [
           "AccessControl",
           "ObjC"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BanubaSDKServicing",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SDKLogger",
+        "printedName": "SDKLogger",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "debugPrint",
+            "printedName": "debugPrint(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18BanubaSDKServicing9SDKLoggerC10debugPrintyySSFZ",
+            "mangledName": "$s18BanubaSDKServicing9SDKLoggerC10debugPrintyySSFZ",
+            "moduleName": "BanubaSDKServicing",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SDKLogger",
+                "printedName": "BanubaSDKServicing.SDKLogger",
+                "usr": "c:@M@BanubaSDKServicing@objc(cs)SDKLogger"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@BanubaSDKServicing@objc(cs)SDKLogger(im)init",
+            "mangledName": "$s18BanubaSDKServicing9SDKLoggerCACycfc",
+            "moduleName": "BanubaSDKServicing",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@BanubaSDKServicing@objc(cs)SDKLogger",
+        "mangledName": "$s18BanubaSDKServicing9SDKLoggerC",
+        "moduleName": "BanubaSDKServicing",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
         ]
       },
       {
@@ -7926,6 +8079,56 @@
             ],
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "addFPSListener",
+            "printedName": "addFPSListener(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Foundation.NSAttributedString) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Foundation.NSAttributedString) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NSAttributedString",
+                        "printedName": "Foundation.NSAttributedString",
+                        "usr": "c:objc(cs)NSAttributedString"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BanubaSDKServicing@objc(pl)CameraModule(im)addFPSListener:",
+            "mangledName": "$s18BanubaSDKServicing12CameraModuleP14addFPSListeneryyySo18NSAttributedStringCcSgF",
+            "moduleName": "BanubaSDKServicing",
+            "genericSig": "<τ_0_0 where τ_0_0 : BanubaSDKServicing.CameraModule>",
+            "sugared_genericSig": "<Self where Self : BanubaSDKServicing.CameraModule>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Protocol",
@@ -9092,6 +9295,30 @@
             ],
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "stopVideoTextureIfNeeded",
+            "printedName": "stopVideoTextureIfNeeded()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18BanubaSDKServicing25SDKEffectTextureServicingP09stopVideoD8IfNeededyyF",
+            "mangledName": "$s18BanubaSDKServicing25SDKEffectTextureServicingP09stopVideoD8IfNeededyyF",
+            "moduleName": "BanubaSDKServicing",
+            "genericSig": "<τ_0_0 where τ_0_0 : BanubaSDKServicing.SDKEffectTextureServicing>",
+            "sugared_genericSig": "<Self where Self : BanubaSDKServicing.SDKEffectTextureServicing>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Protocol",
@@ -9557,8 +9784,8 @@
           },
           {
             "kind": "Function",
-            "name": "configureExposureSettings",
-            "printedName": "configureExposureSettings(_:useContinuousDetection:)",
+            "name": "focus",
+            "printedName": "focus(at:useContinuousDetection:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -9579,44 +9806,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@BanubaSDKServicing@objc(pl)SDKInputServicing(im)configureExposureSettings:useContinuousDetection:",
-            "mangledName": "$s18BanubaSDKServicing17SDKInputServicingP25configureExposureSettings_22useContinuousDetectionySo7CGPointV_SbtF",
-            "moduleName": "BanubaSDKServicing",
-            "genericSig": "<τ_0_0 where τ_0_0 : BanubaSDKServicing.SDKInputServicing>",
-            "sugared_genericSig": "<Self where Self : BanubaSDKServicing.SDKInputServicing>",
-            "protocolReq": true,
-            "declAttributes": [
-              "ObjC"
-            ],
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "configureFocusSettings",
-            "printedName": "configureFocusSettings(_:useContinuousDetection:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "CGPoint",
-                "printedName": "CoreFoundation.CGPoint",
-                "usr": "c:@S@CGPoint"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@BanubaSDKServicing@objc(pl)SDKInputServicing(im)configureFocusSettings:useContinuousDetection:",
-            "mangledName": "$s18BanubaSDKServicing17SDKInputServicingP22configureFocusSettings_22useContinuousDetectionySo7CGPointV_SbtF",
+            "usr": "c:@M@BanubaSDKServicing@objc(pl)SDKInputServicing(im)focusAt:useContinuousDetection:",
+            "mangledName": "$s18BanubaSDKServicing17SDKInputServicingP5focus2at22useContinuousDetectionySo7CGPointV_SbtF",
             "moduleName": "BanubaSDKServicing",
             "genericSig": "<τ_0_0 where τ_0_0 : BanubaSDKServicing.SDKInputServicing>",
             "sugared_genericSig": "<Self where Self : BanubaSDKServicing.SDKInputServicing>",
@@ -9877,14 +10068,14 @@
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKEffectServicing.swift",
       "kind": "StringLiteral",
-      "offset": 1371,
+      "offset": 1405,
       "length": 15,
       "value": "\"BeautyEffects\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKEffectServicing.swift",
       "kind": "BooleanLiteral",
-      "offset": 1521,
+      "offset": 1555,
       "length": 5,
       "value": "false"
     },

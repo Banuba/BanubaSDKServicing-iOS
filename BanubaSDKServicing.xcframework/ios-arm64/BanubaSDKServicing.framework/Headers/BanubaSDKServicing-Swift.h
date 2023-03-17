@@ -296,6 +296,7 @@ SWIFT_PROTOCOL("_TtP18BanubaSDKServicing26SDKEffectsTextureServicing_")
 @protocol SDKEffectsTextureServicing
 - (void)effectAddImageTextureWithImage:(UIImage * _Nonnull)image;
 - (void)setupDefaultImageTexture;
+- (void)stopVideoTextureIfNeeded;
 - (void)effectAddVideoTextureWithAsset:(AVURLAsset * _Nonnull)asset;
 - (void)effectReloadTexturePreviewWithStartTime:(NSTimeInterval)startTime endTime:(NSTimeInterval)endTime itemDuration:(NSTimeInterval)itemDuration;
 - (void)unloadEffectTexture;
@@ -327,7 +328,7 @@ SWIFT_PROTOCOL("_TtP18BanubaSDKServicing18SDKOutputServicing_")
 @protocol SDKOutputServicing
 @property (nonatomic, readonly) BOOL isRecording;
 @property (nonatomic, readonly) BOOL isEnoughDiskSpaceForRecording;
-- (void)startVideoCapturingWithFileURL:(NSURL * _Nullable)fileURL startTimeForVideoTexture:(double)startTimeForVideoTexture isMicrophoneEnabled:(BOOL)isMicrophoneEnabled externalAudioConfiguration:(ExternalAudioConfiguration * _Nullable)externalAudioConfiguration progress:(void (^ _Nonnull)(CMTime))progress didStart:(void (^ _Nullable)(void))didStart shouldSkipFrame:(BOOL (^ _Nullable)(void))shouldSkipFrame periodicProgressTimeInterval:(NSTimeInterval)periodicProgressTimeInterval boundaryTimes:(NSArray<NSValue *> * _Nonnull)boundaryTimes boundaryHandler:(void (^ _Nonnull)(CMTime))boundaryHandler totalDuration:(NSTimeInterval)totalDuration itemDuration:(NSTimeInterval)itemDuration completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+- (void)startVideoCapturingWithFileURL:(NSURL * _Nullable)fileURL startTimeForVideoTexture:(double)startTimeForVideoTexture externalAudioConfiguration:(ExternalAudioConfiguration * _Nullable)externalAudioConfiguration progress:(void (^ _Nonnull)(CMTime))progress didStart:(void (^ _Nullable)(void))didStart shouldSkipFrame:(BOOL (^ _Nullable)(void))shouldSkipFrame periodicProgressTimeInterval:(NSTimeInterval)periodicProgressTimeInterval boundaryTimes:(NSArray<NSValue *> * _Nonnull)boundaryTimes boundaryHandler:(void (^ _Nonnull)(CMTime))boundaryHandler totalDuration:(NSTimeInterval)totalDuration itemDuration:(NSTimeInterval)itemDuration completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 - (void)stopVideoCapturingWithCancel:(BOOL)cancel;
 @end
 
@@ -340,8 +341,7 @@ SWIFT_PROTOCOL("_TtP18BanubaSDKServicing17SDKInputServicing_")
 @property (nonatomic, readonly) float zoomFactor;
 @property (nonatomic, readonly) enum CameraModuleSessionType currentCameraSessionType;
 @property (nonatomic, strong) id <SDKInputServicingDelegate> _Nullable inputDelegate;
-- (void)configureExposureSettings:(CGPoint)point useContinuousDetection:(BOOL)useContinuousDetection;
-- (void)configureFocusSettings:(CGPoint)point useContinuousDetection:(BOOL)useContinuousDetection;
+- (void)focusAt:(CGPoint)point useContinuousDetection:(BOOL)useContinuousDetection;
 - (float)setZoomFactor:(float)zoomFactor SWIFT_WARN_UNUSED_RESULT;
 - (void)toggleCameraWithCompletion:(void (^ _Nonnull)(void))completion;
 - (void)startCamera;
@@ -353,6 +353,7 @@ SWIFT_PROTOCOL("_TtP18BanubaSDKServicing17SDKInputServicing_")
 @end
 
 @class UIView;
+@class NSAttributedString;
 
 SWIFT_PROTOCOL("_TtP18BanubaSDKServicing12CameraModule_")
 @protocol CameraModule <SDKBeautyEffectManaging, SDKEffectsServicing, SDKInputServicing, SDKOutputServicing, SDKPIPServicing>
@@ -373,6 +374,7 @@ SWIFT_PROTOCOL("_TtP18BanubaSDKServicing12CameraModule_")
 - (UIView * _Nonnull)getRendererView SWIFT_WARN_UNUSED_RESULT;
 - (void)startRenderLoop;
 - (void)stopRenderLoop;
+- (void)addFPSListener:(void (^ _Nullable)(NSAttributedString * _Nonnull))listener;
 @end
 
 typedef SWIFT_ENUM(NSInteger, CameraModuleSessionType, open) {
@@ -545,6 +547,12 @@ SWIFT_PROTOCOL("_TtP18BanubaSDKServicing12RenderEffect_")
 SWIFT_PROTOCOL("_TtP18BanubaSDKServicing25SDKInputServicingDelegate_")
 @protocol SDKInputServicingDelegate
 - (void)willOutputWithPixelBuffer:(CVPixelBufferRef _Nonnull)pixelBuffer;
+@end
+
+
+SWIFT_CLASS("_TtC18BanubaSDKServicing9SDKLogger")
+@interface SDKLogger : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
