@@ -8144,24 +8144,10 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "SDKInputServicing",
-            "printedName": "SDKInputServicing",
-            "usr": "c:@M@BanubaSDKServicing@objc(pl)SDKInputServicing",
-            "mangledName": "$s18BanubaSDKServicing17SDKInputServicingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "SDKOutputServicing",
-            "printedName": "SDKOutputServicing",
-            "usr": "c:@M@BanubaSDKServicing@objc(pl)SDKOutputServicing",
-            "mangledName": "$s18BanubaSDKServicing18SDKOutputServicingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "SDKEffectsServicing",
-            "printedName": "SDKEffectsServicing",
-            "usr": "c:@M@BanubaSDKServicing@objc(pl)SDKEffectsServicing",
-            "mangledName": "$s18BanubaSDKServicing19SDKEffectsServicingP"
+            "name": "SDKPIPServicing",
+            "printedName": "SDKPIPServicing",
+            "usr": "c:@M@BanubaSDKServicing@objc(pl)SDKPIPServicing",
+            "mangledName": "$s18BanubaSDKServicing15SDKPIPServicingP"
           },
           {
             "kind": "Conformance",
@@ -8172,10 +8158,10 @@
           },
           {
             "kind": "Conformance",
-            "name": "SDKPIPServicing",
-            "printedName": "SDKPIPServicing",
-            "usr": "c:@M@BanubaSDKServicing@objc(pl)SDKPIPServicing",
-            "mangledName": "$s18BanubaSDKServicing15SDKPIPServicingP"
+            "name": "SDKEffectsServicing",
+            "printedName": "SDKEffectsServicing",
+            "usr": "c:@M@BanubaSDKServicing@objc(pl)SDKEffectsServicing",
+            "mangledName": "$s18BanubaSDKServicing19SDKEffectsServicingP"
           },
           {
             "kind": "Conformance",
@@ -8183,6 +8169,20 @@
             "printedName": "SDKEffectsTextureServicing",
             "usr": "c:@M@BanubaSDKServicing@objc(pl)SDKEffectsTextureServicing",
             "mangledName": "$s18BanubaSDKServicing26SDKEffectsTextureServicingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SDKOutputServicing",
+            "printedName": "SDKOutputServicing",
+            "usr": "c:@M@BanubaSDKServicing@objc(pl)SDKOutputServicing",
+            "mangledName": "$s18BanubaSDKServicing18SDKOutputServicingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SDKInputServicing",
+            "printedName": "SDKInputServicing",
+            "usr": "c:@M@BanubaSDKServicing@objc(pl)SDKInputServicing",
+            "mangledName": "$s18BanubaSDKServicing17SDKInputServicingP"
           }
         ]
       },
@@ -10435,6 +10435,20 @@
       "offset": 265,
       "length": 9,
       "value": "3"
+    },
+    {
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/CameraModule.swift",
+      "kind": "FloatLiteral",
+      "offset": 759,
+      "length": 3,
+      "value": "9.0"
+    },
+    {
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/CameraModule.swift",
+      "kind": "IntegerLiteral",
+      "offset": 772,
+      "length": 2,
+      "value": "16"
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Models\/EffectModel.swift",

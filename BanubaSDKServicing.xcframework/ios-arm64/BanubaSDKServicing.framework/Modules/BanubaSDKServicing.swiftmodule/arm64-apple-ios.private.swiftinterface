@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
+// swift-compiler-version: Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)
 // swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name BanubaSDKServicing
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import AVFoundation
@@ -32,14 +32,14 @@ import _StringProcessing
   @objc func effectDidChangeState()
   @objc func unloadMask()
   @objc func removeAllFilters()
-  @objc func applyFilter(_ filter: BanubaSDKServicing.RenderEffect)
-  @objc func removeFilter(_ filter: BanubaSDKServicing.RenderEffect)
-  @objc func setEffectSubtypeModificationsEventListener(_ listener: BanubaSDKServicing.EffectSubtypeModificationsEventListener)
+  @objc func applyFilter(_ filter: any BanubaSDKServicing.RenderEffect)
+  @objc func removeFilter(_ filter: any BanubaSDKServicing.RenderEffect)
+  @objc func setEffectSubtypeModificationsEventListener(_ listener: any BanubaSDKServicing.EffectSubtypeModificationsEventListener)
   @objc func effectsPaths(includeBeautyEffect: Swift.Bool) -> [Swift.String]
 }
 public protocol EffectsServicing {
-  func apply(effect: BanubaSDKServicing.RenderEffect)
-  func remove(effect: BanubaSDKServicing.RenderEffect)
+  func apply(effect: any BanubaSDKServicing.RenderEffect)
+  func remove(effect: any BanubaSDKServicing.RenderEffect)
   func removeAll()
 }
 public class BeautyEffectManager : BanubaSDKServicing.BeautyEffectManaging {
@@ -63,7 +63,7 @@ public class BeautyEffectManager : BanubaSDKServicing.BeautyEffectManaging {
 @objc public protocol SDKOutputServicing {
   @objc var isRecording: Swift.Bool { get }
   @objc var isEnoughDiskSpaceForRecording: Swift.Bool { get }
-  @objc func startVideoCapturing(fileURL: Foundation.URL?, startTimeForVideoTexture: Swift.Double, externalAudioConfiguration: BanubaSDKServicing.ExternalAudioConfiguration?, progress: @escaping (CoreMedia.CMTime) -> Swift.Void, didStart: (() -> Swift.Void)?, shouldSkipFrame: (() -> Swift.Bool)?, periodicProgressTimeInterval: Foundation.TimeInterval, boundaryTimes: [Foundation.NSValue], boundaryHandler: @escaping (CoreMedia.CMTime) -> Swift.Void, totalDuration: Foundation.TimeInterval, itemDuration: Foundation.TimeInterval, completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
+  @objc func startVideoCapturing(fileURL: Foundation.URL?, startTimeForVideoTexture: Swift.Double, externalAudioConfiguration: BanubaSDKServicing.ExternalAudioConfiguration?, progress: @escaping (CoreMedia.CMTime) -> Swift.Void, didStart: (() -> Swift.Void)?, shouldSkipFrame: (() -> Swift.Bool)?, periodicProgressTimeInterval: Foundation.TimeInterval, boundaryTimes: [Foundation.NSValue], boundaryHandler: @escaping (CoreMedia.CMTime) -> Swift.Void, totalDuration: Foundation.TimeInterval, itemDuration: Foundation.TimeInterval, completion: @escaping (Swift.Bool, (any Swift.Error)?) -> Swift.Void)
   @objc func stopVideoCapturing(cancel: Swift.Bool)
 }
 public protocol BeautyEffectManaging {
@@ -303,9 +303,9 @@ public enum OutputServiceError : Swift.Error {
   }
 }
 public protocol SDKEffectTextureServicing {
-  var selectedGalleryItemTexture: BanubaUtilities.GalleryItem? { get }
-  func effectAddImageTexture(image: UIKit.UIImage, galleryItem: BanubaUtilities.GalleryItem)
-  func effectAddVideoTexture(asset: AVFoundation.AVURLAsset, galleryItem: BanubaUtilities.GalleryItem)
+  var selectedGalleryItemTexture: (any BanubaUtilities.GalleryItem)? { get }
+  func effectAddImageTexture(image: UIKit.UIImage, galleryItem: any BanubaUtilities.GalleryItem)
+  func effectAddVideoTexture(asset: AVFoundation.AVURLAsset, galleryItem: any BanubaUtilities.GalleryItem)
   func unloadEffectTexture()
   func reloadTexturePreview(startTime: Foundation.TimeInterval, endTime: Foundation.TimeInterval, itemDuration: Foundation.TimeInterval)
   func reloadCurrentTexture(imageSize: CoreFoundation.CGSize)
@@ -323,7 +323,7 @@ public protocol SDKEffectTextureServicing {
   @objc var isFrontCamera: Swift.Bool { get }
   @objc var zoomFactor: Swift.Float { get }
   @objc var currentCameraSessionType: BanubaSDKServicing.CameraModuleSessionType { get }
-  @objc var inputDelegate: BanubaSDKServicing.SDKInputServicingDelegate? { get set }
+  @objc var inputDelegate: (any BanubaSDKServicing.SDKInputServicingDelegate)? { get set }
   @objc func focus(at point: CoreFoundation.CGPoint, useContinuousDetection: Swift.Bool)
   @objc func setZoomFactor(_ zoomFactor: Swift.Float) -> Swift.Float
   @objc func toggleCamera(completion: @escaping () -> ())
