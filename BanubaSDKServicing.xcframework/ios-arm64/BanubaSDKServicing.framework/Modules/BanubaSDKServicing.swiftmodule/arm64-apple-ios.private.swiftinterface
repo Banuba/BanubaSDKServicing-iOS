@@ -26,6 +26,7 @@ import _StringProcessing
 }
 @objc public protocol SDKEffectsServicing : BanubaSDKServicing.SDKEffectsTextureServicing {
   @objc func loadMask(name: Swift.String, synchronous: Swift.Bool)
+  @objc func enableBlur()
   @objc func effectDidBeginApplying()
   @objc func effectDidEndApplying()
   @objc func effectDidResetApplying()

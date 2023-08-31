@@ -332,6 +332,30 @@
           },
           {
             "kind": "Function",
+            "name": "enableBlur",
+            "printedName": "enableBlur()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BanubaSDKServicing@objc(pl)SDKEffectsServicing(im)enableBlur",
+            "mangledName": "$s18BanubaSDKServicing19SDKEffectsServicingP10enableBluryyF",
+            "moduleName": "BanubaSDKServicing",
+            "genericSig": "<τ_0_0 where τ_0_0 : BanubaSDKServicing.SDKEffectsServicing>",
+            "sugared_genericSig": "<Self where Self : BanubaSDKServicing.SDKEffectsServicing>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "effectDidBeginApplying",
             "printedName": "effectDidBeginApplying()",
             "children": [
@@ -10068,14 +10092,14 @@
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKEffectServicing.swift",
       "kind": "StringLiteral",
-      "offset": 1405,
+      "offset": 1425,
       "length": 15,
       "value": "\"BeautyEffects\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKEffectServicing.swift",
       "kind": "BooleanLiteral",
-      "offset": 1555,
+      "offset": 1575,
       "length": 5,
       "value": "false"
     },

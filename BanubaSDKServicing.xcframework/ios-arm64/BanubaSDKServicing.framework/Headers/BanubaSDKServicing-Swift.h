@@ -339,6 +339,7 @@ SWIFT_PROTOCOL("_TtP18BanubaSDKServicing26SDKEffectsTextureServicing_")
 SWIFT_PROTOCOL("_TtP18BanubaSDKServicing19SDKEffectsServicing_")
 @protocol SDKEffectsServicing <SDKEffectsTextureServicing>
 - (void)loadMaskWithName:(NSString * _Nonnull)name synchronous:(BOOL)synchronous;
+- (void)enableBlur;
 - (void)effectDidBeginApplying;
 - (void)effectDidEndApplying;
 - (void)effectDidResetApplying;
