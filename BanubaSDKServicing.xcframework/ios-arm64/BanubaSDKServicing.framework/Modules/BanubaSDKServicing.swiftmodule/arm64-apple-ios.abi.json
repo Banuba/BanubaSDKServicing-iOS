@@ -295,6 +295,54 @@
         "printedName": "SDKEffectsServicing",
         "children": [
           {
+            "kind": "Var",
+            "name": "isMaskLoaded",
+            "printedName": "isMaskLoaded",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@BanubaSDKServicing@objc(pl)SDKEffectsServicing(py)isMaskLoaded",
+            "mangledName": "$s18BanubaSDKServicing19SDKEffectsServicingP12isMaskLoadedSbvp",
+            "moduleName": "BanubaSDKServicing",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BanubaSDKServicing@objc(pl)SDKEffectsServicing(im)isMaskLoaded",
+                "mangledName": "$s18BanubaSDKServicing19SDKEffectsServicingP12isMaskLoadedSbvg",
+                "moduleName": "BanubaSDKServicing",
+                "genericSig": "<τ_0_0 where τ_0_0 : BanubaSDKServicing.SDKEffectsServicing>",
+                "sugared_genericSig": "<Self where Self : BanubaSDKServicing.SDKEffectsServicing>",
+                "protocolReq": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
             "kind": "Function",
             "name": "loadMask",
             "printedName": "loadMask(name:synchronous:)",
@@ -10092,14 +10140,14 @@
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKEffectServicing.swift",
       "kind": "StringLiteral",
-      "offset": 1425,
+      "offset": 1458,
       "length": 15,
       "value": "\"BeautyEffects\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKEffectServicing.swift",
       "kind": "BooleanLiteral",
-      "offset": 1575,
+      "offset": 1608,
       "length": 5,
       "value": "false"
     },
