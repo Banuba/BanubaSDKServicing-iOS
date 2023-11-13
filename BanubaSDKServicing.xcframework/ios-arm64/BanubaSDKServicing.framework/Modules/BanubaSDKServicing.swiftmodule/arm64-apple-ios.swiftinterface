@@ -45,6 +45,17 @@ public protocol EffectsServicing {
   func remove(effect: any BanubaSDKServicing.RenderEffect)
   func removeAll()
 }
+public class BeautyEffectManager : BanubaSDKServicing.BeautyEffectManaging {
+  public var applyHandler: ((Swift.String?) -> Swift.Void)?
+  public var enabled: Swift.Bool {
+    get
+    set
+  }
+  public init()
+  public func enable()
+  public func disable()
+  @objc deinit
+}
 @objc public class ExternalAudioConfiguration : ObjectiveC.NSObject {
   @objc final public let url: Foundation.URL
   @objc final public let offset: Foundation.TimeInterval
@@ -57,6 +68,10 @@ public protocol EffectsServicing {
   @objc var isEnoughDiskSpaceForRecording: Swift.Bool { get }
   @objc func startVideoCapturing(fileURL: Foundation.URL?, startTimeForVideoTexture: Swift.Double, externalAudioConfiguration: BanubaSDKServicing.ExternalAudioConfiguration?, progress: @escaping (CoreMedia.CMTime) -> Swift.Void, didStart: (() -> Swift.Void)?, shouldSkipFrame: (() -> Swift.Bool)?, periodicProgressTimeInterval: Foundation.TimeInterval, boundaryTimes: [Foundation.NSValue], boundaryHandler: @escaping (CoreMedia.CMTime) -> Swift.Void, totalDuration: Foundation.TimeInterval, itemDuration: Foundation.TimeInterval, completion: @escaping (Swift.Bool, (any Swift.Error)?) -> Swift.Void)
   @objc func stopVideoCapturing(cancel: Swift.Bool)
+}
+public protocol BeautyEffectManaging {
+  var enabled: Swift.Bool { get set }
+  var applyHandler: ((_ mask: Swift.String?) -> Swift.Void)? { get set }
 }
 @objc public protocol RenderEffect {
   @objc var name: Swift.String { get }
@@ -302,10 +317,7 @@ public protocol SDKEffectTextureServicing {
 }
 @objc public protocol SDKBeautyEffectManaging {
   @objc var isBeautificationEnabled: Swift.Bool { get set }
-  @objc var supportsIntensity: Swift.Bool { get }
-  @objc var intensity: Swift.Double { get set }
   @objc func toggleBeautification() -> Swift.Bool
-  @objc func resetIntensity()
 }
 @objc public protocol SDKInputServicingDelegate {
   @objc func willOutput(pixelBuffer: CoreVideo.CVPixelBuffer)
