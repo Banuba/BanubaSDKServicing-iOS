@@ -333,7 +333,10 @@ SWIFT_PROTOCOL("_TtP18BanubaSDKServicing15SDKPIPServicing_")
 SWIFT_PROTOCOL("_TtP18BanubaSDKServicing23SDKBeautyEffectManaging_")
 @protocol SDKBeautyEffectManaging
 @property (nonatomic) BOOL isBeautificationEnabled;
+@property (nonatomic, readonly) BOOL supportsIntensity;
+@property (nonatomic) double intensity;
 - (BOOL)toggleBeautification SWIFT_WARN_UNUSED_RESULT;
+- (void)resetIntensity;
 @end
 
 @class UIImage;

@@ -11,7 +11,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface OutputSettings : NSObject
+@interface VEOutputSettings : NSObject
 
 @property(nonatomic) UIDeviceOrientation deviceOrientation;
 @property(nonatomic) BOOL isMirrored;
