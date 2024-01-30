@@ -22,7 +22,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		lZU5mQJQjqQI8n5ccZTJ9trcwck=
+		g0AIVXa+//Q49RucBr1qVA4PFTE=
 		</data>
 		<key>Modules/BanubaSDKServicing.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -67,6 +67,10 @@
 		<key>Modules/module.modulemap</key>
 		<data>
 		u2s3d/Py6ylCHqXbIclNIGsLGXw=
+		</data>
+		<key>PrivacyInfo.xcprivacy</key>
+		<data>
+		ddjeciPe7EMnZX+icw2VOPCtzQQ=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -174,6 +178,13 @@
 			<key>hash2</key>
 			<data>
 			d/7PLy3lQfCehysEbshuKOUlI9lA442QGOqJ5h5xv4s=
+			</data>
+		</dict>
+		<key>PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Mph9b2XawMqYrnetEn8wILj7Oa0ZlyS1aE7S/sIfY8s=
 			</data>
 		</dict>
 	</dict>

@@ -3,7 +3,7 @@ triple:          'arm64-apple-darwin'
 binary-path:     '/Users/user/Library/Developer/Xcode/DerivedData/VideoEditorSDKSandbox-apczolamkvzvcugwxnswrghnwlmi/Build/Intermediates.noindex/ArchiveIntermediates/BanubaSDKServicing/InstallationBuildProductsLocation/Library/Frameworks/BanubaSDKServicing.framework/BanubaSDKServicing'
 relocations:
   - { offsetInCU: 0x34, offset: 0xDCD04, size: 0x8, addend: 0x0, symName: _BanubaSDKServicingVersionString, symObjAddr: 0x0, symBinAddr: 0xC100, symSize: 0x0 }
-  - { offsetInCU: 0x69, offset: 0xDCD39, size: 0x8, addend: 0x0, symName: _BanubaSDKServicingVersionNumber, symObjAddr: 0x48, symBinAddr: 0xC148, symSize: 0x0 }
+  - { offsetInCU: 0x69, offset: 0xDCD39, size: 0x8, addend: 0x0, symName: _BanubaSDKServicingVersionNumber, symObjAddr: 0x50, symBinAddr: 0xC150, symSize: 0x0 }
   - { offsetInCU: 0x27, offset: 0xDCD76, size: 0x8, addend: 0x0, symName: '-[VEOutputSettings initWithOrientation:isMirrored:applyWatermark:]', symObjAddr: 0x0, symBinAddr: 0x8000, symSize: 0x60 }
   - { offsetInCU: 0xE3, offset: 0xDCE32, size: 0x8, addend: 0x0, symName: '-[VEOutputSettings initWithOrientation:isMirrored:applyWatermark:]', symObjAddr: 0x0, symBinAddr: 0x8000, symSize: 0x60 }
   - { offsetInCU: 0x14A, offset: 0xDCE99, size: 0x8, addend: 0x0, symName: '-[VEOutputSettings shouldApplyVerticalFlip]', symObjAddr: 0x60, symBinAddr: 0x8060, symSize: 0x28 }
