@@ -251,7 +251,6 @@ public struct CameraModuleDefaults {
 @objc public protocol CameraModule : BanubaSDKServicing.SDKBeautyEffectManaging, BanubaSDKServicing.SDKEffectsServicing, BanubaSDKServicing.SDKInputServicing, BanubaSDKServicing.SDKOutputServicing, BanubaSDKServicing.SDKPIPServicing {
   @objc var isLoaded: Swift.Bool { get }
   @objc var allowProcessing: Swift.Bool { get set }
-  @objc var playerViewSize: CoreFoundation.CGSize { get }
   @objc var autoStart: Swift.Bool { get set }
   @objc var isCameraEnabled: Swift.Bool { get set }
   @objc var renderQueue: Dispatch.DispatchQueue? { get }

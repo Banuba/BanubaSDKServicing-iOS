@@ -411,7 +411,6 @@ SWIFT_PROTOCOL("_TtP18BanubaSDKServicing12CameraModule_")
 @protocol CameraModule <SDKBeautyEffectManaging, SDKEffectsServicing, SDKInputServicing, SDKOutputServicing, SDKPIPServicing>
 @property (nonatomic, readonly) BOOL isLoaded;
 @property (nonatomic) BOOL allowProcessing;
-@property (nonatomic, readonly) CGSize playerViewSize;
 @property (nonatomic) BOOL autoStart;
 @property (nonatomic) BOOL isCameraEnabled;
 @property (nonatomic, readonly, strong) dispatch_queue_t _Nullable renderQueue;
@@ -1039,7 +1038,6 @@ SWIFT_PROTOCOL("_TtP18BanubaSDKServicing12CameraModule_")
 @protocol CameraModule <SDKBeautyEffectManaging, SDKEffectsServicing, SDKInputServicing, SDKOutputServicing, SDKPIPServicing>
 @property (nonatomic, readonly) BOOL isLoaded;
 @property (nonatomic) BOOL allowProcessing;
-@property (nonatomic, readonly) CGSize playerViewSize;
 @property (nonatomic) BOOL autoStart;
 @property (nonatomic) BOOL isCameraEnabled;
 @property (nonatomic, readonly, strong) dispatch_queue_t _Nullable renderQueue;

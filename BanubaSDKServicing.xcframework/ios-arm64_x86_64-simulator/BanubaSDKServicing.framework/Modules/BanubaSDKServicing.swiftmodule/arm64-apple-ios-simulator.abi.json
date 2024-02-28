@@ -6921,54 +6921,6 @@
           },
           {
             "kind": "Var",
-            "name": "playerViewSize",
-            "printedName": "playerViewSize",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "CGSize",
-                "printedName": "CoreFoundation.CGSize",
-                "usr": "c:@S@CGSize"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@BanubaSDKServicing@objc(pl)CameraModule(py)playerViewSize",
-            "mangledName": "$s18BanubaSDKServicing12CameraModuleP14playerViewSizeSo6CGSizeVvp",
-            "moduleName": "BanubaSDKServicing",
-            "protocolReq": true,
-            "declAttributes": [
-              "ObjC"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "CGSize",
-                    "printedName": "CoreFoundation.CGSize",
-                    "usr": "c:@S@CGSize"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@BanubaSDKServicing@objc(pl)CameraModule(im)playerViewSize",
-                "mangledName": "$s18BanubaSDKServicing12CameraModuleP14playerViewSizeSo6CGSizeVvg",
-                "moduleName": "BanubaSDKServicing",
-                "genericSig": "<τ_0_0 where τ_0_0 : BanubaSDKServicing.CameraModule>",
-                "sugared_genericSig": "<Self where Self : BanubaSDKServicing.CameraModule>",
-                "protocolReq": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
-                "reqNewWitnessTableEntry": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
             "name": "autoStart",
             "printedName": "autoStart",
             "children": [
