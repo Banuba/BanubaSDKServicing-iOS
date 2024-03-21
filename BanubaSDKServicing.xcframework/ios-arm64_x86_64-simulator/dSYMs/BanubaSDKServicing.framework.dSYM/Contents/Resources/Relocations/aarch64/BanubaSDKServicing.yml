@@ -2,189 +2,189 @@
 triple:          'arm64-apple-darwin'
 binary-path:     '/Users/user/Library/Developer/Xcode/DerivedData/VideoEditorSDKSandbox-apczolamkvzvcugwxnswrghnwlmi/Build/Intermediates.noindex/ArchiveIntermediates/BanubaSDKServicing/InstallationBuildProductsLocation/Library/Frameworks/BanubaSDKServicing.framework/BanubaSDKServicing'
 relocations:
-  - { offsetInCU: 0x34, offset: 0xDD6FA, size: 0x8, addend: 0x0, symName: _BanubaSDKServicingVersionString, symObjAddr: 0x0, symBinAddr: 0x8650, symSize: 0x0 }
-  - { offsetInCU: 0x69, offset: 0xDD72F, size: 0x8, addend: 0x0, symName: _BanubaSDKServicingVersionNumber, symObjAddr: 0x48, symBinAddr: 0x8698, symSize: 0x0 }
-  - { offsetInCU: 0x27, offset: 0xDD76C, size: 0x8, addend: 0x0, symName: '-[VEOutputSettings initWithOrientation:isMirrored:applyWatermark:]', symObjAddr: 0x0, symBinAddr: 0x43E8, symSize: 0x60 }
-  - { offsetInCU: 0xE3, offset: 0xDD828, size: 0x8, addend: 0x0, symName: '-[VEOutputSettings initWithOrientation:isMirrored:applyWatermark:]', symObjAddr: 0x0, symBinAddr: 0x43E8, symSize: 0x60 }
-  - { offsetInCU: 0x14A, offset: 0xDD88F, size: 0x8, addend: 0x0, symName: '-[VEOutputSettings shouldApplyVerticalFlip]', symObjAddr: 0x60, symBinAddr: 0x4448, symSize: 0x28 }
-  - { offsetInCU: 0x181, offset: 0xDD8C6, size: 0x8, addend: 0x0, symName: '-[VEOutputSettings shouldApplyHorizontalFlip]', symObjAddr: 0x88, symBinAddr: 0x4470, symSize: 0x3C }
-  - { offsetInCU: 0x1B8, offset: 0xDD8FD, size: 0x8, addend: 0x0, symName: '-[VEOutputSettings resultVideoTransform]', symObjAddr: 0xC4, symBinAddr: 0x44AC, symSize: 0x4C }
-  - { offsetInCU: 0x222, offset: 0xDD967, size: 0x8, addend: 0x0, symName: '-[VEOutputSettings resultImageOrientation]', symObjAddr: 0x110, symBinAddr: 0x44F8, symSize: 0x1C }
-  - { offsetInCU: 0x259, offset: 0xDD99E, size: 0x8, addend: 0x0, symName: '-[VEOutputSettings deviceOrientation]', symObjAddr: 0x12C, symBinAddr: 0x4514, symSize: 0x8 }
-  - { offsetInCU: 0x290, offset: 0xDD9D5, size: 0x8, addend: 0x0, symName: '-[VEOutputSettings setDeviceOrientation:]', symObjAddr: 0x134, symBinAddr: 0x451C, symSize: 0x8 }
-  - { offsetInCU: 0x2CD, offset: 0xDDA12, size: 0x8, addend: 0x0, symName: '-[VEOutputSettings isMirrored]', symObjAddr: 0x13C, symBinAddr: 0x4524, symSize: 0x8 }
-  - { offsetInCU: 0x304, offset: 0xDDA49, size: 0x8, addend: 0x0, symName: '-[VEOutputSettings setIsMirrored:]', symObjAddr: 0x144, symBinAddr: 0x452C, symSize: 0x8 }
-  - { offsetInCU: 0x33F, offset: 0xDDA84, size: 0x8, addend: 0x0, symName: '-[VEOutputSettings applyWatermark]', symObjAddr: 0x14C, symBinAddr: 0x4534, symSize: 0x8 }
-  - { offsetInCU: 0x376, offset: 0xDDABB, size: 0x8, addend: 0x0, symName: '-[VEOutputSettings setApplyWatermark:]', symObjAddr: 0x154, symBinAddr: 0x453C, symSize: 0x8 }
-  - { offsetInCU: 0x27, offset: 0xDDB6C, size: 0x8, addend: 0x0, symName: '-[RecorderSettings initWithVideoDataOutput:captureSize:useHEVCCodecIfPossible:]', symObjAddr: 0x0, symBinAddr: 0x4544, symSize: 0x330 }
-  - { offsetInCU: 0x96, offset: 0xDDBDB, size: 0x8, addend: 0x0, symName: '-[RecorderSettings initWithVideoDataOutput:captureSize:useHEVCCodecIfPossible:]', symObjAddr: 0x0, symBinAddr: 0x4544, symSize: 0x330 }
-  - { offsetInCU: 0x19F, offset: 0xDDCE4, size: 0x8, addend: 0x0, symName: '+[RecorderSettings isDeviceSupportHEVCCodec]', symObjAddr: 0x330, symBinAddr: 0x4874, symSize: 0x50 }
-  - { offsetInCU: 0x1D2, offset: 0xDDD17, size: 0x8, addend: 0x0, symName: '-[RecorderSettings videoSettings]', symObjAddr: 0x380, symBinAddr: 0x48C4, symSize: 0x8 }
-  - { offsetInCU: 0x209, offset: 0xDDD4E, size: 0x8, addend: 0x0, symName: '-[RecorderSettings captureSize]', symObjAddr: 0x388, symBinAddr: 0x48CC, symSize: 0x8 }
-  - { offsetInCU: 0x23E, offset: 0xDDD83, size: 0x8, addend: 0x0, symName: '-[RecorderSettings .cxx_destruct]', symObjAddr: 0x390, symBinAddr: 0x48D4, symSize: 0xC }
-  - { offsetInCU: 0x27, offset: 0xDDE5E, size: 0x8, addend: 0x0, symName: '_$sSo18AVCaptureFlashModeVMa', symObjAddr: 0x18, symBinAddr: 0x48F8, symSize: 0x54 }
-  - { offsetInCU: 0x3F, offset: 0xDDE76, size: 0x8, addend: 0x0, symName: '_$sSo18AVCaptureFlashModeVMa', symObjAddr: 0x18, symBinAddr: 0x48F8, symSize: 0x54 }
-  - { offsetInCU: 0x27, offset: 0xDDFC2, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing26ExternalAudioConfigurationC3url10Foundation3URLVvgTo', symObjAddr: 0x0, symBinAddr: 0x494C, symSize: 0x28 }
-  - { offsetInCU: 0x69, offset: 0xDE004, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing26ExternalAudioConfigurationC3url10Foundation3URLVvgTo', symObjAddr: 0x0, symBinAddr: 0x494C, symSize: 0x28 }
-  - { offsetInCU: 0xA4, offset: 0xDE03F, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing26ExternalAudioConfigurationC3url10Foundation3URLVvg', symObjAddr: 0x28, symBinAddr: 0x4974, symSize: 0x44 }
-  - { offsetInCU: 0xE1, offset: 0xDE07C, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing26ExternalAudioConfigurationC6offsetSdvgTo', symObjAddr: 0x6C, symBinAddr: 0x49B8, symSize: 0x10 }
-  - { offsetInCU: 0x101, offset: 0xDE09C, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing26ExternalAudioConfigurationC6offsetSdvgTo', symObjAddr: 0x6C, symBinAddr: 0x49B8, symSize: 0x10 }
-  - { offsetInCU: 0x11C, offset: 0xDE0B7, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing26ExternalAudioConfigurationC6offsetSdvg', symObjAddr: 0x7C, symBinAddr: 0x49C8, symSize: 0x10 }
-  - { offsetInCU: 0x157, offset: 0xDE0F2, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing26ExternalAudioConfigurationC15preferredVolumeSfvgTo', symObjAddr: 0x8C, symBinAddr: 0x49D8, symSize: 0x10 }
-  - { offsetInCU: 0x177, offset: 0xDE112, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing26ExternalAudioConfigurationC15preferredVolumeSfvgTo', symObjAddr: 0x8C, symBinAddr: 0x49D8, symSize: 0x10 }
-  - { offsetInCU: 0x192, offset: 0xDE12D, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing26ExternalAudioConfigurationC15preferredVolumeSfvg', symObjAddr: 0x9C, symBinAddr: 0x49E8, symSize: 0x10 }
-  - { offsetInCU: 0x1FD, offset: 0xDE198, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing26ExternalAudioConfigurationC3url6offset15preferredVolumeAC10Foundation3URLV_SdSftcfC', symObjAddr: 0xAC, symBinAddr: 0x49F8, symSize: 0xC4 }
-  - { offsetInCU: 0x25F, offset: 0xDE1FA, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing26ExternalAudioConfigurationC3url6offset15preferredVolumeAC10Foundation3URLV_SdSftcfc', symObjAddr: 0x170, symBinAddr: 0x4ABC, symSize: 0xC0 }
-  - { offsetInCU: 0x2A6, offset: 0xDE241, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing26ExternalAudioConfigurationCACycfC', symObjAddr: 0x26C, symBinAddr: 0x4BB8, symSize: 0x20 }
-  - { offsetInCU: 0x2C4, offset: 0xDE25F, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing26ExternalAudioConfigurationCACycfc', symObjAddr: 0x28C, symBinAddr: 0x4BD8, symSize: 0x2C }
-  - { offsetInCU: 0x327, offset: 0xDE2C2, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing26ExternalAudioConfigurationCACycfcTo', symObjAddr: 0x2B8, symBinAddr: 0x4C04, symSize: 0x2C }
-  - { offsetInCU: 0x38E, offset: 0xDE329, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing26ExternalAudioConfigurationCfD', symObjAddr: 0x2E4, symBinAddr: 0x4C30, symSize: 0x34 }
-  - { offsetInCU: 0x3BC, offset: 0xDE357, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing26ExternalAudioConfigurationCMa', symObjAddr: 0x230, symBinAddr: 0x4B7C, symSize: 0x3C }
-  - { offsetInCU: 0x3E6, offset: 0xDE381, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing26ExternalAudioConfigurationCfETo', symObjAddr: 0x318, symBinAddr: 0x4C64, symSize: 0x3C }
-  - { offsetInCU: 0x415, offset: 0xDE3B0, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing26ExternalAudioConfigurationCMU', symObjAddr: 0x354, symBinAddr: 0x4CA0, symSize: 0x8 }
-  - { offsetInCU: 0x429, offset: 0xDE3C4, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing26ExternalAudioConfigurationCMr', symObjAddr: 0x35C, symBinAddr: 0x4CA8, symSize: 0x88 }
-  - { offsetInCU: 0x27, offset: 0xDE55B, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing9SDKLoggerC10debugPrintyySSFZ', symObjAddr: 0x0, symBinAddr: 0x4D44, symSize: 0x4 }
-  - { offsetInCU: 0x4B, offset: 0xDE57F, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing9SDKLoggerC10debugPrintyySSFZ', symObjAddr: 0x0, symBinAddr: 0x4D44, symSize: 0x4 }
-  - { offsetInCU: 0x82, offset: 0xDE5B6, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing9SDKLoggerCACycfC', symObjAddr: 0x4, symBinAddr: 0x4D48, symSize: 0x20 }
-  - { offsetInCU: 0xA0, offset: 0xDE5D4, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing9SDKLoggerCACycfc', symObjAddr: 0x24, symBinAddr: 0x4D68, symSize: 0x30 }
-  - { offsetInCU: 0xDB, offset: 0xDE60F, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing9SDKLoggerCACycfcTo', symObjAddr: 0x74, symBinAddr: 0x4DB8, symSize: 0x3C }
-  - { offsetInCU: 0x116, offset: 0xDE64A, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing9SDKLoggerCfD', symObjAddr: 0xB0, symBinAddr: 0x4DF4, symSize: 0x30 }
-  - { offsetInCU: 0x144, offset: 0xDE678, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing9SDKLoggerCMa', symObjAddr: 0x54, symBinAddr: 0x4D98, symSize: 0x20 }
-  - { offsetInCU: 0x4B, offset: 0xDE800, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing23PIPSwitchLayoutSettingsO8rawValueSivg', symObjAddr: 0x0, symBinAddr: 0x4E24, symSize: 0x4 }
-  - { offsetInCU: 0x81, offset: 0xDE836, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing23PIPCameraLayoutSettingsO8rawValueACSgSi_tcfC', symObjAddr: 0xC, symBinAddr: 0x4E30, symSize: 0x14 }
-  - { offsetInCU: 0xA0, offset: 0xDE855, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing23PIPCameraLayoutSettingsO8rawValueSivg', symObjAddr: 0x20, symBinAddr: 0x4E44, symSize: 0x4 }
-  - { offsetInCU: 0xE3, offset: 0xDE898, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing23PIPCameraLayoutSettingsOSYAASY8rawValuexSg03RawG0Qz_tcfCTW', symObjAddr: 0x24, symBinAddr: 0x4E48, symSize: 0x20 }
-  - { offsetInCU: 0x121, offset: 0xDE8D6, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing23PIPPlayerLayoutSettingsO8rawValueSivg', symObjAddr: 0x44, symBinAddr: 0x4E68, symSize: 0x4 }
-  - { offsetInCU: 0x157, offset: 0xDE90C, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing21RenderBehaviorAdapterO8rawValueACSgSi_tcfC', symObjAddr: 0x48, symBinAddr: 0x4E6C, symSize: 0x14 }
-  - { offsetInCU: 0x176, offset: 0xDE92B, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing21RenderBehaviorAdapterO8rawValueSivg', symObjAddr: 0x5C, symBinAddr: 0x4E80, symSize: 0x4 }
-  - { offsetInCU: 0x1B9, offset: 0xDE96E, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing21RenderBehaviorAdapterOSYAASY8rawValuexSg03RawG0Qz_tcfCTW', symObjAddr: 0x60, symBinAddr: 0x4E84, symSize: 0x20 }
-  - { offsetInCU: 0x1F7, offset: 0xDE9AC, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing15PIPShapeAdapterO8rawValueACSgSi_tcfC', symObjAddr: 0x80, symBinAddr: 0x4EA4, symSize: 0x14 }
-  - { offsetInCU: 0x216, offset: 0xDE9CB, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing15PIPShapeAdapterO8rawValueSivg', symObjAddr: 0x94, symBinAddr: 0x4EB8, symSize: 0x4 }
-  - { offsetInCU: 0x259, offset: 0xDEA0E, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing15PIPShapeAdapterOSYAASY8rawValuexSg03RawF0Qz_tcfCTW', symObjAddr: 0x160, symBinAddr: 0x4F84, symSize: 0x20 }
-  - { offsetInCU: 0x28A, offset: 0xDEA3F, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing15PIPShapeAdapterOSYAASY8rawValue03RawF0QzvgTW', symObjAddr: 0x180, symBinAddr: 0x4FA4, symSize: 0xC }
-  - { offsetInCU: 0x2F2, offset: 0xDEAA7, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing22PIPSwitchLayoutSettingC7settingAA0cD8SettingsOvgTo', symObjAddr: 0x18C, symBinAddr: 0x4FB0, symSize: 0x10 }
-  - { offsetInCU: 0x312, offset: 0xDEAC7, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing22PIPSwitchLayoutSettingC7settingAA0cD8SettingsOvgTo', symObjAddr: 0x18C, symBinAddr: 0x4FB0, symSize: 0x10 }
-  - { offsetInCU: 0x32D, offset: 0xDEAE2, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing22PIPSwitchLayoutSettingC7settingAA0cD8SettingsOvg', symObjAddr: 0x19C, symBinAddr: 0x4FC0, symSize: 0x10 }
-  - { offsetInCU: 0x34A, offset: 0xDEAFF, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing22PIPSwitchLayoutSettingC2eeoiySbAC_ACtFZ', symObjAddr: 0x320, symBinAddr: 0x5144, symSize: 0x1C }
-  - { offsetInCU: 0x3BD, offset: 0xDEB72, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing22PIPSwitchLayoutSettingCACycfc', symObjAddr: 0x348, symBinAddr: 0x516C, symSize: 0x2C }
-  - { offsetInCU: 0x420, offset: 0xDEBD5, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing22PIPSwitchLayoutSettingCACycfcTo', symObjAddr: 0x374, symBinAddr: 0x5198, symSize: 0x2C }
-  - { offsetInCU: 0x488, offset: 0xDEC3D, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing22PIPSwitchLayoutSettingCMa', symObjAddr: 0x1CC, symBinAddr: 0x4FF0, symSize: 0x20 }
-  - { offsetInCU: 0x4DC, offset: 0xDEC91, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing22PIPCameraLayoutSettingC7settingAA0cD8SettingsOvgTo', symObjAddr: 0x3AC, symBinAddr: 0x51D0, symSize: 0x10 }
-  - { offsetInCU: 0x4FC, offset: 0xDECB1, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing22PIPCameraLayoutSettingC7settingAA0cD8SettingsOvgTo', symObjAddr: 0x3AC, symBinAddr: 0x51D0, symSize: 0x10 }
-  - { offsetInCU: 0x517, offset: 0xDECCC, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing22PIPCameraLayoutSettingC7settingAA0cD8SettingsOvg', symObjAddr: 0x3BC, symBinAddr: 0x51E0, symSize: 0x10 }
-  - { offsetInCU: 0x534, offset: 0xDECE9, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing22PIPCameraLayoutSettingC2eeoiySbAC_ACtFZ', symObjAddr: 0x4E0, symBinAddr: 0x5304, symSize: 0x1C }
-  - { offsetInCU: 0x5A7, offset: 0xDED5C, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing22PIPCameraLayoutSettingCACycfc', symObjAddr: 0x4FC, symBinAddr: 0x5320, symSize: 0x2C }
-  - { offsetInCU: 0x60A, offset: 0xDEDBF, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing22PIPCameraLayoutSettingCACycfcTo', symObjAddr: 0x528, symBinAddr: 0x534C, symSize: 0x2C }
-  - { offsetInCU: 0x672, offset: 0xDEE27, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing22PIPCameraLayoutSettingCMa', symObjAddr: 0x3EC, symBinAddr: 0x5210, symSize: 0x20 }
-  - { offsetInCU: 0x6B0, offset: 0xDEE65, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing22PIPPlayerLayoutSettingC7settingAA0cD8SettingsOvgTo', symObjAddr: 0x560, symBinAddr: 0x5384, symSize: 0x10 }
-  - { offsetInCU: 0x6D0, offset: 0xDEE85, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing22PIPPlayerLayoutSettingC7settingAA0cD8SettingsOvgTo', symObjAddr: 0x560, symBinAddr: 0x5384, symSize: 0x10 }
-  - { offsetInCU: 0x6EB, offset: 0xDEEA0, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing22PIPPlayerLayoutSettingC7settingAA0cD8SettingsOvg', symObjAddr: 0x570, symBinAddr: 0x5394, symSize: 0x10 }
-  - { offsetInCU: 0x708, offset: 0xDEEBD, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing22PIPPlayerLayoutSettingC2eeoiySbAC_ACtFZ', symObjAddr: 0x814, symBinAddr: 0x5638, symSize: 0x1C }
-  - { offsetInCU: 0x77B, offset: 0xDEF30, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing22PIPPlayerLayoutSettingCACycfc', symObjAddr: 0x830, symBinAddr: 0x5654, symSize: 0x2C }
-  - { offsetInCU: 0x7DE, offset: 0xDEF93, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing22PIPPlayerLayoutSettingCACycfcTo', symObjAddr: 0x85C, symBinAddr: 0x5680, symSize: 0x2C }
-  - { offsetInCU: 0x846, offset: 0xDEFFB, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing22PIPPlayerLayoutSettingCMa', symObjAddr: 0x62C, symBinAddr: 0x5450, symSize: 0x20 }
-  - { offsetInCU: 0x884, offset: 0xDF039, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing19PIPShapeTypeAdapterC7settingAA0cE0OvgTo', symObjAddr: 0x894, symBinAddr: 0x56B8, symSize: 0x10 }
-  - { offsetInCU: 0x8A4, offset: 0xDF059, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing19PIPShapeTypeAdapterC7settingAA0cE0OvgTo', symObjAddr: 0x894, symBinAddr: 0x56B8, symSize: 0x10 }
-  - { offsetInCU: 0x8BF, offset: 0xDF074, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing19PIPShapeTypeAdapterC7settingAA0cE0Ovg', symObjAddr: 0x8A4, symBinAddr: 0x56C8, symSize: 0x10 }
-  - { offsetInCU: 0x8FA, offset: 0xDF0AF, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing19PIPShapeTypeAdapterC6radius12CoreGraphics7CGFloatVvgTo', symObjAddr: 0x8B4, symBinAddr: 0x56D8, symSize: 0x10 }
-  - { offsetInCU: 0x91A, offset: 0xDF0CF, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing19PIPShapeTypeAdapterC6radius12CoreGraphics7CGFloatVvgTo', symObjAddr: 0x8B4, symBinAddr: 0x56D8, symSize: 0x10 }
-  - { offsetInCU: 0x935, offset: 0xDF0EA, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing19PIPShapeTypeAdapterC6radius12CoreGraphics7CGFloatVvg', symObjAddr: 0x8C4, symBinAddr: 0x56E8, symSize: 0x10 }
-  - { offsetInCU: 0x988, offset: 0xDF13D, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing19PIPShapeTypeAdapterC7setting6radiusAcA0cE0O_12CoreGraphics7CGFloatVtcfC', symObjAddr: 0x8D4, symBinAddr: 0x56F8, symSize: 0x64 }
-  - { offsetInCU: 0x9D8, offset: 0xDF18D, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing19PIPShapeTypeAdapterC7setting6radiusAcA0cE0O_12CoreGraphics7CGFloatVtcfc', symObjAddr: 0x938, symBinAddr: 0x575C, symSize: 0x48 }
-  - { offsetInCU: 0xA09, offset: 0xDF1BE, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing19PIPShapeTypeAdapterC7setting6radiusAcA0cE0O_12CoreGraphics7CGFloatVtcfcTo', symObjAddr: 0x9A0, symBinAddr: 0x57C4, symSize: 0x54 }
-  - { offsetInCU: 0xA58, offset: 0xDF20D, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing19PIPShapeTypeAdapterC2eeoiySbAC_ACtFZ', symObjAddr: 0xBCC, symBinAddr: 0x59F0, symSize: 0x1C }
-  - { offsetInCU: 0xACB, offset: 0xDF280, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing19PIPShapeTypeAdapterCACycfc', symObjAddr: 0xC24, symBinAddr: 0x5A48, symSize: 0x2C }
-  - { offsetInCU: 0xB2E, offset: 0xDF2E3, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing19PIPShapeTypeAdapterCACycfcTo', symObjAddr: 0xC50, symBinAddr: 0x5A74, symSize: 0x2C }
-  - { offsetInCU: 0xB96, offset: 0xDF34B, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing19PIPShapeTypeAdapterCMa', symObjAddr: 0x980, symBinAddr: 0x57A4, symSize: 0x20 }
-  - { offsetInCU: 0xBAA, offset: 0xDF35F, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing23PIPSwitchLayoutSettingsOSHAASQWb', symObjAddr: 0xCB8, symBinAddr: 0x5ADC, symSize: 0x4 }
-  - { offsetInCU: 0xBBE, offset: 0xDF373, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing23PIPSwitchLayoutSettingsOACSQAAWl', symObjAddr: 0xCBC, symBinAddr: 0x5AE0, symSize: 0x44 }
-  - { offsetInCU: 0xBD2, offset: 0xDF387, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing23PIPCameraLayoutSettingsOSHAASQWb', symObjAddr: 0xD00, symBinAddr: 0x5B24, symSize: 0x4 }
-  - { offsetInCU: 0xBE6, offset: 0xDF39B, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing23PIPCameraLayoutSettingsOACSQAAWl', symObjAddr: 0xD04, symBinAddr: 0x5B28, symSize: 0x44 }
-  - { offsetInCU: 0xBFA, offset: 0xDF3AF, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing23PIPPlayerLayoutSettingsOSHAASQWb', symObjAddr: 0xD48, symBinAddr: 0x5B6C, symSize: 0x4 }
-  - { offsetInCU: 0xC0E, offset: 0xDF3C3, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing23PIPPlayerLayoutSettingsOACSQAAWl', symObjAddr: 0xD4C, symBinAddr: 0x5B70, symSize: 0x44 }
-  - { offsetInCU: 0xC22, offset: 0xDF3D7, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing21RenderBehaviorAdapterOSHAASQWb', symObjAddr: 0xD90, symBinAddr: 0x5BB4, symSize: 0x4 }
-  - { offsetInCU: 0xC36, offset: 0xDF3EB, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing21RenderBehaviorAdapterOACSQAAWl', symObjAddr: 0xD94, symBinAddr: 0x5BB8, symSize: 0x44 }
-  - { offsetInCU: 0xC4A, offset: 0xDF3FF, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing15PIPShapeAdapterOSHAASQWb', symObjAddr: 0xDD8, symBinAddr: 0x5BFC, symSize: 0x4 }
-  - { offsetInCU: 0xC5E, offset: 0xDF413, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing15PIPShapeAdapterOACSQAAWl', symObjAddr: 0xDDC, symBinAddr: 0x5C00, symSize: 0x44 }
-  - { offsetInCU: 0xC72, offset: 0xDF427, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing23PIPSwitchLayoutSettingsOMa', symObjAddr: 0xE20, symBinAddr: 0x5C44, symSize: 0x10 }
-  - { offsetInCU: 0xC86, offset: 0xDF43B, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing23PIPCameraLayoutSettingsOMa', symObjAddr: 0xE30, symBinAddr: 0x5C54, symSize: 0x10 }
-  - { offsetInCU: 0xC9A, offset: 0xDF44F, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing23PIPPlayerLayoutSettingsOMa', symObjAddr: 0xE40, symBinAddr: 0x5C64, symSize: 0x10 }
-  - { offsetInCU: 0xCAE, offset: 0xDF463, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing21RenderBehaviorAdapterOMa', symObjAddr: 0xE50, symBinAddr: 0x5C74, symSize: 0x10 }
-  - { offsetInCU: 0xCC2, offset: 0xDF477, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing15PIPShapeAdapterOMa', symObjAddr: 0xE60, symBinAddr: 0x5C84, symSize: 0x10 }
-  - { offsetInCU: 0xD14, offset: 0xDF4C9, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing15PIPShapeAdapterOSQAASQ2eeoiySbx_xtFZTW', symObjAddr: 0x98, symBinAddr: 0x4EBC, symSize: 0x14 }
-  - { offsetInCU: 0xD69, offset: 0xDF51E, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing15PIPShapeAdapterOSHAASH4hash4intoys6HasherVz_tFTW', symObjAddr: 0xF4, symBinAddr: 0x4F18, symSize: 0x28 }
-  - { offsetInCU: 0x2B, offset: 0xDF76D, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing23CameraModuleSessionTypeO8rawValueACSgSi_tcfC', symObjAddr: 0x0, symBinAddr: 0x5D5C, symSize: 0x14 }
-  - { offsetInCU: 0x4F, offset: 0xDF791, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing23CameraModuleSessionTypeO8rawValueACSgSi_tcfC', symObjAddr: 0x0, symBinAddr: 0x5D5C, symSize: 0x14 }
-  - { offsetInCU: 0x6E, offset: 0xDF7B0, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing23CameraModuleSessionTypeO8rawValueSivg', symObjAddr: 0x14, symBinAddr: 0x5D70, symSize: 0x4 }
-  - { offsetInCU: 0xB1, offset: 0xDF7F3, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing23CameraModuleSessionTypeOSYAASY8rawValuexSg03RawH0Qz_tcfCTW', symObjAddr: 0xD8, symBinAddr: 0x5E34, symSize: 0x20 }
-  - { offsetInCU: 0xE2, offset: 0xDF824, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing23CameraModuleSessionTypeOSYAASY8rawValue03RawH0QzvgTW', symObjAddr: 0xF8, symBinAddr: 0x5E54, symSize: 0xC }
-  - { offsetInCU: 0x127, offset: 0xDF869, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing25CameraModulePhotoSettingsV16useStabilizationSbvg', symObjAddr: 0x104, symBinAddr: 0x5E60, symSize: 0x8 }
-  - { offsetInCU: 0x145, offset: 0xDF887, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing25CameraModulePhotoSettingsV9flashModeSo014AVCaptureFlashH0Vvg', symObjAddr: 0x10C, symBinAddr: 0x5E68, symSize: 0x8 }
-  - { offsetInCU: 0x163, offset: 0xDF8A5, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing25CameraModulePhotoSettingsV16useStabilization9flashModeACSb_So014AVCaptureFlashJ0VtcfC', symObjAddr: 0x114, symBinAddr: 0x5E70, symSize: 0xC }
-  - { offsetInCU: 0x1C2, offset: 0xDF904, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing20CameraModuleDefaultsV8viewSizeSo6CGSizeVvgZ', symObjAddr: 0x120, symBinAddr: 0x5E7C, symSize: 0x88 }
-  - { offsetInCU: 0x243, offset: 0xDF985, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing23CameraModuleSessionTypeOSHAASQWb', symObjAddr: 0x1A8, symBinAddr: 0x5F04, symSize: 0x4 }
-  - { offsetInCU: 0x257, offset: 0xDF999, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing23CameraModuleSessionTypeOACSQAAWl', symObjAddr: 0x1AC, symBinAddr: 0x5F08, symSize: 0x44 }
-  - { offsetInCU: 0x26B, offset: 0xDF9AD, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing23CameraModuleSessionTypeOMa', symObjAddr: 0x1F0, symBinAddr: 0x5F4C, symSize: 0x10 }
-  - { offsetInCU: 0x27F, offset: 0xDF9C1, size: 0x8, addend: 0x0, symName: ___swift_memcpy16_8, symObjAddr: 0x200, symBinAddr: 0x5F5C, symSize: 0xC }
-  - { offsetInCU: 0x293, offset: 0xDF9D5, size: 0x8, addend: 0x0, symName: ___swift_noop_void_return, symObjAddr: 0x20C, symBinAddr: 0x5F68, symSize: 0x4 }
-  - { offsetInCU: 0x2A7, offset: 0xDF9E9, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing25CameraModulePhotoSettingsVwet', symObjAddr: 0x210, symBinAddr: 0x5F6C, symSize: 0x54 }
-  - { offsetInCU: 0x2BB, offset: 0xDF9FD, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing25CameraModulePhotoSettingsVwst', symObjAddr: 0x264, symBinAddr: 0x5FC0, symSize: 0x40 }
-  - { offsetInCU: 0x2CF, offset: 0xDFA11, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing25CameraModulePhotoSettingsVMa', symObjAddr: 0x2A4, symBinAddr: 0x6000, symSize: 0x10 }
-  - { offsetInCU: 0x2E3, offset: 0xDFA25, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing20CameraModuleDefaultsVMa', symObjAddr: 0x2B4, symBinAddr: 0x6010, symSize: 0x10 }
-  - { offsetInCU: 0x323, offset: 0xDFA65, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing23CameraModuleSessionTypeOSQAASQ2eeoiySbx_xtFZTW', symObjAddr: 0x18, symBinAddr: 0x5D74, symSize: 0x14 }
-  - { offsetInCU: 0x3B4, offset: 0xDFAF6, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing23CameraModuleSessionTypeOSHAASH9hashValueSivgTW', symObjAddr: 0x2C, symBinAddr: 0x5D88, symSize: 0x44 }
-  - { offsetInCU: 0x463, offset: 0xDFBA5, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing23CameraModuleSessionTypeOSHAASH4hash4intoys6HasherVz_tFTW', symObjAddr: 0x70, symBinAddr: 0x5DCC, symSize: 0x28 }
-  - { offsetInCU: 0x4B6, offset: 0xDFBF8, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing23CameraModuleSessionTypeOSHAASH13_rawHashValue4seedS2i_tFTW', symObjAddr: 0x98, symBinAddr: 0x5DF4, symSize: 0x40 }
-  - { offsetInCU: 0x4B, offset: 0xDFE26, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing11EffectModelC2idSuvg', symObjAddr: 0x0, symBinAddr: 0x6020, symSize: 0x44 }
-  - { offsetInCU: 0x6A, offset: 0xDFE45, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing11EffectModelC2idSuvs', symObjAddr: 0x44, symBinAddr: 0x6064, symSize: 0x48 }
-  - { offsetInCU: 0x93, offset: 0xDFE6E, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing11EffectModelC2idSuvM', symObjAddr: 0x8C, symBinAddr: 0x60AC, symSize: 0x44 }
-  - { offsetInCU: 0xC2, offset: 0xDFE9D, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing11EffectModelC2idSuvM.resume.0', symObjAddr: 0xD0, symBinAddr: 0x60F0, symSize: 0x4 }
-  - { offsetInCU: 0x117, offset: 0xDFEF2, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing11EffectModelC3url10Foundation3URLVSgvg', symObjAddr: 0x178, symBinAddr: 0x6198, symSize: 0x50 }
-  - { offsetInCU: 0x136, offset: 0xDFF11, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing11EffectModelC3url10Foundation3URLVSgvs', symObjAddr: 0x250, symBinAddr: 0x6270, symSize: 0x60 }
-  - { offsetInCU: 0x15F, offset: 0xDFF3A, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing11EffectModelC3url10Foundation3URLVSgvM', symObjAddr: 0x338, symBinAddr: 0x6358, symSize: 0x44 }
-  - { offsetInCU: 0x1D6, offset: 0xDFFB1, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing11EffectModelC4nameSSSgvg', symObjAddr: 0x438, symBinAddr: 0x6458, symSize: 0x54 }
-  - { offsetInCU: 0x1F5, offset: 0xDFFD0, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing11EffectModelC4nameSSSgvs', symObjAddr: 0x48C, symBinAddr: 0x64AC, symSize: 0x5C }
-  - { offsetInCU: 0x21E, offset: 0xDFFF9, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing11EffectModelC4nameSSSgvM', symObjAddr: 0x4E8, symBinAddr: 0x6508, symSize: 0x44 }
-  - { offsetInCU: 0x24D, offset: 0xE0028, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing11EffectModelC2id3urlACSu_10Foundation3URLVtcfC', symObjAddr: 0x52C, symBinAddr: 0x654C, symSize: 0x40 }
-  - { offsetInCU: 0x26B, offset: 0xE0046, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing11EffectModelC2id3urlACSu_10Foundation3URLVtcfc', symObjAddr: 0x56C, symBinAddr: 0x658C, symSize: 0x174 }
-  - { offsetInCU: 0x30C, offset: 0xE00E7, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing11EffectModelC2id4nameACSu_SStcfC', symObjAddr: 0x764, symBinAddr: 0x6784, symSize: 0x104 }
-  - { offsetInCU: 0x355, offset: 0xE0130, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing11EffectModelC2id4nameACSu_SStcfc', symObjAddr: 0x868, symBinAddr: 0x6888, symSize: 0xF8 }
-  - { offsetInCU: 0x392, offset: 0xE016D, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing11EffectModelCACycfC', symObjAddr: 0x960, symBinAddr: 0x6980, symSize: 0x20 }
-  - { offsetInCU: 0x3B0, offset: 0xE018B, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing11EffectModelCACycfc', symObjAddr: 0x980, symBinAddr: 0x69A0, symSize: 0x2C }
-  - { offsetInCU: 0x413, offset: 0xE01EE, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing11EffectModelCACycfcTo', symObjAddr: 0x9AC, symBinAddr: 0x69CC, symSize: 0x2C }
-  - { offsetInCU: 0x47A, offset: 0xE0255, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing11EffectModelCfD', symObjAddr: 0x9D8, symBinAddr: 0x69F8, symSize: 0x34 }
-  - { offsetInCU: 0x50E, offset: 0xE02E9, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing11EffectModelC3url10Foundation3URLVSgvpACTk', symObjAddr: 0xD4, symBinAddr: 0x60F4, symSize: 0xA4 }
-  - { offsetInCU: 0x545, offset: 0xE0320, size: 0x8, addend: 0x0, symName: '_$s10Foundation3URLVSgWOc', symObjAddr: 0x1C8, symBinAddr: 0x61E8, symSize: 0x48 }
-  - { offsetInCU: 0x559, offset: 0xE0334, size: 0x8, addend: 0x0, symName: ___swift_instantiateConcreteTypeFromMangledName, symObjAddr: 0x210, symBinAddr: 0x6230, symSize: 0x40 }
-  - { offsetInCU: 0x56D, offset: 0xE0348, size: 0x8, addend: 0x0, symName: '_$s10Foundation3URLVSgWOf', symObjAddr: 0x2B0, symBinAddr: 0x62D0, symSize: 0x48 }
-  - { offsetInCU: 0x581, offset: 0xE035C, size: 0x8, addend: 0x0, symName: '_$s10Foundation3URLVSgWOh', symObjAddr: 0x2F8, symBinAddr: 0x6318, symSize: 0x40 }
-  - { offsetInCU: 0x595, offset: 0xE0370, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing11EffectModelC4nameSSSgvpACTK', symObjAddr: 0x37C, symBinAddr: 0x639C, symSize: 0x54 }
-  - { offsetInCU: 0x5C2, offset: 0xE039D, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing11EffectModelC4nameSSSgvpACTk', symObjAddr: 0x3D0, symBinAddr: 0x63F0, symSize: 0x68 }
-  - { offsetInCU: 0x5FA, offset: 0xE03D5, size: 0x8, addend: 0x0, symName: '_$s10Foundation3URLVSgWOd', symObjAddr: 0x6E0, symBinAddr: 0x6700, symSize: 0x48 }
-  - { offsetInCU: 0x60E, offset: 0xE03E9, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing11EffectModelCMa', symObjAddr: 0x728, symBinAddr: 0x6748, symSize: 0x3C }
-  - { offsetInCU: 0x638, offset: 0xE0413, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing11EffectModelCfETo', symObjAddr: 0xB08, symBinAddr: 0x6B28, symSize: 0x3C }
-  - { offsetInCU: 0x667, offset: 0xE0442, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing11EffectModelCMU', symObjAddr: 0xB44, symBinAddr: 0x6B64, symSize: 0x8 }
-  - { offsetInCU: 0x67B, offset: 0xE0456, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing11EffectModelCMr', symObjAddr: 0xB4C, symBinAddr: 0x6B6C, symSize: 0x84 }
-  - { offsetInCU: 0x68F, offset: 0xE046A, size: 0x8, addend: 0x0, symName: '_$s10Foundation3URLVSgMa', symObjAddr: 0xCE8, symBinAddr: 0x6D08, symSize: 0x54 }
-  - { offsetInCU: 0x27, offset: 0xE061E, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing18OutputServiceErrorO2eeoiySbAC_ACtFZ', symObjAddr: 0x0, symBinAddr: 0x6D64, symSize: 0x8 }
-  - { offsetInCU: 0x46, offset: 0xE063D, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing18OutputServiceErrorO2eeoiySbAC_ACtFZ', symObjAddr: 0x0, symBinAddr: 0x6D64, symSize: 0x8 }
-  - { offsetInCU: 0x6E, offset: 0xE0665, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing18OutputServiceErrorO4hash4intoys6HasherVz_tF', symObjAddr: 0x8, symBinAddr: 0x6D6C, symSize: 0x24 }
-  - { offsetInCU: 0xF4, offset: 0xE06EB, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing18OutputServiceErrorO9hashValueSivg', symObjAddr: 0x2C, symBinAddr: 0x6D90, symSize: 0x40 }
-  - { offsetInCU: 0x1BA, offset: 0xE07B1, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing18OutputServiceErrorOSQAASQ2eeoiySbx_xtFZTW', symObjAddr: 0x6C, symBinAddr: 0x6DD0, symSize: 0x8 }
-  - { offsetInCU: 0x1E5, offset: 0xE07DC, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing18OutputServiceErrorOSHAASH9hashValueSivgTW', symObjAddr: 0x74, symBinAddr: 0x6DD8, symSize: 0x40 }
-  - { offsetInCU: 0x2C8, offset: 0xE08BF, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing18OutputServiceErrorOSHAASH4hash4intoys6HasherVz_tFTW', symObjAddr: 0xB4, symBinAddr: 0x6E18, symSize: 0x24 }
-  - { offsetInCU: 0x350, offset: 0xE0947, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing18OutputServiceErrorOSHAASQWb', symObjAddr: 0x114, symBinAddr: 0x6E78, symSize: 0x4 }
-  - { offsetInCU: 0x364, offset: 0xE095B, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing18OutputServiceErrorOACSQAAWl', symObjAddr: 0x118, symBinAddr: 0x6E7C, symSize: 0x44 }
-  - { offsetInCU: 0x378, offset: 0xE096F, size: 0x8, addend: 0x0, symName: ___swift_memcpy0_1, symObjAddr: 0x16C, symBinAddr: 0x6ED0, symSize: 0x4 }
-  - { offsetInCU: 0x38C, offset: 0xE0983, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing18OutputServiceErrorOwet', symObjAddr: 0x174, symBinAddr: 0x6ED4, symSize: 0x50 }
-  - { offsetInCU: 0x3A0, offset: 0xE0997, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing18OutputServiceErrorOwst', symObjAddr: 0x1C4, symBinAddr: 0x6F24, symSize: 0x8C }
-  - { offsetInCU: 0x3B4, offset: 0xE09AB, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing18OutputServiceErrorOwug', symObjAddr: 0x250, symBinAddr: 0x6FB0, symSize: 0x8 }
-  - { offsetInCU: 0x3C8, offset: 0xE09BF, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing18OutputServiceErrorOwup', symObjAddr: 0x258, symBinAddr: 0x6FB8, symSize: 0x4 }
-  - { offsetInCU: 0x3DC, offset: 0xE09D3, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing18OutputServiceErrorOwui', symObjAddr: 0x25C, symBinAddr: 0x6FBC, symSize: 0x4 }
-  - { offsetInCU: 0x3F0, offset: 0xE09E7, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing18OutputServiceErrorOMa', symObjAddr: 0x260, symBinAddr: 0x6FC0, symSize: 0x10 }
-  - { offsetInCU: 0x45E, offset: 0xE0A55, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing18OutputServiceErrorOSHAASH13_rawHashValue4seedS2i_tFTW', symObjAddr: 0xD8, symBinAddr: 0x6E3C, symSize: 0x3C }
-  - { offsetInCU: 0x4FA, offset: 0xE0AF1, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing18OutputServiceErrorOs0E0AAsADP7_domainSSvgTW', symObjAddr: 0x15C, symBinAddr: 0x6EC0, symSize: 0x4 }
-  - { offsetInCU: 0x516, offset: 0xE0B0D, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing18OutputServiceErrorOs0E0AAsADP5_codeSivgTW', symObjAddr: 0x160, symBinAddr: 0x6EC4, symSize: 0x4 }
-  - { offsetInCU: 0x532, offset: 0xE0B29, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing18OutputServiceErrorOs0E0AAsADP9_userInfoyXlSgvgTW', symObjAddr: 0x164, symBinAddr: 0x6EC8, symSize: 0x4 }
-  - { offsetInCU: 0x54E, offset: 0xE0B45, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing18OutputServiceErrorOs0E0AAsADP19_getEmbeddedNSErroryXlSgyFTW', symObjAddr: 0x168, symBinAddr: 0x6ECC, symSize: 0x4 }
+  - { offsetInCU: 0x34, offset: 0xDD7E9, size: 0x8, addend: 0x0, symName: _BanubaSDKServicingVersionString, symObjAddr: 0x0, symBinAddr: 0x8610, symSize: 0x0 }
+  - { offsetInCU: 0x69, offset: 0xDD81E, size: 0x8, addend: 0x0, symName: _BanubaSDKServicingVersionNumber, symObjAddr: 0x48, symBinAddr: 0x8658, symSize: 0x0 }
+  - { offsetInCU: 0x27, offset: 0xDD85B, size: 0x8, addend: 0x0, symName: '-[VEOutputSettings initWithOrientation:isMirrored:applyWatermark:]', symObjAddr: 0x0, symBinAddr: 0x45F4, symSize: 0x60 }
+  - { offsetInCU: 0xE3, offset: 0xDD917, size: 0x8, addend: 0x0, symName: '-[VEOutputSettings initWithOrientation:isMirrored:applyWatermark:]', symObjAddr: 0x0, symBinAddr: 0x45F4, symSize: 0x60 }
+  - { offsetInCU: 0x14A, offset: 0xDD97E, size: 0x8, addend: 0x0, symName: '-[VEOutputSettings shouldApplyVerticalFlip]', symObjAddr: 0x60, symBinAddr: 0x4654, symSize: 0x28 }
+  - { offsetInCU: 0x181, offset: 0xDD9B5, size: 0x8, addend: 0x0, symName: '-[VEOutputSettings shouldApplyHorizontalFlip]', symObjAddr: 0x88, symBinAddr: 0x467C, symSize: 0x3C }
+  - { offsetInCU: 0x1B8, offset: 0xDD9EC, size: 0x8, addend: 0x0, symName: '-[VEOutputSettings resultVideoTransform]', symObjAddr: 0xC4, symBinAddr: 0x46B8, symSize: 0x4C }
+  - { offsetInCU: 0x222, offset: 0xDDA56, size: 0x8, addend: 0x0, symName: '-[VEOutputSettings resultImageOrientation]', symObjAddr: 0x110, symBinAddr: 0x4704, symSize: 0x1C }
+  - { offsetInCU: 0x259, offset: 0xDDA8D, size: 0x8, addend: 0x0, symName: '-[VEOutputSettings deviceOrientation]', symObjAddr: 0x12C, symBinAddr: 0x4720, symSize: 0x8 }
+  - { offsetInCU: 0x290, offset: 0xDDAC4, size: 0x8, addend: 0x0, symName: '-[VEOutputSettings setDeviceOrientation:]', symObjAddr: 0x134, symBinAddr: 0x4728, symSize: 0x8 }
+  - { offsetInCU: 0x2CD, offset: 0xDDB01, size: 0x8, addend: 0x0, symName: '-[VEOutputSettings isMirrored]', symObjAddr: 0x13C, symBinAddr: 0x4730, symSize: 0x8 }
+  - { offsetInCU: 0x304, offset: 0xDDB38, size: 0x8, addend: 0x0, symName: '-[VEOutputSettings setIsMirrored:]', symObjAddr: 0x144, symBinAddr: 0x4738, symSize: 0x8 }
+  - { offsetInCU: 0x33F, offset: 0xDDB73, size: 0x8, addend: 0x0, symName: '-[VEOutputSettings applyWatermark]', symObjAddr: 0x14C, symBinAddr: 0x4740, symSize: 0x8 }
+  - { offsetInCU: 0x376, offset: 0xDDBAA, size: 0x8, addend: 0x0, symName: '-[VEOutputSettings setApplyWatermark:]', symObjAddr: 0x154, symBinAddr: 0x4748, symSize: 0x8 }
+  - { offsetInCU: 0x27, offset: 0xDDC5B, size: 0x8, addend: 0x0, symName: '-[RecorderSettings initWithVideoDataOutput:captureSize:useHEVCCodecIfPossible:]', symObjAddr: 0x0, symBinAddr: 0x4750, symSize: 0x330 }
+  - { offsetInCU: 0x96, offset: 0xDDCCA, size: 0x8, addend: 0x0, symName: '-[RecorderSettings initWithVideoDataOutput:captureSize:useHEVCCodecIfPossible:]', symObjAddr: 0x0, symBinAddr: 0x4750, symSize: 0x330 }
+  - { offsetInCU: 0x19F, offset: 0xDDDD3, size: 0x8, addend: 0x0, symName: '+[RecorderSettings isDeviceSupportHEVCCodec]', symObjAddr: 0x330, symBinAddr: 0x4A80, symSize: 0x50 }
+  - { offsetInCU: 0x1D2, offset: 0xDDE06, size: 0x8, addend: 0x0, symName: '-[RecorderSettings videoSettings]', symObjAddr: 0x380, symBinAddr: 0x4AD0, symSize: 0x8 }
+  - { offsetInCU: 0x209, offset: 0xDDE3D, size: 0x8, addend: 0x0, symName: '-[RecorderSettings captureSize]', symObjAddr: 0x388, symBinAddr: 0x4AD8, symSize: 0x8 }
+  - { offsetInCU: 0x23E, offset: 0xDDE72, size: 0x8, addend: 0x0, symName: '-[RecorderSettings .cxx_destruct]', symObjAddr: 0x390, symBinAddr: 0x4AE0, symSize: 0xC }
+  - { offsetInCU: 0x27, offset: 0xDDF4D, size: 0x8, addend: 0x0, symName: '_$sSo18AVCaptureFlashModeVMa', symObjAddr: 0x18, symBinAddr: 0x4B04, symSize: 0x54 }
+  - { offsetInCU: 0x3F, offset: 0xDDF65, size: 0x8, addend: 0x0, symName: '_$sSo18AVCaptureFlashModeVMa', symObjAddr: 0x18, symBinAddr: 0x4B04, symSize: 0x54 }
+  - { offsetInCU: 0x27, offset: 0xDE0B1, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing26ExternalAudioConfigurationC3url10Foundation3URLVvgTo', symObjAddr: 0x0, symBinAddr: 0x4B58, symSize: 0x28 }
+  - { offsetInCU: 0x69, offset: 0xDE0F3, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing26ExternalAudioConfigurationC3url10Foundation3URLVvgTo', symObjAddr: 0x0, symBinAddr: 0x4B58, symSize: 0x28 }
+  - { offsetInCU: 0xA4, offset: 0xDE12E, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing26ExternalAudioConfigurationC3url10Foundation3URLVvg', symObjAddr: 0x28, symBinAddr: 0x4B80, symSize: 0x44 }
+  - { offsetInCU: 0xE1, offset: 0xDE16B, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing26ExternalAudioConfigurationC6offsetSdvgTo', symObjAddr: 0x6C, symBinAddr: 0x4BC4, symSize: 0x10 }
+  - { offsetInCU: 0x101, offset: 0xDE18B, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing26ExternalAudioConfigurationC6offsetSdvgTo', symObjAddr: 0x6C, symBinAddr: 0x4BC4, symSize: 0x10 }
+  - { offsetInCU: 0x11C, offset: 0xDE1A6, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing26ExternalAudioConfigurationC6offsetSdvg', symObjAddr: 0x7C, symBinAddr: 0x4BD4, symSize: 0x10 }
+  - { offsetInCU: 0x157, offset: 0xDE1E1, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing26ExternalAudioConfigurationC15preferredVolumeSfvgTo', symObjAddr: 0x8C, symBinAddr: 0x4BE4, symSize: 0x10 }
+  - { offsetInCU: 0x177, offset: 0xDE201, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing26ExternalAudioConfigurationC15preferredVolumeSfvgTo', symObjAddr: 0x8C, symBinAddr: 0x4BE4, symSize: 0x10 }
+  - { offsetInCU: 0x192, offset: 0xDE21C, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing26ExternalAudioConfigurationC15preferredVolumeSfvg', symObjAddr: 0x9C, symBinAddr: 0x4BF4, symSize: 0x10 }
+  - { offsetInCU: 0x1FD, offset: 0xDE287, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing26ExternalAudioConfigurationC3url6offset15preferredVolumeAC10Foundation3URLV_SdSftcfC', symObjAddr: 0xAC, symBinAddr: 0x4C04, symSize: 0xC4 }
+  - { offsetInCU: 0x25F, offset: 0xDE2E9, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing26ExternalAudioConfigurationC3url6offset15preferredVolumeAC10Foundation3URLV_SdSftcfc', symObjAddr: 0x170, symBinAddr: 0x4CC8, symSize: 0xC0 }
+  - { offsetInCU: 0x2A6, offset: 0xDE330, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing26ExternalAudioConfigurationCACycfC', symObjAddr: 0x26C, symBinAddr: 0x4DC4, symSize: 0x20 }
+  - { offsetInCU: 0x2C4, offset: 0xDE34E, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing26ExternalAudioConfigurationCACycfc', symObjAddr: 0x28C, symBinAddr: 0x4DE4, symSize: 0x2C }
+  - { offsetInCU: 0x327, offset: 0xDE3B1, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing26ExternalAudioConfigurationCACycfcTo', symObjAddr: 0x2B8, symBinAddr: 0x4E10, symSize: 0x2C }
+  - { offsetInCU: 0x38E, offset: 0xDE418, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing26ExternalAudioConfigurationCfD', symObjAddr: 0x2E4, symBinAddr: 0x4E3C, symSize: 0x34 }
+  - { offsetInCU: 0x3BC, offset: 0xDE446, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing26ExternalAudioConfigurationCMa', symObjAddr: 0x230, symBinAddr: 0x4D88, symSize: 0x3C }
+  - { offsetInCU: 0x3E6, offset: 0xDE470, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing26ExternalAudioConfigurationCfETo', symObjAddr: 0x318, symBinAddr: 0x4E70, symSize: 0x3C }
+  - { offsetInCU: 0x415, offset: 0xDE49F, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing26ExternalAudioConfigurationCMU', symObjAddr: 0x354, symBinAddr: 0x4EAC, symSize: 0x8 }
+  - { offsetInCU: 0x429, offset: 0xDE4B3, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing26ExternalAudioConfigurationCMr', symObjAddr: 0x35C, symBinAddr: 0x4EB4, symSize: 0x88 }
+  - { offsetInCU: 0x27, offset: 0xDE64A, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing9SDKLoggerC10debugPrintyySSFZ', symObjAddr: 0x0, symBinAddr: 0x4F50, symSize: 0x4 }
+  - { offsetInCU: 0x4B, offset: 0xDE66E, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing9SDKLoggerC10debugPrintyySSFZ', symObjAddr: 0x0, symBinAddr: 0x4F50, symSize: 0x4 }
+  - { offsetInCU: 0x82, offset: 0xDE6A5, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing9SDKLoggerCACycfC', symObjAddr: 0x4, symBinAddr: 0x4F54, symSize: 0x20 }
+  - { offsetInCU: 0xA0, offset: 0xDE6C3, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing9SDKLoggerCACycfc', symObjAddr: 0x24, symBinAddr: 0x4F74, symSize: 0x30 }
+  - { offsetInCU: 0xDB, offset: 0xDE6FE, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing9SDKLoggerCACycfcTo', symObjAddr: 0x74, symBinAddr: 0x4FC4, symSize: 0x3C }
+  - { offsetInCU: 0x116, offset: 0xDE739, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing9SDKLoggerCfD', symObjAddr: 0xB0, symBinAddr: 0x5000, symSize: 0x30 }
+  - { offsetInCU: 0x144, offset: 0xDE767, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing9SDKLoggerCMa', symObjAddr: 0x54, symBinAddr: 0x4FA4, symSize: 0x20 }
+  - { offsetInCU: 0x4B, offset: 0xDE8EF, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing23PIPSwitchLayoutSettingsO8rawValueSivg', symObjAddr: 0x0, symBinAddr: 0x5030, symSize: 0x4 }
+  - { offsetInCU: 0x81, offset: 0xDE925, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing23PIPCameraLayoutSettingsO8rawValueACSgSi_tcfC', symObjAddr: 0xC, symBinAddr: 0x503C, symSize: 0x14 }
+  - { offsetInCU: 0xA0, offset: 0xDE944, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing23PIPCameraLayoutSettingsO8rawValueSivg', symObjAddr: 0x20, symBinAddr: 0x5050, symSize: 0x4 }
+  - { offsetInCU: 0xE3, offset: 0xDE987, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing23PIPCameraLayoutSettingsOSYAASY8rawValuexSg03RawG0Qz_tcfCTW', symObjAddr: 0x24, symBinAddr: 0x5054, symSize: 0x20 }
+  - { offsetInCU: 0x121, offset: 0xDE9C5, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing23PIPPlayerLayoutSettingsO8rawValueSivg', symObjAddr: 0x44, symBinAddr: 0x5074, symSize: 0x4 }
+  - { offsetInCU: 0x157, offset: 0xDE9FB, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing21RenderBehaviorAdapterO8rawValueACSgSi_tcfC', symObjAddr: 0x48, symBinAddr: 0x5078, symSize: 0x14 }
+  - { offsetInCU: 0x176, offset: 0xDEA1A, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing21RenderBehaviorAdapterO8rawValueSivg', symObjAddr: 0x5C, symBinAddr: 0x508C, symSize: 0x4 }
+  - { offsetInCU: 0x1B9, offset: 0xDEA5D, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing21RenderBehaviorAdapterOSYAASY8rawValuexSg03RawG0Qz_tcfCTW', symObjAddr: 0x60, symBinAddr: 0x5090, symSize: 0x20 }
+  - { offsetInCU: 0x1F7, offset: 0xDEA9B, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing15PIPShapeAdapterO8rawValueACSgSi_tcfC', symObjAddr: 0x80, symBinAddr: 0x50B0, symSize: 0x14 }
+  - { offsetInCU: 0x216, offset: 0xDEABA, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing15PIPShapeAdapterO8rawValueSivg', symObjAddr: 0x94, symBinAddr: 0x50C4, symSize: 0x4 }
+  - { offsetInCU: 0x259, offset: 0xDEAFD, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing15PIPShapeAdapterOSYAASY8rawValuexSg03RawF0Qz_tcfCTW', symObjAddr: 0x160, symBinAddr: 0x5190, symSize: 0x20 }
+  - { offsetInCU: 0x28A, offset: 0xDEB2E, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing15PIPShapeAdapterOSYAASY8rawValue03RawF0QzvgTW', symObjAddr: 0x180, symBinAddr: 0x51B0, symSize: 0xC }
+  - { offsetInCU: 0x2F2, offset: 0xDEB96, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing22PIPSwitchLayoutSettingC7settingAA0cD8SettingsOvgTo', symObjAddr: 0x18C, symBinAddr: 0x51BC, symSize: 0x10 }
+  - { offsetInCU: 0x312, offset: 0xDEBB6, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing22PIPSwitchLayoutSettingC7settingAA0cD8SettingsOvgTo', symObjAddr: 0x18C, symBinAddr: 0x51BC, symSize: 0x10 }
+  - { offsetInCU: 0x32D, offset: 0xDEBD1, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing22PIPSwitchLayoutSettingC7settingAA0cD8SettingsOvg', symObjAddr: 0x19C, symBinAddr: 0x51CC, symSize: 0x10 }
+  - { offsetInCU: 0x34A, offset: 0xDEBEE, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing22PIPSwitchLayoutSettingC2eeoiySbAC_ACtFZ', symObjAddr: 0x320, symBinAddr: 0x5350, symSize: 0x1C }
+  - { offsetInCU: 0x3BD, offset: 0xDEC61, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing22PIPSwitchLayoutSettingCACycfc', symObjAddr: 0x348, symBinAddr: 0x5378, symSize: 0x2C }
+  - { offsetInCU: 0x420, offset: 0xDECC4, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing22PIPSwitchLayoutSettingCACycfcTo', symObjAddr: 0x374, symBinAddr: 0x53A4, symSize: 0x2C }
+  - { offsetInCU: 0x488, offset: 0xDED2C, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing22PIPSwitchLayoutSettingCMa', symObjAddr: 0x1CC, symBinAddr: 0x51FC, symSize: 0x20 }
+  - { offsetInCU: 0x4DC, offset: 0xDED80, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing22PIPCameraLayoutSettingC7settingAA0cD8SettingsOvgTo', symObjAddr: 0x3AC, symBinAddr: 0x53DC, symSize: 0x10 }
+  - { offsetInCU: 0x4FC, offset: 0xDEDA0, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing22PIPCameraLayoutSettingC7settingAA0cD8SettingsOvgTo', symObjAddr: 0x3AC, symBinAddr: 0x53DC, symSize: 0x10 }
+  - { offsetInCU: 0x517, offset: 0xDEDBB, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing22PIPCameraLayoutSettingC7settingAA0cD8SettingsOvg', symObjAddr: 0x3BC, symBinAddr: 0x53EC, symSize: 0x10 }
+  - { offsetInCU: 0x534, offset: 0xDEDD8, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing22PIPCameraLayoutSettingC2eeoiySbAC_ACtFZ', symObjAddr: 0x4E0, symBinAddr: 0x5510, symSize: 0x1C }
+  - { offsetInCU: 0x5A7, offset: 0xDEE4B, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing22PIPCameraLayoutSettingCACycfc', symObjAddr: 0x4FC, symBinAddr: 0x552C, symSize: 0x2C }
+  - { offsetInCU: 0x60A, offset: 0xDEEAE, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing22PIPCameraLayoutSettingCACycfcTo', symObjAddr: 0x528, symBinAddr: 0x5558, symSize: 0x2C }
+  - { offsetInCU: 0x672, offset: 0xDEF16, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing22PIPCameraLayoutSettingCMa', symObjAddr: 0x3EC, symBinAddr: 0x541C, symSize: 0x20 }
+  - { offsetInCU: 0x6B0, offset: 0xDEF54, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing22PIPPlayerLayoutSettingC7settingAA0cD8SettingsOvgTo', symObjAddr: 0x560, symBinAddr: 0x5590, symSize: 0x10 }
+  - { offsetInCU: 0x6D0, offset: 0xDEF74, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing22PIPPlayerLayoutSettingC7settingAA0cD8SettingsOvgTo', symObjAddr: 0x560, symBinAddr: 0x5590, symSize: 0x10 }
+  - { offsetInCU: 0x6EB, offset: 0xDEF8F, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing22PIPPlayerLayoutSettingC7settingAA0cD8SettingsOvg', symObjAddr: 0x570, symBinAddr: 0x55A0, symSize: 0x10 }
+  - { offsetInCU: 0x708, offset: 0xDEFAC, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing22PIPPlayerLayoutSettingC2eeoiySbAC_ACtFZ', symObjAddr: 0x814, symBinAddr: 0x5844, symSize: 0x1C }
+  - { offsetInCU: 0x77B, offset: 0xDF01F, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing22PIPPlayerLayoutSettingCACycfc', symObjAddr: 0x830, symBinAddr: 0x5860, symSize: 0x2C }
+  - { offsetInCU: 0x7DE, offset: 0xDF082, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing22PIPPlayerLayoutSettingCACycfcTo', symObjAddr: 0x85C, symBinAddr: 0x588C, symSize: 0x2C }
+  - { offsetInCU: 0x846, offset: 0xDF0EA, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing22PIPPlayerLayoutSettingCMa', symObjAddr: 0x62C, symBinAddr: 0x565C, symSize: 0x20 }
+  - { offsetInCU: 0x884, offset: 0xDF128, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing19PIPShapeTypeAdapterC7settingAA0cE0OvgTo', symObjAddr: 0x894, symBinAddr: 0x58C4, symSize: 0x10 }
+  - { offsetInCU: 0x8A4, offset: 0xDF148, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing19PIPShapeTypeAdapterC7settingAA0cE0OvgTo', symObjAddr: 0x894, symBinAddr: 0x58C4, symSize: 0x10 }
+  - { offsetInCU: 0x8BF, offset: 0xDF163, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing19PIPShapeTypeAdapterC7settingAA0cE0Ovg', symObjAddr: 0x8A4, symBinAddr: 0x58D4, symSize: 0x10 }
+  - { offsetInCU: 0x8FA, offset: 0xDF19E, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing19PIPShapeTypeAdapterC6radius12CoreGraphics7CGFloatVvgTo', symObjAddr: 0x8B4, symBinAddr: 0x58E4, symSize: 0x10 }
+  - { offsetInCU: 0x91A, offset: 0xDF1BE, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing19PIPShapeTypeAdapterC6radius12CoreGraphics7CGFloatVvgTo', symObjAddr: 0x8B4, symBinAddr: 0x58E4, symSize: 0x10 }
+  - { offsetInCU: 0x935, offset: 0xDF1D9, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing19PIPShapeTypeAdapterC6radius12CoreGraphics7CGFloatVvg', symObjAddr: 0x8C4, symBinAddr: 0x58F4, symSize: 0x10 }
+  - { offsetInCU: 0x988, offset: 0xDF22C, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing19PIPShapeTypeAdapterC7setting6radiusAcA0cE0O_12CoreGraphics7CGFloatVtcfC', symObjAddr: 0x8D4, symBinAddr: 0x5904, symSize: 0x64 }
+  - { offsetInCU: 0x9D8, offset: 0xDF27C, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing19PIPShapeTypeAdapterC7setting6radiusAcA0cE0O_12CoreGraphics7CGFloatVtcfc', symObjAddr: 0x938, symBinAddr: 0x5968, symSize: 0x48 }
+  - { offsetInCU: 0xA09, offset: 0xDF2AD, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing19PIPShapeTypeAdapterC7setting6radiusAcA0cE0O_12CoreGraphics7CGFloatVtcfcTo', symObjAddr: 0x9A0, symBinAddr: 0x59D0, symSize: 0x54 }
+  - { offsetInCU: 0xA58, offset: 0xDF2FC, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing19PIPShapeTypeAdapterC2eeoiySbAC_ACtFZ', symObjAddr: 0xBCC, symBinAddr: 0x5BFC, symSize: 0x1C }
+  - { offsetInCU: 0xACB, offset: 0xDF36F, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing19PIPShapeTypeAdapterCACycfc', symObjAddr: 0xC24, symBinAddr: 0x5C54, symSize: 0x2C }
+  - { offsetInCU: 0xB2E, offset: 0xDF3D2, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing19PIPShapeTypeAdapterCACycfcTo', symObjAddr: 0xC50, symBinAddr: 0x5C80, symSize: 0x2C }
+  - { offsetInCU: 0xB96, offset: 0xDF43A, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing19PIPShapeTypeAdapterCMa', symObjAddr: 0x980, symBinAddr: 0x59B0, symSize: 0x20 }
+  - { offsetInCU: 0xBAA, offset: 0xDF44E, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing23PIPSwitchLayoutSettingsOSHAASQWb', symObjAddr: 0xCB8, symBinAddr: 0x5CE8, symSize: 0x4 }
+  - { offsetInCU: 0xBBE, offset: 0xDF462, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing23PIPSwitchLayoutSettingsOACSQAAWl', symObjAddr: 0xCBC, symBinAddr: 0x5CEC, symSize: 0x44 }
+  - { offsetInCU: 0xBD2, offset: 0xDF476, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing23PIPCameraLayoutSettingsOSHAASQWb', symObjAddr: 0xD00, symBinAddr: 0x5D30, symSize: 0x4 }
+  - { offsetInCU: 0xBE6, offset: 0xDF48A, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing23PIPCameraLayoutSettingsOACSQAAWl', symObjAddr: 0xD04, symBinAddr: 0x5D34, symSize: 0x44 }
+  - { offsetInCU: 0xBFA, offset: 0xDF49E, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing23PIPPlayerLayoutSettingsOSHAASQWb', symObjAddr: 0xD48, symBinAddr: 0x5D78, symSize: 0x4 }
+  - { offsetInCU: 0xC0E, offset: 0xDF4B2, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing23PIPPlayerLayoutSettingsOACSQAAWl', symObjAddr: 0xD4C, symBinAddr: 0x5D7C, symSize: 0x44 }
+  - { offsetInCU: 0xC22, offset: 0xDF4C6, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing21RenderBehaviorAdapterOSHAASQWb', symObjAddr: 0xD90, symBinAddr: 0x5DC0, symSize: 0x4 }
+  - { offsetInCU: 0xC36, offset: 0xDF4DA, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing21RenderBehaviorAdapterOACSQAAWl', symObjAddr: 0xD94, symBinAddr: 0x5DC4, symSize: 0x44 }
+  - { offsetInCU: 0xC4A, offset: 0xDF4EE, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing15PIPShapeAdapterOSHAASQWb', symObjAddr: 0xDD8, symBinAddr: 0x5E08, symSize: 0x4 }
+  - { offsetInCU: 0xC5E, offset: 0xDF502, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing15PIPShapeAdapterOACSQAAWl', symObjAddr: 0xDDC, symBinAddr: 0x5E0C, symSize: 0x44 }
+  - { offsetInCU: 0xC72, offset: 0xDF516, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing23PIPSwitchLayoutSettingsOMa', symObjAddr: 0xE20, symBinAddr: 0x5E50, symSize: 0x10 }
+  - { offsetInCU: 0xC86, offset: 0xDF52A, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing23PIPCameraLayoutSettingsOMa', symObjAddr: 0xE30, symBinAddr: 0x5E60, symSize: 0x10 }
+  - { offsetInCU: 0xC9A, offset: 0xDF53E, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing23PIPPlayerLayoutSettingsOMa', symObjAddr: 0xE40, symBinAddr: 0x5E70, symSize: 0x10 }
+  - { offsetInCU: 0xCAE, offset: 0xDF552, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing21RenderBehaviorAdapterOMa', symObjAddr: 0xE50, symBinAddr: 0x5E80, symSize: 0x10 }
+  - { offsetInCU: 0xCC2, offset: 0xDF566, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing15PIPShapeAdapterOMa', symObjAddr: 0xE60, symBinAddr: 0x5E90, symSize: 0x10 }
+  - { offsetInCU: 0xD14, offset: 0xDF5B8, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing15PIPShapeAdapterOSQAASQ2eeoiySbx_xtFZTW', symObjAddr: 0x98, symBinAddr: 0x50C8, symSize: 0x14 }
+  - { offsetInCU: 0xD69, offset: 0xDF60D, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing15PIPShapeAdapterOSHAASH4hash4intoys6HasherVz_tFTW', symObjAddr: 0xF4, symBinAddr: 0x5124, symSize: 0x28 }
+  - { offsetInCU: 0x2B, offset: 0xDF85C, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing23CameraModuleSessionTypeO8rawValueACSgSi_tcfC', symObjAddr: 0x0, symBinAddr: 0x5F68, symSize: 0x14 }
+  - { offsetInCU: 0x4F, offset: 0xDF880, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing23CameraModuleSessionTypeO8rawValueACSgSi_tcfC', symObjAddr: 0x0, symBinAddr: 0x5F68, symSize: 0x14 }
+  - { offsetInCU: 0x6E, offset: 0xDF89F, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing23CameraModuleSessionTypeO8rawValueSivg', symObjAddr: 0x14, symBinAddr: 0x5F7C, symSize: 0x4 }
+  - { offsetInCU: 0xB1, offset: 0xDF8E2, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing23CameraModuleSessionTypeOSYAASY8rawValuexSg03RawH0Qz_tcfCTW', symObjAddr: 0xD8, symBinAddr: 0x6040, symSize: 0x20 }
+  - { offsetInCU: 0xE2, offset: 0xDF913, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing23CameraModuleSessionTypeOSYAASY8rawValue03RawH0QzvgTW', symObjAddr: 0xF8, symBinAddr: 0x6060, symSize: 0xC }
+  - { offsetInCU: 0x127, offset: 0xDF958, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing25CameraModulePhotoSettingsV16useStabilizationSbvg', symObjAddr: 0x104, symBinAddr: 0x606C, symSize: 0x8 }
+  - { offsetInCU: 0x145, offset: 0xDF976, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing25CameraModulePhotoSettingsV9flashModeSo014AVCaptureFlashH0Vvg', symObjAddr: 0x10C, symBinAddr: 0x6074, symSize: 0x8 }
+  - { offsetInCU: 0x163, offset: 0xDF994, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing25CameraModulePhotoSettingsV16useStabilization9flashModeACSb_So014AVCaptureFlashJ0VtcfC', symObjAddr: 0x114, symBinAddr: 0x607C, symSize: 0xC }
+  - { offsetInCU: 0x1C2, offset: 0xDF9F3, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing20CameraModuleDefaultsV8viewSizeSo6CGSizeVvgZ', symObjAddr: 0x120, symBinAddr: 0x6088, symSize: 0x88 }
+  - { offsetInCU: 0x243, offset: 0xDFA74, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing23CameraModuleSessionTypeOSHAASQWb', symObjAddr: 0x1A8, symBinAddr: 0x6110, symSize: 0x4 }
+  - { offsetInCU: 0x257, offset: 0xDFA88, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing23CameraModuleSessionTypeOACSQAAWl', symObjAddr: 0x1AC, symBinAddr: 0x6114, symSize: 0x44 }
+  - { offsetInCU: 0x26B, offset: 0xDFA9C, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing23CameraModuleSessionTypeOMa', symObjAddr: 0x1F0, symBinAddr: 0x6158, symSize: 0x10 }
+  - { offsetInCU: 0x27F, offset: 0xDFAB0, size: 0x8, addend: 0x0, symName: ___swift_memcpy16_8, symObjAddr: 0x200, symBinAddr: 0x6168, symSize: 0xC }
+  - { offsetInCU: 0x293, offset: 0xDFAC4, size: 0x8, addend: 0x0, symName: ___swift_noop_void_return, symObjAddr: 0x20C, symBinAddr: 0x6174, symSize: 0x4 }
+  - { offsetInCU: 0x2A7, offset: 0xDFAD8, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing25CameraModulePhotoSettingsVwet', symObjAddr: 0x210, symBinAddr: 0x6178, symSize: 0x54 }
+  - { offsetInCU: 0x2BB, offset: 0xDFAEC, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing25CameraModulePhotoSettingsVwst', symObjAddr: 0x264, symBinAddr: 0x61CC, symSize: 0x40 }
+  - { offsetInCU: 0x2CF, offset: 0xDFB00, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing25CameraModulePhotoSettingsVMa', symObjAddr: 0x2A4, symBinAddr: 0x620C, symSize: 0x10 }
+  - { offsetInCU: 0x2E3, offset: 0xDFB14, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing20CameraModuleDefaultsVMa', symObjAddr: 0x2B4, symBinAddr: 0x621C, symSize: 0x10 }
+  - { offsetInCU: 0x323, offset: 0xDFB54, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing23CameraModuleSessionTypeOSQAASQ2eeoiySbx_xtFZTW', symObjAddr: 0x18, symBinAddr: 0x5F80, symSize: 0x14 }
+  - { offsetInCU: 0x3B4, offset: 0xDFBE5, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing23CameraModuleSessionTypeOSHAASH9hashValueSivgTW', symObjAddr: 0x2C, symBinAddr: 0x5F94, symSize: 0x44 }
+  - { offsetInCU: 0x463, offset: 0xDFC94, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing23CameraModuleSessionTypeOSHAASH4hash4intoys6HasherVz_tFTW', symObjAddr: 0x70, symBinAddr: 0x5FD8, symSize: 0x28 }
+  - { offsetInCU: 0x4B6, offset: 0xDFCE7, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing23CameraModuleSessionTypeOSHAASH13_rawHashValue4seedS2i_tFTW', symObjAddr: 0x98, symBinAddr: 0x6000, symSize: 0x40 }
+  - { offsetInCU: 0x4B, offset: 0xDFF15, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing11EffectModelC2idSuvg', symObjAddr: 0x0, symBinAddr: 0x622C, symSize: 0x44 }
+  - { offsetInCU: 0x6A, offset: 0xDFF34, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing11EffectModelC2idSuvs', symObjAddr: 0x44, symBinAddr: 0x6270, symSize: 0x48 }
+  - { offsetInCU: 0x93, offset: 0xDFF5D, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing11EffectModelC2idSuvM', symObjAddr: 0x8C, symBinAddr: 0x62B8, symSize: 0x44 }
+  - { offsetInCU: 0xC2, offset: 0xDFF8C, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing11EffectModelC2idSuvM.resume.0', symObjAddr: 0xD0, symBinAddr: 0x62FC, symSize: 0x4 }
+  - { offsetInCU: 0x117, offset: 0xDFFE1, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing11EffectModelC3url10Foundation3URLVSgvg', symObjAddr: 0x178, symBinAddr: 0x63A4, symSize: 0x50 }
+  - { offsetInCU: 0x136, offset: 0xE0000, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing11EffectModelC3url10Foundation3URLVSgvs', symObjAddr: 0x250, symBinAddr: 0x647C, symSize: 0x60 }
+  - { offsetInCU: 0x15F, offset: 0xE0029, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing11EffectModelC3url10Foundation3URLVSgvM', symObjAddr: 0x338, symBinAddr: 0x6564, symSize: 0x44 }
+  - { offsetInCU: 0x1D6, offset: 0xE00A0, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing11EffectModelC4nameSSSgvg', symObjAddr: 0x438, symBinAddr: 0x6664, symSize: 0x54 }
+  - { offsetInCU: 0x1F5, offset: 0xE00BF, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing11EffectModelC4nameSSSgvs', symObjAddr: 0x48C, symBinAddr: 0x66B8, symSize: 0x5C }
+  - { offsetInCU: 0x21E, offset: 0xE00E8, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing11EffectModelC4nameSSSgvM', symObjAddr: 0x4E8, symBinAddr: 0x6714, symSize: 0x44 }
+  - { offsetInCU: 0x24D, offset: 0xE0117, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing11EffectModelC2id3urlACSu_10Foundation3URLVtcfC', symObjAddr: 0x52C, symBinAddr: 0x6758, symSize: 0x40 }
+  - { offsetInCU: 0x26B, offset: 0xE0135, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing11EffectModelC2id3urlACSu_10Foundation3URLVtcfc', symObjAddr: 0x56C, symBinAddr: 0x6798, symSize: 0x174 }
+  - { offsetInCU: 0x30C, offset: 0xE01D6, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing11EffectModelC2id4nameACSu_SStcfC', symObjAddr: 0x764, symBinAddr: 0x6990, symSize: 0x104 }
+  - { offsetInCU: 0x355, offset: 0xE021F, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing11EffectModelC2id4nameACSu_SStcfc', symObjAddr: 0x868, symBinAddr: 0x6A94, symSize: 0xF8 }
+  - { offsetInCU: 0x392, offset: 0xE025C, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing11EffectModelCACycfC', symObjAddr: 0x960, symBinAddr: 0x6B8C, symSize: 0x20 }
+  - { offsetInCU: 0x3B0, offset: 0xE027A, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing11EffectModelCACycfc', symObjAddr: 0x980, symBinAddr: 0x6BAC, symSize: 0x2C }
+  - { offsetInCU: 0x413, offset: 0xE02DD, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing11EffectModelCACycfcTo', symObjAddr: 0x9AC, symBinAddr: 0x6BD8, symSize: 0x2C }
+  - { offsetInCU: 0x47A, offset: 0xE0344, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing11EffectModelCfD', symObjAddr: 0x9D8, symBinAddr: 0x6C04, symSize: 0x34 }
+  - { offsetInCU: 0x50E, offset: 0xE03D8, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing11EffectModelC3url10Foundation3URLVSgvpACTk', symObjAddr: 0xD4, symBinAddr: 0x6300, symSize: 0xA4 }
+  - { offsetInCU: 0x545, offset: 0xE040F, size: 0x8, addend: 0x0, symName: '_$s10Foundation3URLVSgWOc', symObjAddr: 0x1C8, symBinAddr: 0x63F4, symSize: 0x48 }
+  - { offsetInCU: 0x559, offset: 0xE0423, size: 0x8, addend: 0x0, symName: ___swift_instantiateConcreteTypeFromMangledName, symObjAddr: 0x210, symBinAddr: 0x643C, symSize: 0x40 }
+  - { offsetInCU: 0x56D, offset: 0xE0437, size: 0x8, addend: 0x0, symName: '_$s10Foundation3URLVSgWOf', symObjAddr: 0x2B0, symBinAddr: 0x64DC, symSize: 0x48 }
+  - { offsetInCU: 0x581, offset: 0xE044B, size: 0x8, addend: 0x0, symName: '_$s10Foundation3URLVSgWOh', symObjAddr: 0x2F8, symBinAddr: 0x6524, symSize: 0x40 }
+  - { offsetInCU: 0x595, offset: 0xE045F, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing11EffectModelC4nameSSSgvpACTK', symObjAddr: 0x37C, symBinAddr: 0x65A8, symSize: 0x54 }
+  - { offsetInCU: 0x5C2, offset: 0xE048C, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing11EffectModelC4nameSSSgvpACTk', symObjAddr: 0x3D0, symBinAddr: 0x65FC, symSize: 0x68 }
+  - { offsetInCU: 0x5FA, offset: 0xE04C4, size: 0x8, addend: 0x0, symName: '_$s10Foundation3URLVSgWOd', symObjAddr: 0x6E0, symBinAddr: 0x690C, symSize: 0x48 }
+  - { offsetInCU: 0x60E, offset: 0xE04D8, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing11EffectModelCMa', symObjAddr: 0x728, symBinAddr: 0x6954, symSize: 0x3C }
+  - { offsetInCU: 0x638, offset: 0xE0502, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing11EffectModelCfETo', symObjAddr: 0xB08, symBinAddr: 0x6D34, symSize: 0x3C }
+  - { offsetInCU: 0x667, offset: 0xE0531, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing11EffectModelCMU', symObjAddr: 0xB44, symBinAddr: 0x6D70, symSize: 0x8 }
+  - { offsetInCU: 0x67B, offset: 0xE0545, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing11EffectModelCMr', symObjAddr: 0xB4C, symBinAddr: 0x6D78, symSize: 0x84 }
+  - { offsetInCU: 0x68F, offset: 0xE0559, size: 0x8, addend: 0x0, symName: '_$s10Foundation3URLVSgMa', symObjAddr: 0xCE8, symBinAddr: 0x6F14, symSize: 0x54 }
+  - { offsetInCU: 0x27, offset: 0xE070D, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing18OutputServiceErrorO2eeoiySbAC_ACtFZ', symObjAddr: 0x0, symBinAddr: 0x6F70, symSize: 0x8 }
+  - { offsetInCU: 0x46, offset: 0xE072C, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing18OutputServiceErrorO2eeoiySbAC_ACtFZ', symObjAddr: 0x0, symBinAddr: 0x6F70, symSize: 0x8 }
+  - { offsetInCU: 0x6E, offset: 0xE0754, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing18OutputServiceErrorO4hash4intoys6HasherVz_tF', symObjAddr: 0x8, symBinAddr: 0x6F78, symSize: 0x24 }
+  - { offsetInCU: 0xF4, offset: 0xE07DA, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing18OutputServiceErrorO9hashValueSivg', symObjAddr: 0x2C, symBinAddr: 0x6F9C, symSize: 0x40 }
+  - { offsetInCU: 0x1BA, offset: 0xE08A0, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing18OutputServiceErrorOSQAASQ2eeoiySbx_xtFZTW', symObjAddr: 0x6C, symBinAddr: 0x6FDC, symSize: 0x8 }
+  - { offsetInCU: 0x1E5, offset: 0xE08CB, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing18OutputServiceErrorOSHAASH9hashValueSivgTW', symObjAddr: 0x74, symBinAddr: 0x6FE4, symSize: 0x40 }
+  - { offsetInCU: 0x2C8, offset: 0xE09AE, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing18OutputServiceErrorOSHAASH4hash4intoys6HasherVz_tFTW', symObjAddr: 0xB4, symBinAddr: 0x7024, symSize: 0x24 }
+  - { offsetInCU: 0x350, offset: 0xE0A36, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing18OutputServiceErrorOSHAASQWb', symObjAddr: 0x114, symBinAddr: 0x7084, symSize: 0x4 }
+  - { offsetInCU: 0x364, offset: 0xE0A4A, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing18OutputServiceErrorOACSQAAWl', symObjAddr: 0x118, symBinAddr: 0x7088, symSize: 0x44 }
+  - { offsetInCU: 0x378, offset: 0xE0A5E, size: 0x8, addend: 0x0, symName: ___swift_memcpy0_1, symObjAddr: 0x16C, symBinAddr: 0x70DC, symSize: 0x4 }
+  - { offsetInCU: 0x38C, offset: 0xE0A72, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing18OutputServiceErrorOwet', symObjAddr: 0x174, symBinAddr: 0x70E0, symSize: 0x50 }
+  - { offsetInCU: 0x3A0, offset: 0xE0A86, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing18OutputServiceErrorOwst', symObjAddr: 0x1C4, symBinAddr: 0x7130, symSize: 0x8C }
+  - { offsetInCU: 0x3B4, offset: 0xE0A9A, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing18OutputServiceErrorOwug', symObjAddr: 0x250, symBinAddr: 0x71BC, symSize: 0x8 }
+  - { offsetInCU: 0x3C8, offset: 0xE0AAE, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing18OutputServiceErrorOwup', symObjAddr: 0x258, symBinAddr: 0x71C4, symSize: 0x4 }
+  - { offsetInCU: 0x3DC, offset: 0xE0AC2, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing18OutputServiceErrorOwui', symObjAddr: 0x25C, symBinAddr: 0x71C8, symSize: 0x4 }
+  - { offsetInCU: 0x3F0, offset: 0xE0AD6, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing18OutputServiceErrorOMa', symObjAddr: 0x260, symBinAddr: 0x71CC, symSize: 0x10 }
+  - { offsetInCU: 0x45E, offset: 0xE0B44, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing18OutputServiceErrorOSHAASH13_rawHashValue4seedS2i_tFTW', symObjAddr: 0xD8, symBinAddr: 0x7048, symSize: 0x3C }
+  - { offsetInCU: 0x4FA, offset: 0xE0BE0, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing18OutputServiceErrorOs0E0AAsADP7_domainSSvgTW', symObjAddr: 0x15C, symBinAddr: 0x70CC, symSize: 0x4 }
+  - { offsetInCU: 0x516, offset: 0xE0BFC, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing18OutputServiceErrorOs0E0AAsADP5_codeSivgTW', symObjAddr: 0x160, symBinAddr: 0x70D0, symSize: 0x4 }
+  - { offsetInCU: 0x532, offset: 0xE0C18, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing18OutputServiceErrorOs0E0AAsADP9_userInfoyXlSgvgTW', symObjAddr: 0x164, symBinAddr: 0x70D4, symSize: 0x4 }
+  - { offsetInCU: 0x54E, offset: 0xE0C34, size: 0x8, addend: 0x0, symName: '_$s18BanubaSDKServicing18OutputServiceErrorOs0E0AAsADP19_getEmbeddedNSErroryXlSgyFTW', symObjAddr: 0x168, symBinAddr: 0x70D8, symSize: 0x4 }
 ...

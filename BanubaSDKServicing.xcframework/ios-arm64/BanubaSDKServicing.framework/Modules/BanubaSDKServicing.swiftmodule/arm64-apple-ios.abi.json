@@ -106,7 +106,7 @@
           {
             "kind": "Function",
             "name": "effectAddImageTexture",
-            "printedName": "effectAddImageTexture(image:)",
+            "printedName": "effectAddImageTexture(image:backgroundColor:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -118,11 +118,17 @@
                 "name": "UIImage",
                 "printedName": "UIKit.UIImage",
                 "usr": "c:objc(cs)UIImage"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIColor",
+                "printedName": "UIKit.UIColor",
+                "usr": "c:objc(cs)UIColor"
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@BanubaSDKServicing@objc(pl)SDKEffectsTextureServicing(im)effectAddImageTextureWithImage:",
-            "mangledName": "$s18BanubaSDKServicing26SDKEffectsTextureServicingP014effectAddImageD05imageySo7UIImageC_tF",
+            "usr": "c:@M@BanubaSDKServicing@objc(pl)SDKEffectsTextureServicing(im)effectAddImageTextureWithImage:backgroundColor:",
+            "mangledName": "$s18BanubaSDKServicing26SDKEffectsTextureServicingP014effectAddImageD05image15backgroundColorySo7UIImageC_So7UIColorCtF",
             "moduleName": "BanubaSDKServicing",
             "genericSig": "<τ_0_0 where τ_0_0 : BanubaSDKServicing.SDKEffectsTextureServicing>",
             "sugared_genericSig": "<Self where Self : BanubaSDKServicing.SDKEffectsTextureServicing>",
@@ -184,7 +190,7 @@
           {
             "kind": "Function",
             "name": "effectAddVideoTexture",
-            "printedName": "effectAddVideoTexture(asset:)",
+            "printedName": "effectAddVideoTexture(asset:backgroundColor:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -196,11 +202,17 @@
                 "name": "AVURLAsset",
                 "printedName": "AVFoundation.AVURLAsset",
                 "usr": "c:objc(cs)AVURLAsset"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIColor",
+                "printedName": "UIKit.UIColor",
+                "usr": "c:objc(cs)UIColor"
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@BanubaSDKServicing@objc(pl)SDKEffectsTextureServicing(im)effectAddVideoTextureWithAsset:",
-            "mangledName": "$s18BanubaSDKServicing26SDKEffectsTextureServicingP014effectAddVideoD05assetySo10AVURLAssetC_tF",
+            "usr": "c:@M@BanubaSDKServicing@objc(pl)SDKEffectsTextureServicing(im)effectAddVideoTextureWithAsset:backgroundColor:",
+            "mangledName": "$s18BanubaSDKServicing26SDKEffectsTextureServicingP014effectAddVideoD05asset15backgroundColorySo10AVURLAssetC_So7UIColorCtF",
             "moduleName": "BanubaSDKServicing",
             "genericSig": "<τ_0_0 where τ_0_0 : BanubaSDKServicing.SDKEffectsTextureServicing>",
             "sugared_genericSig": "<Self where Self : BanubaSDKServicing.SDKEffectsTextureServicing>",
@@ -8449,27 +8461,40 @@
         "children": [
           {
             "kind": "Var",
-            "name": "selectedGalleryItemTexture",
-            "printedName": "selectedGalleryItemTexture",
+            "name": "selectedBackgroundTextureSettings",
+            "printedName": "selectedBackgroundTextureSettings",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "BanubaUtilities.GalleryItem?",
+                "printedName": "(galleryItem: BanubaUtilities.GalleryItem, backgroundColor: UIKit.UIColor)?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "GalleryItem",
-                    "printedName": "BanubaUtilities.GalleryItem",
-                    "usr": "c:@M@BanubaUtilities@objc(pl)GalleryItem"
+                    "name": "Tuple",
+                    "printedName": "(galleryItem: BanubaUtilities.GalleryItem, backgroundColor: UIKit.UIColor)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GalleryItem",
+                        "printedName": "BanubaUtilities.GalleryItem",
+                        "usr": "c:@M@BanubaUtilities@objc(pl)GalleryItem"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIColor",
+                        "printedName": "UIKit.UIColor",
+                        "usr": "c:objc(cs)UIColor"
+                      }
+                    ]
                   }
                 ],
                 "usr": "s:Sq"
               }
             ],
             "declKind": "Var",
-            "usr": "s:18BanubaSDKServicing25SDKEffectTextureServicingP019selectedGalleryItemD00A9Utilities0gH0_pSgvp",
-            "mangledName": "$s18BanubaSDKServicing25SDKEffectTextureServicingP019selectedGalleryItemD00A9Utilities0gH0_pSgvp",
+            "usr": "s:18BanubaSDKServicing25SDKEffectTextureServicingP018selectedBackgroundD8Settings0A9Utilities11GalleryItem_p07galleryK0_So7UIColorC15backgroundColortSgvp",
+            "mangledName": "$s18BanubaSDKServicing25SDKEffectTextureServicingP018selectedBackgroundD8Settings0A9Utilities11GalleryItem_p07galleryK0_So7UIColorC15backgroundColortSgvp",
             "moduleName": "BanubaSDKServicing",
             "protocolReq": true,
             "declAttributes": [
@@ -8484,21 +8509,34 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "BanubaUtilities.GalleryItem?",
+                    "printedName": "(galleryItem: BanubaUtilities.GalleryItem, backgroundColor: UIKit.UIColor)?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "GalleryItem",
-                        "printedName": "BanubaUtilities.GalleryItem",
-                        "usr": "c:@M@BanubaUtilities@objc(pl)GalleryItem"
+                        "name": "Tuple",
+                        "printedName": "(galleryItem: BanubaUtilities.GalleryItem, backgroundColor: UIKit.UIColor)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "GalleryItem",
+                            "printedName": "BanubaUtilities.GalleryItem",
+                            "usr": "c:@M@BanubaUtilities@objc(pl)GalleryItem"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "UIColor",
+                            "printedName": "UIKit.UIColor",
+                            "usr": "c:objc(cs)UIColor"
+                          }
+                        ]
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18BanubaSDKServicing25SDKEffectTextureServicingP019selectedGalleryItemD00A9Utilities0gH0_pSgvg",
-                "mangledName": "$s18BanubaSDKServicing25SDKEffectTextureServicingP019selectedGalleryItemD00A9Utilities0gH0_pSgvg",
+                "usr": "s:18BanubaSDKServicing25SDKEffectTextureServicingP018selectedBackgroundD8Settings0A9Utilities11GalleryItem_p07galleryK0_So7UIColorC15backgroundColortSgvg",
+                "mangledName": "$s18BanubaSDKServicing25SDKEffectTextureServicingP018selectedBackgroundD8Settings0A9Utilities11GalleryItem_p07galleryK0_So7UIColorC15backgroundColortSgvg",
                 "moduleName": "BanubaSDKServicing",
                 "genericSig": "<τ_0_0 where τ_0_0 : BanubaSDKServicing.SDKEffectTextureServicing>",
                 "sugared_genericSig": "<Self where Self : BanubaSDKServicing.SDKEffectTextureServicing>",
@@ -8511,7 +8549,7 @@
           {
             "kind": "Function",
             "name": "effectAddImageTexture",
-            "printedName": "effectAddImageTexture(image:galleryItem:)",
+            "printedName": "effectAddImageTexture(image:backgroundTextureSettings:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -8526,14 +8564,27 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "GalleryItem",
-                "printedName": "BanubaUtilities.GalleryItem",
-                "usr": "c:@M@BanubaUtilities@objc(pl)GalleryItem"
+                "name": "Tuple",
+                "printedName": "(galleryItem: BanubaUtilities.GalleryItem, backgroundColor: UIKit.UIColor)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GalleryItem",
+                    "printedName": "BanubaUtilities.GalleryItem",
+                    "usr": "c:@M@BanubaUtilities@objc(pl)GalleryItem"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ]
               }
             ],
             "declKind": "Func",
-            "usr": "s:18BanubaSDKServicing25SDKEffectTextureServicingP014effectAddImageD05image11galleryItemySo7UIImageC_0A9Utilities07GalleryK0_ptF",
-            "mangledName": "$s18BanubaSDKServicing25SDKEffectTextureServicingP014effectAddImageD05image11galleryItemySo7UIImageC_0A9Utilities07GalleryK0_ptF",
+            "usr": "s:18BanubaSDKServicing25SDKEffectTextureServicingP014effectAddImageD05image010backgroundD8SettingsySo7UIImageC_0A9Utilities11GalleryItem_p07galleryO0_So7UIColorC0J5ColorttF",
+            "mangledName": "$s18BanubaSDKServicing25SDKEffectTextureServicingP014effectAddImageD05image010backgroundD8SettingsySo7UIImageC_0A9Utilities11GalleryItem_p07galleryO0_So7UIColorC0J5ColorttF",
             "moduleName": "BanubaSDKServicing",
             "genericSig": "<τ_0_0 where τ_0_0 : BanubaSDKServicing.SDKEffectTextureServicing>",
             "sugared_genericSig": "<Self where Self : BanubaSDKServicing.SDKEffectTextureServicing>",
@@ -8547,7 +8598,7 @@
           {
             "kind": "Function",
             "name": "effectAddVideoTexture",
-            "printedName": "effectAddVideoTexture(asset:galleryItem:)",
+            "printedName": "effectAddVideoTexture(asset:backgroundTextureSettings:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -8562,14 +8613,27 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "GalleryItem",
-                "printedName": "BanubaUtilities.GalleryItem",
-                "usr": "c:@M@BanubaUtilities@objc(pl)GalleryItem"
+                "name": "Tuple",
+                "printedName": "(galleryItem: BanubaUtilities.GalleryItem, backgroundColor: UIKit.UIColor)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GalleryItem",
+                    "printedName": "BanubaUtilities.GalleryItem",
+                    "usr": "c:@M@BanubaUtilities@objc(pl)GalleryItem"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ]
               }
             ],
             "declKind": "Func",
-            "usr": "s:18BanubaSDKServicing25SDKEffectTextureServicingP014effectAddVideoD05asset11galleryItemySo10AVURLAssetC_0A9Utilities07GalleryK0_ptF",
-            "mangledName": "$s18BanubaSDKServicing25SDKEffectTextureServicingP014effectAddVideoD05asset11galleryItemySo10AVURLAssetC_0A9Utilities07GalleryK0_ptF",
+            "usr": "s:18BanubaSDKServicing25SDKEffectTextureServicingP014effectAddVideoD05asset010backgroundD8SettingsySo10AVURLAssetC_0A9Utilities11GalleryItem_p07galleryO0_So7UIColorC0J5ColorttF",
+            "mangledName": "$s18BanubaSDKServicing25SDKEffectTextureServicingP014effectAddVideoD05asset010backgroundD8SettingsySo10AVURLAssetC_0A9Utilities11GalleryItem_p07galleryO0_So7UIColorC0J5ColorttF",
             "moduleName": "BanubaSDKServicing",
             "genericSig": "<τ_0_0 where τ_0_0 : BanubaSDKServicing.SDKEffectTextureServicing>",
             "sugared_genericSig": "<Self where Self : BanubaSDKServicing.SDKEffectTextureServicing>",

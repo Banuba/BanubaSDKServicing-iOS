@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)
-// swift-module-flags: -target arm64-apple-ios14.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name BanubaSDKServicing
+// swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
+// swift-module-flags: -target arm64-apple-ios15.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name BanubaSDKServicing
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import AVFoundation
 import AVKit
@@ -18,10 +18,10 @@ import _SwiftConcurrencyShims
   @objc func didInitiateEffectSubtype(_ subtypeName: Swift.String)
 }
 @objc public protocol SDKEffectsTextureServicing {
-  @objc func effectAddImageTexture(image: UIKit.UIImage)
+  @objc func effectAddImageTexture(image: UIKit.UIImage, backgroundColor: UIKit.UIColor)
   @objc func setupDefaultImageTexture()
   @objc func stopVideoTextureIfNeeded()
-  @objc func effectAddVideoTexture(asset: AVFoundation.AVURLAsset)
+  @objc func effectAddVideoTexture(asset: AVFoundation.AVURLAsset, backgroundColor: UIKit.UIColor)
   @objc func effectReloadTexturePreview(startTime: Foundation.TimeInterval, endTime: Foundation.TimeInterval, itemDuration: Foundation.TimeInterval)
   @objc func unloadEffectTexture()
 }
@@ -289,10 +289,11 @@ public enum OutputServiceError : Swift.Error {
     get
   }
 }
+public typealias BackgroundTextureSettings = (galleryItem: any BanubaUtilities.GalleryItem, backgroundColor: UIKit.UIColor)
 public protocol SDKEffectTextureServicing {
-  var selectedGalleryItemTexture: (any BanubaUtilities.GalleryItem)? { get }
-  func effectAddImageTexture(image: UIKit.UIImage, galleryItem: any BanubaUtilities.GalleryItem)
-  func effectAddVideoTexture(asset: AVFoundation.AVURLAsset, galleryItem: any BanubaUtilities.GalleryItem)
+  var selectedBackgroundTextureSettings: BanubaSDKServicing.BackgroundTextureSettings? { get }
+  func effectAddImageTexture(image: UIKit.UIImage, backgroundTextureSettings: BanubaSDKServicing.BackgroundTextureSettings)
+  func effectAddVideoTexture(asset: AVFoundation.AVURLAsset, backgroundTextureSettings: BanubaSDKServicing.BackgroundTextureSettings)
   func unloadEffectTexture()
   func reloadTexturePreview(startTime: Foundation.TimeInterval, endTime: Foundation.TimeInterval, itemDuration: Foundation.TimeInterval)
   func reloadCurrentTexture(imageSize: CoreFoundation.CGSize)
