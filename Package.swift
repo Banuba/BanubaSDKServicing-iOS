@@ -1,17 +1,22 @@
-// swift-tools-version:5.3
+// swift-tools-version:5.9
+
 import PackageDescription
+
 let package = Package(
   name: "BanubaSDKServicing",
   platforms: [
-    .iOS(.v12)
+    .iOS(.v15)
   ],
   products: [
     .library(
-      name: "BanubaSDKServicing", 
-      targets: ["BanubaSDKServicing"])
+      name: "BanubaSDKServicing",
+      targets: ["BanubaSDKServicing"]
+    )
   ],
   targets: [
     .binaryTarget(
-      name: "BanubaSDKServicing", 
-      path: "BanubaSDKServicing.xcframework")
-  ])
+      name: "BanubaSDKServicing",
+      path: "BanubaSDKServicing.xcframework"
+    )
+  ]
+)
