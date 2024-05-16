@@ -536,30 +536,6 @@
           },
           {
             "kind": "Function",
-            "name": "removeAllFilters",
-            "printedName": "removeAllFilters()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@BanubaSDKServicing@objc(pl)SDKEffectsServicing(im)removeAllFilters",
-            "mangledName": "$s18BanubaSDKServicing19SDKEffectsServicingP16removeAllFiltersyyF",
-            "moduleName": "BanubaSDKServicing",
-            "genericSig": "<τ_0_0 where τ_0_0 : BanubaSDKServicing.SDKEffectsServicing>",
-            "sugared_genericSig": "<Self where Self : BanubaSDKServicing.SDKEffectsServicing>",
-            "protocolReq": true,
-            "declAttributes": [
-              "ObjC"
-            ],
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
             "name": "applyFilter",
             "printedName": "applyFilter(_:)",
             "children": [
@@ -608,6 +584,30 @@
             "declKind": "Func",
             "usr": "c:@M@BanubaSDKServicing@objc(pl)SDKEffectsServicing(im)removeFilter:",
             "mangledName": "$s18BanubaSDKServicing19SDKEffectsServicingP12removeFilteryyAA12RenderEffect_pF",
+            "moduleName": "BanubaSDKServicing",
+            "genericSig": "<τ_0_0 where τ_0_0 : BanubaSDKServicing.SDKEffectsServicing>",
+            "sugared_genericSig": "<Self where Self : BanubaSDKServicing.SDKEffectsServicing>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "removeAllFilters",
+            "printedName": "removeAllFilters()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BanubaSDKServicing@objc(pl)SDKEffectsServicing(im)removeAllFilters",
+            "mangledName": "$s18BanubaSDKServicing19SDKEffectsServicingP16removeAllFiltersyyF",
             "moduleName": "BanubaSDKServicing",
             "genericSig": "<τ_0_0 where τ_0_0 : BanubaSDKServicing.SDKEffectsServicing>",
             "sugared_genericSig": "<Self where Self : BanubaSDKServicing.SDKEffectsServicing>",

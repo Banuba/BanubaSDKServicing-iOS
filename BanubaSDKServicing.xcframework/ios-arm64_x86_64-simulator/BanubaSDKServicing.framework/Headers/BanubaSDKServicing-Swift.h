@@ -367,9 +367,9 @@ SWIFT_PROTOCOL("_TtP18BanubaSDKServicing19SDKEffectsServicing_")
 - (void)effectDidResetApplying;
 - (void)effectDidChangeState;
 - (void)unloadMask;
-- (void)removeAllFilters;
 - (void)applyFilter:(id <RenderEffect> _Nonnull)filter;
 - (void)removeFilter:(id <RenderEffect> _Nonnull)filter;
+- (void)removeAllFilters;
 - (void)setEffectSubtypeModificationsEventListener:(id <EffectSubtypeModificationsEventListener> _Nonnull)listener;
 - (NSArray<NSString *> * _Nonnull)effectsPathsWithIncludeBeautyEffect:(BOOL)includeBeautyEffect SWIFT_WARN_UNUSED_RESULT;
 @end
@@ -995,9 +995,9 @@ SWIFT_PROTOCOL("_TtP18BanubaSDKServicing19SDKEffectsServicing_")
 - (void)effectDidResetApplying;
 - (void)effectDidChangeState;
 - (void)unloadMask;
-- (void)removeAllFilters;
 - (void)applyFilter:(id <RenderEffect> _Nonnull)filter;
 - (void)removeFilter:(id <RenderEffect> _Nonnull)filter;
+- (void)removeAllFilters;
 - (void)setEffectSubtypeModificationsEventListener:(id <EffectSubtypeModificationsEventListener> _Nonnull)listener;
 - (NSArray<NSString *> * _Nonnull)effectsPathsWithIncludeBeautyEffect:(BOOL)includeBeautyEffect SWIFT_WARN_UNUSED_RESULT;
 @end

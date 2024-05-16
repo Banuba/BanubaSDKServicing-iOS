@@ -34,9 +34,9 @@ import _SwiftConcurrencyShims
   @objc func effectDidResetApplying()
   @objc func effectDidChangeState()
   @objc func unloadMask()
-  @objc func removeAllFilters()
   @objc func applyFilter(_ filter: any BanubaSDKServicing.RenderEffect)
   @objc func removeFilter(_ filter: any BanubaSDKServicing.RenderEffect)
+  @objc func removeAllFilters()
   @objc func setEffectSubtypeModificationsEventListener(_ listener: any BanubaSDKServicing.EffectSubtypeModificationsEventListener)
   @objc func effectsPaths(includeBeautyEffect: Swift.Bool) -> [Swift.String]
 }
