@@ -9401,6 +9401,132 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "isMultiCamSupported",
+            "printedName": "isMultiCamSupported",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@BanubaSDKServicing@objc(pl)SDKInputServicing(py)isMultiCamSupported",
+            "mangledName": "$s18BanubaSDKServicing17SDKInputServicingP19isMultiCamSupportedSbvp",
+            "moduleName": "BanubaSDKServicing",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BanubaSDKServicing@objc(pl)SDKInputServicing(im)isMultiCamSupported",
+                "mangledName": "$s18BanubaSDKServicing17SDKInputServicingP19isMultiCamSupportedSbvg",
+                "moduleName": "BanubaSDKServicing",
+                "genericSig": "<τ_0_0 where τ_0_0 : BanubaSDKServicing.SDKInputServicing>",
+                "sugared_genericSig": "<Self where Self : BanubaSDKServicing.SDKInputServicing>",
+                "protocolReq": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isMultiCamEnabled",
+            "printedName": "isMultiCamEnabled",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@BanubaSDKServicing@objc(pl)SDKInputServicing(py)isMultiCamEnabled",
+            "mangledName": "$s18BanubaSDKServicing17SDKInputServicingP17isMultiCamEnabledSbvp",
+            "moduleName": "BanubaSDKServicing",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BanubaSDKServicing@objc(pl)SDKInputServicing(im)isMultiCamEnabled",
+                "mangledName": "$s18BanubaSDKServicing17SDKInputServicingP17isMultiCamEnabledSbvg",
+                "moduleName": "BanubaSDKServicing",
+                "genericSig": "<τ_0_0 where τ_0_0 : BanubaSDKServicing.SDKInputServicing>",
+                "sugared_genericSig": "<Self where Self : BanubaSDKServicing.SDKInputServicing>",
+                "protocolReq": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BanubaSDKServicing@objc(pl)SDKInputServicing(im)setIsMultiCamEnabled:",
+                "mangledName": "$s18BanubaSDKServicing17SDKInputServicingP17isMultiCamEnabledSbvs",
+                "moduleName": "BanubaSDKServicing",
+                "genericSig": "<τ_0_0 where τ_0_0 : BanubaSDKServicing.SDKInputServicing>",
+                "sugared_genericSig": "<Self where Self : BanubaSDKServicing.SDKInputServicing>",
+                "protocolReq": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
             "kind": "Function",
             "name": "focus",
             "printedName": "focus(at:useContinuousDetection:)",

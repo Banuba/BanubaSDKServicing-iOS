@@ -394,6 +394,8 @@ SWIFT_PROTOCOL("_TtP18BanubaSDKServicing17SDKInputServicing_")
 @property (nonatomic, readonly) float zoomFactor;
 @property (nonatomic, readonly) enum CameraModuleSessionType currentCameraSessionType;
 @property (nonatomic, strong) id <SDKInputServicingDelegate> _Nullable inputDelegate;
+@property (nonatomic, readonly) BOOL isMultiCamSupported;
+@property (nonatomic) BOOL isMultiCamEnabled;
 - (void)focusAt:(CGPoint)point useContinuousDetection:(BOOL)useContinuousDetection;
 - (float)setZoomFactor:(float)zoomFactor SWIFT_WARN_UNUSED_RESULT;
 - (void)toggleCameraWithCompletion:(void (^ _Nonnull)(void))completion;

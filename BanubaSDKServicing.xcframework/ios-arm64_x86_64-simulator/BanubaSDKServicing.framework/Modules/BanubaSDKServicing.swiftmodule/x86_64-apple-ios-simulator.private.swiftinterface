@@ -315,6 +315,8 @@ public protocol SDKEffectTextureServicing {
   @objc var zoomFactor: Swift.Float { get }
   @objc var currentCameraSessionType: BanubaSDKServicing.CameraModuleSessionType { get }
   @objc var inputDelegate: (any BanubaSDKServicing.SDKInputServicingDelegate)? { get set }
+  @objc var isMultiCamSupported: Swift.Bool { get }
+  @objc var isMultiCamEnabled: Swift.Bool { get set }
   @objc func focus(at point: CoreFoundation.CGPoint, useContinuousDetection: Swift.Bool)
   @objc func setZoomFactor(_ zoomFactor: Swift.Float) -> Swift.Float
   @objc func toggleCamera(completion: @escaping () -> ())
