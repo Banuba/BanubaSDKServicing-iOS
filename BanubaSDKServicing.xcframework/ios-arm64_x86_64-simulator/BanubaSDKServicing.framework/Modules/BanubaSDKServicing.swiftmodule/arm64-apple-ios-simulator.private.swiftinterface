@@ -1,11 +1,9 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
-// swift-module-flags: -target arm64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name BanubaSDKServicing
-// swift-module-flags-ignorable: -enable-bare-slash-regex
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target arm64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name BanubaSDKServicing
 import AVFoundation
 import AVKit
 @_exported import BanubaSDKServicing
-import BanubaUtilities
 import CoreMedia
 import Foundation
 import Swift
@@ -19,7 +17,6 @@ import _SwiftConcurrencyShims
 }
 @objc public protocol SDKEffectsTextureServicing {
   @objc func effectAddImageTexture(image: UIKit.UIImage, backgroundColor: UIKit.UIColor)
-  @objc func setupDefaultImageTexture()
   @objc func stopVideoTextureIfNeeded()
   @objc func effectAddVideoTexture(asset: AVFoundation.AVURLAsset, backgroundColor: UIKit.UIColor)
   @objc func effectReloadTexturePreview(startTime: Foundation.TimeInterval, endTime: Foundation.TimeInterval, itemDuration: Foundation.TimeInterval)
@@ -38,7 +35,7 @@ import _SwiftConcurrencyShims
   @objc func removeFilter(_ filter: any BanubaSDKServicing.RenderEffect)
   @objc func removeAllFilters()
   @objc func setEffectSubtypeModificationsEventListener(_ listener: any BanubaSDKServicing.EffectSubtypeModificationsEventListener)
-  @objc func effectsPaths(includeBeautyEffect: Swift.Bool) -> [Swift.String]
+  @objc func effectsPaths() -> [Swift.String]
 }
 public protocol EffectsServicing {
   func apply(effect: any BanubaSDKServicing.RenderEffect)
@@ -113,6 +110,7 @@ public protocol EffectsServicing {
   case horizontalSplitLeft
   case horizontalSplitRight
   case pip
+  case pipMixer
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
@@ -227,6 +225,22 @@ public protocol EffectsServicing {
   @objc func applyPIPSwitchSettingIfNeeded(_ setting: BanubaSDKServicing.PIPSwitchLayoutSetting, restoreSession: Swift.Bool)
   @objc func setPIPPlayerVolume(_ volume: Swift.Float)
 }
+@objc public class EmbeddedBackgroundImage : ObjectiveC.NSObject {
+  final public let id: Swift.String
+  final public let image: UIKit.UIImage
+  public init(id: Swift.String, image: UIKit.UIImage)
+  @objc deinit
+}
+@objc public protocol SDKBackgroundEffectManaging {
+  @objc var isBackgroundEnabled: Swift.Bool { get }
+  @objc var embeddedImages: [BanubaSDKServicing.EmbeddedBackgroundImage] { get }
+  @objc func enableBackground(completion: @escaping () -> Swift.Void)
+  @objc func disableBackground()
+}
+@objc public protocol SDKPiPMixerServicing {
+  @objc func startPiPMixer(completion: (() -> Swift.Void)?)
+  @objc func stopPiPMixer(completion: (() -> Swift.Void)?)
+}
 @objc public enum CameraModuleSessionType : Swift.Int {
   case frontVideo
   case backVideo
@@ -248,7 +262,7 @@ public struct CameraModuleDefaults {
     get
   }
 }
-@objc public protocol CameraModule : BanubaSDKServicing.SDKBeautyEffectManaging, BanubaSDKServicing.SDKEffectsServicing, BanubaSDKServicing.SDKInputServicing, BanubaSDKServicing.SDKOutputServicing, BanubaSDKServicing.SDKPIPServicing {
+@objc public protocol CameraModule : BanubaSDKServicing.SDKBackgroundEffectManaging, BanubaSDKServicing.SDKBeautyEffectManaging, BanubaSDKServicing.SDKEffectsServicing, BanubaSDKServicing.SDKInputServicing, BanubaSDKServicing.SDKOutputServicing, BanubaSDKServicing.SDKPIPServicing, BanubaSDKServicing.SDKPiPMixerServicing {
   @objc var isLoaded: Swift.Bool { get }
   @objc var allowProcessing: Swift.Bool { get set }
   @objc var autoStart: Swift.Bool { get set }
@@ -288,17 +302,6 @@ public enum OutputServiceError : Swift.Error {
   public var hashValue: Swift.Int {
     get
   }
-}
-public typealias BackgroundTextureSettings = (galleryItem: any BanubaUtilities.GalleryItem, backgroundColor: UIKit.UIColor)
-public protocol SDKEffectTextureServicing {
-  var selectedBackgroundTextureSettings: BanubaSDKServicing.BackgroundTextureSettings? { get }
-  func effectAddImageTexture(image: UIKit.UIImage, backgroundTextureSettings: BanubaSDKServicing.BackgroundTextureSettings)
-  func effectAddVideoTexture(asset: AVFoundation.AVURLAsset, backgroundTextureSettings: BanubaSDKServicing.BackgroundTextureSettings)
-  func unloadEffectTexture()
-  func reloadTexturePreview(startTime: Foundation.TimeInterval, endTime: Foundation.TimeInterval, itemDuration: Foundation.TimeInterval)
-  func reloadCurrentTexture(imageSize: CoreFoundation.CGSize)
-  func setupDefaultImageTexture()
-  func stopVideoTextureIfNeeded()
 }
 @objc public protocol SDKBeautyEffectManaging {
   @objc var isBeautificationEnabled: Swift.Bool { get set }

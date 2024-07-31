@@ -141,30 +141,6 @@
           },
           {
             "kind": "Function",
-            "name": "setupDefaultImageTexture",
-            "printedName": "setupDefaultImageTexture()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@BanubaSDKServicing@objc(pl)SDKEffectsTextureServicing(im)setupDefaultImageTexture",
-            "mangledName": "$s18BanubaSDKServicing26SDKEffectsTextureServicingP017setupDefaultImageD0yyF",
-            "moduleName": "BanubaSDKServicing",
-            "genericSig": "<τ_0_0 where τ_0_0 : BanubaSDKServicing.SDKEffectsTextureServicing>",
-            "sugared_genericSig": "<Self where Self : BanubaSDKServicing.SDKEffectsTextureServicing>",
-            "protocolReq": true,
-            "declAttributes": [
-              "ObjC"
-            ],
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
             "name": "stopVideoTextureIfNeeded",
             "printedName": "stopVideoTextureIfNeeded()",
             "children": [
@@ -547,7 +523,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "RenderEffect",
-                "printedName": "BanubaSDKServicing.RenderEffect",
+                "printedName": "any BanubaSDKServicing.RenderEffect",
                 "usr": "c:@M@BanubaSDKServicing@objc(pl)RenderEffect"
               }
             ],
@@ -577,7 +553,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "RenderEffect",
-                "printedName": "BanubaSDKServicing.RenderEffect",
+                "printedName": "any BanubaSDKServicing.RenderEffect",
                 "usr": "c:@M@BanubaSDKServicing@objc(pl)RenderEffect"
               }
             ],
@@ -631,7 +607,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "EffectSubtypeModificationsEventListener",
-                "printedName": "BanubaSDKServicing.EffectSubtypeModificationsEventListener",
+                "printedName": "any BanubaSDKServicing.EffectSubtypeModificationsEventListener",
                 "usr": "c:@M@BanubaSDKServicing@objc(pl)EffectSubtypeModificationsEventListener"
               }
             ],
@@ -651,7 +627,7 @@
           {
             "kind": "Function",
             "name": "effectsPaths",
-            "printedName": "effectsPaths(includeBeautyEffect:)",
+            "printedName": "effectsPaths()",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -666,17 +642,11 @@
                   }
                 ],
                 "usr": "s:Sa"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@BanubaSDKServicing@objc(pl)SDKEffectsServicing(im)effectsPathsWithIncludeBeautyEffect:",
-            "mangledName": "$s18BanubaSDKServicing19SDKEffectsServicingP12effectsPaths19includeBeautyEffectSaySSGSb_tF",
+            "usr": "c:@M@BanubaSDKServicing@objc(pl)SDKEffectsServicing(im)effectsPaths",
+            "mangledName": "$s18BanubaSDKServicing19SDKEffectsServicingP12effectsPathsSaySSGyF",
             "moduleName": "BanubaSDKServicing",
             "genericSig": "<τ_0_0 where τ_0_0 : BanubaSDKServicing.SDKEffectsServicing>",
             "sugared_genericSig": "<Self where Self : BanubaSDKServicing.SDKEffectsServicing>",
@@ -726,7 +696,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "RenderEffect",
-                "printedName": "BanubaSDKServicing.RenderEffect",
+                "printedName": "any BanubaSDKServicing.RenderEffect",
                 "usr": "c:@M@BanubaSDKServicing@objc(pl)RenderEffect"
               }
             ],
@@ -753,7 +723,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "RenderEffect",
-                "printedName": "BanubaSDKServicing.RenderEffect",
+                "printedName": "any BanubaSDKServicing.RenderEffect",
                 "usr": "c:@M@BanubaSDKServicing@objc(pl)RenderEffect"
               }
             ],
@@ -1371,7 +1341,7 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(Swift.Bool, Swift.Error?) -> ()",
+                "printedName": "(Swift.Bool, (any Swift.Error)?) -> ()",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -1381,7 +1351,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Tuple",
-                    "printedName": "(Swift.Bool, Swift.Error?)",
+                    "printedName": "(Swift.Bool, (any Swift.Error)?)",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -1392,12 +1362,12 @@
                       {
                         "kind": "TypeNominal",
                         "name": "Optional",
-                        "printedName": "Swift.Error?",
+                        "printedName": "(any Swift.Error)?",
                         "children": [
                           {
                             "kind": "TypeNominal",
                             "name": "Error",
-                            "printedName": "Swift.Error",
+                            "printedName": "any Swift.Error",
                             "usr": "s:s5ErrorP"
                           }
                         ],
@@ -3113,6 +3083,47 @@
               "ObjC"
             ],
             "fixedbinaryorder": 5
+          },
+          {
+            "kind": "Var",
+            "name": "pipMixer",
+            "printedName": "pipMixer",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BanubaSDKServicing.RenderBehaviorAdapter.Type) -> BanubaSDKServicing.RenderBehaviorAdapter",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RenderBehaviorAdapter",
+                    "printedName": "BanubaSDKServicing.RenderBehaviorAdapter",
+                    "usr": "c:@M@BanubaSDKServicing@E@RenderBehaviorAdapter"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "BanubaSDKServicing.RenderBehaviorAdapter.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RenderBehaviorAdapter",
+                        "printedName": "BanubaSDKServicing.RenderBehaviorAdapter",
+                        "usr": "c:@M@BanubaSDKServicing@E@RenderBehaviorAdapter"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@BanubaSDKServicing@E@RenderBehaviorAdapter@RenderBehaviorAdapterPipMixer",
+            "mangledName": "$s18BanubaSDKServicing21RenderBehaviorAdapterO8pipMixeryA2CmF",
+            "moduleName": "BanubaSDKServicing",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 6
           },
           {
             "kind": "Constructor",
@@ -6297,6 +6308,560 @@
       },
       {
         "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "BanubaSDKServicing",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "EmbeddedBackgroundImage",
+        "printedName": "EmbeddedBackgroundImage",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "id",
+            "printedName": "id",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18BanubaSDKServicing23EmbeddedBackgroundImageC2idSSvp",
+            "mangledName": "$s18BanubaSDKServicing23EmbeddedBackgroundImageC2idSSvp",
+            "moduleName": "BanubaSDKServicing",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18BanubaSDKServicing23EmbeddedBackgroundImageC2idSSvg",
+                "mangledName": "$s18BanubaSDKServicing23EmbeddedBackgroundImageC2idSSvg",
+                "moduleName": "BanubaSDKServicing",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "image",
+            "printedName": "image",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIImage",
+                "printedName": "UIKit.UIImage",
+                "usr": "c:objc(cs)UIImage"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18BanubaSDKServicing23EmbeddedBackgroundImageC5imageSo7UIImageCvp",
+            "mangledName": "$s18BanubaSDKServicing23EmbeddedBackgroundImageC5imageSo7UIImageCvp",
+            "moduleName": "BanubaSDKServicing",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIImage",
+                    "printedName": "UIKit.UIImage",
+                    "usr": "c:objc(cs)UIImage"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18BanubaSDKServicing23EmbeddedBackgroundImageC5imageSo7UIImageCvg",
+                "mangledName": "$s18BanubaSDKServicing23EmbeddedBackgroundImageC5imageSo7UIImageCvg",
+                "moduleName": "BanubaSDKServicing",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(id:image:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "EmbeddedBackgroundImage",
+                "printedName": "BanubaSDKServicing.EmbeddedBackgroundImage",
+                "usr": "c:@M@BanubaSDKServicing@objc(cs)EmbeddedBackgroundImage"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIImage",
+                "printedName": "UIKit.UIImage",
+                "usr": "c:objc(cs)UIImage"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:18BanubaSDKServicing23EmbeddedBackgroundImageC2id5imageACSS_So7UIImageCtcfc",
+            "mangledName": "$s18BanubaSDKServicing23EmbeddedBackgroundImageC2id5imageACSS_So7UIImageCtcfc",
+            "moduleName": "BanubaSDKServicing",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "EmbeddedBackgroundImage",
+                "printedName": "BanubaSDKServicing.EmbeddedBackgroundImage",
+                "usr": "c:@M@BanubaSDKServicing@objc(cs)EmbeddedBackgroundImage"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@BanubaSDKServicing@objc(cs)EmbeddedBackgroundImage(im)init",
+            "mangledName": "$s18BanubaSDKServicing23EmbeddedBackgroundImageCACycfc",
+            "moduleName": "BanubaSDKServicing",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@BanubaSDKServicing@objc(cs)EmbeddedBackgroundImage",
+        "mangledName": "$s18BanubaSDKServicing23EmbeddedBackgroundImageC",
+        "moduleName": "BanubaSDKServicing",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SDKBackgroundEffectManaging",
+        "printedName": "SDKBackgroundEffectManaging",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "isBackgroundEnabled",
+            "printedName": "isBackgroundEnabled",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@BanubaSDKServicing@objc(pl)SDKBackgroundEffectManaging(py)isBackgroundEnabled",
+            "mangledName": "$s18BanubaSDKServicing27SDKBackgroundEffectManagingP19isBackgroundEnabledSbvp",
+            "moduleName": "BanubaSDKServicing",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BanubaSDKServicing@objc(pl)SDKBackgroundEffectManaging(im)isBackgroundEnabled",
+                "mangledName": "$s18BanubaSDKServicing27SDKBackgroundEffectManagingP19isBackgroundEnabledSbvg",
+                "moduleName": "BanubaSDKServicing",
+                "genericSig": "<τ_0_0 where τ_0_0 : BanubaSDKServicing.SDKBackgroundEffectManaging>",
+                "sugared_genericSig": "<Self where Self : BanubaSDKServicing.SDKBackgroundEffectManaging>",
+                "protocolReq": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "embeddedImages",
+            "printedName": "embeddedImages",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[BanubaSDKServicing.EmbeddedBackgroundImage]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "EmbeddedBackgroundImage",
+                    "printedName": "BanubaSDKServicing.EmbeddedBackgroundImage",
+                    "usr": "c:@M@BanubaSDKServicing@objc(cs)EmbeddedBackgroundImage"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@BanubaSDKServicing@objc(pl)SDKBackgroundEffectManaging(py)embeddedImages",
+            "mangledName": "$s18BanubaSDKServicing27SDKBackgroundEffectManagingP14embeddedImagesSayAA23EmbeddedBackgroundImageCGvp",
+            "moduleName": "BanubaSDKServicing",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[BanubaSDKServicing.EmbeddedBackgroundImage]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "EmbeddedBackgroundImage",
+                        "printedName": "BanubaSDKServicing.EmbeddedBackgroundImage",
+                        "usr": "c:@M@BanubaSDKServicing@objc(cs)EmbeddedBackgroundImage"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BanubaSDKServicing@objc(pl)SDKBackgroundEffectManaging(im)embeddedImages",
+                "mangledName": "$s18BanubaSDKServicing27SDKBackgroundEffectManagingP14embeddedImagesSayAA23EmbeddedBackgroundImageCGvg",
+                "moduleName": "BanubaSDKServicing",
+                "genericSig": "<τ_0_0 where τ_0_0 : BanubaSDKServicing.SDKBackgroundEffectManaging>",
+                "sugared_genericSig": "<Self where Self : BanubaSDKServicing.SDKBackgroundEffectManaging>",
+                "protocolReq": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "enableBackground",
+            "printedName": "enableBackground(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "() -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BanubaSDKServicing@objc(pl)SDKBackgroundEffectManaging(im)enableBackgroundWithCompletion:",
+            "mangledName": "$s18BanubaSDKServicing27SDKBackgroundEffectManagingP16enableBackground10completionyyyc_tF",
+            "moduleName": "BanubaSDKServicing",
+            "genericSig": "<τ_0_0 where τ_0_0 : BanubaSDKServicing.SDKBackgroundEffectManaging>",
+            "sugared_genericSig": "<Self where Self : BanubaSDKServicing.SDKBackgroundEffectManaging>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "disableBackground",
+            "printedName": "disableBackground()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BanubaSDKServicing@objc(pl)SDKBackgroundEffectManaging(im)disableBackground",
+            "mangledName": "$s18BanubaSDKServicing27SDKBackgroundEffectManagingP17disableBackgroundyyF",
+            "moduleName": "BanubaSDKServicing",
+            "genericSig": "<τ_0_0 where τ_0_0 : BanubaSDKServicing.SDKBackgroundEffectManaging>",
+            "sugared_genericSig": "<Self where Self : BanubaSDKServicing.SDKBackgroundEffectManaging>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "c:@M@BanubaSDKServicing@objc(pl)SDKBackgroundEffectManaging",
+        "mangledName": "$s18BanubaSDKServicing27SDKBackgroundEffectManagingP",
+        "moduleName": "BanubaSDKServicing",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BanubaSDKServicing",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SDKPiPMixerServicing",
+        "printedName": "SDKPiPMixerServicing",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "startPiPMixer",
+            "printedName": "startPiPMixer(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(() -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "() -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BanubaSDKServicing@objc(pl)SDKPiPMixerServicing(im)startPiPMixerWithCompletion:",
+            "mangledName": "$s18BanubaSDKServicing20SDKPiPMixerServicingP07startPiD010completionyyycSg_tF",
+            "moduleName": "BanubaSDKServicing",
+            "genericSig": "<τ_0_0 where τ_0_0 : BanubaSDKServicing.SDKPiPMixerServicing>",
+            "sugared_genericSig": "<Self where Self : BanubaSDKServicing.SDKPiPMixerServicing>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "stopPiPMixer",
+            "printedName": "stopPiPMixer(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(() -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "() -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BanubaSDKServicing@objc(pl)SDKPiPMixerServicing(im)stopPiPMixerWithCompletion:",
+            "mangledName": "$s18BanubaSDKServicing20SDKPiPMixerServicingP06stopPiD010completionyyycSg_tF",
+            "moduleName": "BanubaSDKServicing",
+            "genericSig": "<τ_0_0 where τ_0_0 : BanubaSDKServicing.SDKPiPMixerServicing>",
+            "sugared_genericSig": "<Self where Self : BanubaSDKServicing.SDKPiPMixerServicing>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "c:@M@BanubaSDKServicing@objc(pl)SDKPiPMixerServicing",
+        "mangledName": "$s18BanubaSDKServicing20SDKPiPMixerServicingP",
+        "moduleName": "BanubaSDKServicing",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "AVFoundation",
         "printedName": "AVFoundation",
         "declKind": "Import",
@@ -7551,13 +8116,27 @@
         "usr": "c:@M@BanubaSDKServicing@objc(pl)CameraModule",
         "mangledName": "$s18BanubaSDKServicing12CameraModuleP",
         "moduleName": "BanubaSDKServicing",
-        "genericSig": "<τ_0_0 : BanubaSDKServicing.SDKBeautyEffectManaging, τ_0_0 : BanubaSDKServicing.SDKEffectsServicing, τ_0_0 : BanubaSDKServicing.SDKInputServicing, τ_0_0 : BanubaSDKServicing.SDKOutputServicing, τ_0_0 : BanubaSDKServicing.SDKPIPServicing>",
-        "sugared_genericSig": "<Self : BanubaSDKServicing.SDKBeautyEffectManaging, Self : BanubaSDKServicing.SDKEffectsServicing, Self : BanubaSDKServicing.SDKInputServicing, Self : BanubaSDKServicing.SDKOutputServicing, Self : BanubaSDKServicing.SDKPIPServicing>",
+        "genericSig": "<τ_0_0 : BanubaSDKServicing.SDKBackgroundEffectManaging, τ_0_0 : BanubaSDKServicing.SDKBeautyEffectManaging, τ_0_0 : BanubaSDKServicing.SDKEffectsServicing, τ_0_0 : BanubaSDKServicing.SDKInputServicing, τ_0_0 : BanubaSDKServicing.SDKOutputServicing, τ_0_0 : BanubaSDKServicing.SDKPIPServicing, τ_0_0 : BanubaSDKServicing.SDKPiPMixerServicing>",
+        "sugared_genericSig": "<Self : BanubaSDKServicing.SDKBackgroundEffectManaging, Self : BanubaSDKServicing.SDKBeautyEffectManaging, Self : BanubaSDKServicing.SDKEffectsServicing, Self : BanubaSDKServicing.SDKInputServicing, Self : BanubaSDKServicing.SDKOutputServicing, Self : BanubaSDKServicing.SDKPIPServicing, Self : BanubaSDKServicing.SDKPiPMixerServicing>",
         "declAttributes": [
           "AccessControl",
           "ObjC"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "SDKBackgroundEffectManaging",
+            "printedName": "SDKBackgroundEffectManaging",
+            "usr": "c:@M@BanubaSDKServicing@objc(pl)SDKBackgroundEffectManaging",
+            "mangledName": "$s18BanubaSDKServicing27SDKBackgroundEffectManagingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SDKPiPMixerServicing",
+            "printedName": "SDKPiPMixerServicing",
+            "usr": "c:@M@BanubaSDKServicing@objc(pl)SDKPiPMixerServicing",
+            "mangledName": "$s18BanubaSDKServicing20SDKPiPMixerServicingP"
+          },
           {
             "kind": "Conformance",
             "name": "SDKPIPServicing",
@@ -8439,381 +9018,13 @@
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "BanubaSDKServicing",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "BanubaUtilities",
-        "printedName": "BanubaUtilities",
-        "declKind": "Import",
-        "moduleName": "BanubaSDKServicing"
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "SDKEffectTextureServicing",
-        "printedName": "SDKEffectTextureServicing",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "selectedBackgroundTextureSettings",
-            "printedName": "selectedBackgroundTextureSettings",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "(galleryItem: BanubaUtilities.GalleryItem, backgroundColor: UIKit.UIColor)?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Tuple",
-                    "printedName": "(galleryItem: BanubaUtilities.GalleryItem, backgroundColor: UIKit.UIColor)",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "GalleryItem",
-                        "printedName": "BanubaUtilities.GalleryItem",
-                        "usr": "c:@M@BanubaUtilities@objc(pl)GalleryItem"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "UIColor",
-                        "printedName": "UIKit.UIColor",
-                        "usr": "c:objc(cs)UIColor"
-                      }
-                    ]
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:18BanubaSDKServicing25SDKEffectTextureServicingP018selectedBackgroundD8Settings0A9Utilities11GalleryItem_p07galleryK0_So7UIColorC15backgroundColortSgvp",
-            "mangledName": "$s18BanubaSDKServicing25SDKEffectTextureServicingP018selectedBackgroundD8Settings0A9Utilities11GalleryItem_p07galleryK0_So7UIColorC15backgroundColortSgvp",
-            "moduleName": "BanubaSDKServicing",
-            "protocolReq": true,
-            "declAttributes": [
-              "RawDocComment"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "(galleryItem: BanubaUtilities.GalleryItem, backgroundColor: UIKit.UIColor)?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Tuple",
-                        "printedName": "(galleryItem: BanubaUtilities.GalleryItem, backgroundColor: UIKit.UIColor)",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "GalleryItem",
-                            "printedName": "BanubaUtilities.GalleryItem",
-                            "usr": "c:@M@BanubaUtilities@objc(pl)GalleryItem"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "UIColor",
-                            "printedName": "UIKit.UIColor",
-                            "usr": "c:objc(cs)UIColor"
-                          }
-                        ]
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:18BanubaSDKServicing25SDKEffectTextureServicingP018selectedBackgroundD8Settings0A9Utilities11GalleryItem_p07galleryK0_So7UIColorC15backgroundColortSgvg",
-                "mangledName": "$s18BanubaSDKServicing25SDKEffectTextureServicingP018selectedBackgroundD8Settings0A9Utilities11GalleryItem_p07galleryK0_So7UIColorC15backgroundColortSgvg",
-                "moduleName": "BanubaSDKServicing",
-                "genericSig": "<τ_0_0 where τ_0_0 : BanubaSDKServicing.SDKEffectTextureServicing>",
-                "sugared_genericSig": "<Self where Self : BanubaSDKServicing.SDKEffectTextureServicing>",
-                "protocolReq": true,
-                "reqNewWitnessTableEntry": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Function",
-            "name": "effectAddImageTexture",
-            "printedName": "effectAddImageTexture(image:backgroundTextureSettings:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UIImage",
-                "printedName": "UIKit.UIImage",
-                "usr": "c:objc(cs)UIImage"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Tuple",
-                "printedName": "(galleryItem: BanubaUtilities.GalleryItem, backgroundColor: UIKit.UIColor)",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "GalleryItem",
-                    "printedName": "BanubaUtilities.GalleryItem",
-                    "usr": "c:@M@BanubaUtilities@objc(pl)GalleryItem"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "UIColor",
-                    "printedName": "UIKit.UIColor",
-                    "usr": "c:objc(cs)UIColor"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:18BanubaSDKServicing25SDKEffectTextureServicingP014effectAddImageD05image010backgroundD8SettingsySo7UIImageC_0A9Utilities11GalleryItem_p07galleryO0_So7UIColorC0J5ColorttF",
-            "mangledName": "$s18BanubaSDKServicing25SDKEffectTextureServicingP014effectAddImageD05image010backgroundD8SettingsySo7UIImageC_0A9Utilities11GalleryItem_p07galleryO0_So7UIColorC0J5ColorttF",
-            "moduleName": "BanubaSDKServicing",
-            "genericSig": "<τ_0_0 where τ_0_0 : BanubaSDKServicing.SDKEffectTextureServicing>",
-            "sugared_genericSig": "<Self where Self : BanubaSDKServicing.SDKEffectTextureServicing>",
-            "protocolReq": true,
-            "declAttributes": [
-              "RawDocComment"
-            ],
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "effectAddVideoTexture",
-            "printedName": "effectAddVideoTexture(asset:backgroundTextureSettings:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "AVURLAsset",
-                "printedName": "AVFoundation.AVURLAsset",
-                "usr": "c:objc(cs)AVURLAsset"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Tuple",
-                "printedName": "(galleryItem: BanubaUtilities.GalleryItem, backgroundColor: UIKit.UIColor)",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "GalleryItem",
-                    "printedName": "BanubaUtilities.GalleryItem",
-                    "usr": "c:@M@BanubaUtilities@objc(pl)GalleryItem"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "UIColor",
-                    "printedName": "UIKit.UIColor",
-                    "usr": "c:objc(cs)UIColor"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:18BanubaSDKServicing25SDKEffectTextureServicingP014effectAddVideoD05asset010backgroundD8SettingsySo10AVURLAssetC_0A9Utilities11GalleryItem_p07galleryO0_So7UIColorC0J5ColorttF",
-            "mangledName": "$s18BanubaSDKServicing25SDKEffectTextureServicingP014effectAddVideoD05asset010backgroundD8SettingsySo10AVURLAssetC_0A9Utilities11GalleryItem_p07galleryO0_So7UIColorC0J5ColorttF",
-            "moduleName": "BanubaSDKServicing",
-            "genericSig": "<τ_0_0 where τ_0_0 : BanubaSDKServicing.SDKEffectTextureServicing>",
-            "sugared_genericSig": "<Self where Self : BanubaSDKServicing.SDKEffectTextureServicing>",
-            "protocolReq": true,
-            "declAttributes": [
-              "RawDocComment"
-            ],
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "unloadEffectTexture",
-            "printedName": "unloadEffectTexture()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:18BanubaSDKServicing25SDKEffectTextureServicingP012unloadEffectD0yyF",
-            "mangledName": "$s18BanubaSDKServicing25SDKEffectTextureServicingP012unloadEffectD0yyF",
-            "moduleName": "BanubaSDKServicing",
-            "genericSig": "<τ_0_0 where τ_0_0 : BanubaSDKServicing.SDKEffectTextureServicing>",
-            "sugared_genericSig": "<Self where Self : BanubaSDKServicing.SDKEffectTextureServicing>",
-            "protocolReq": true,
-            "declAttributes": [
-              "RawDocComment"
-            ],
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "reloadTexturePreview",
-            "printedName": "reloadTexturePreview(startTime:endTime:itemDuration:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Double",
-                "printedName": "Swift.Double",
-                "usr": "s:Sd"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Double",
-                "printedName": "Swift.Double",
-                "usr": "s:Sd"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Double",
-                "printedName": "Swift.Double",
-                "usr": "s:Sd"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:18BanubaSDKServicing25SDKEffectTextureServicingP06reloadD7Preview9startTime03endI012itemDurationySd_S2dtF",
-            "mangledName": "$s18BanubaSDKServicing25SDKEffectTextureServicingP06reloadD7Preview9startTime03endI012itemDurationySd_S2dtF",
-            "moduleName": "BanubaSDKServicing",
-            "genericSig": "<τ_0_0 where τ_0_0 : BanubaSDKServicing.SDKEffectTextureServicing>",
-            "sugared_genericSig": "<Self where Self : BanubaSDKServicing.SDKEffectTextureServicing>",
-            "protocolReq": true,
-            "declAttributes": [
-              "RawDocComment"
-            ],
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "reloadCurrentTexture",
-            "printedName": "reloadCurrentTexture(imageSize:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "CGSize",
-                "printedName": "CoreFoundation.CGSize",
-                "usr": "c:@S@CGSize"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:18BanubaSDKServicing25SDKEffectTextureServicingP013reloadCurrentD09imageSizeySo6CGSizeV_tF",
-            "mangledName": "$s18BanubaSDKServicing25SDKEffectTextureServicingP013reloadCurrentD09imageSizeySo6CGSizeV_tF",
-            "moduleName": "BanubaSDKServicing",
-            "genericSig": "<τ_0_0 where τ_0_0 : BanubaSDKServicing.SDKEffectTextureServicing>",
-            "sugared_genericSig": "<Self where Self : BanubaSDKServicing.SDKEffectTextureServicing>",
-            "protocolReq": true,
-            "declAttributes": [
-              "RawDocComment"
-            ],
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "setupDefaultImageTexture",
-            "printedName": "setupDefaultImageTexture()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:18BanubaSDKServicing25SDKEffectTextureServicingP017setupDefaultImageD0yyF",
-            "mangledName": "$s18BanubaSDKServicing25SDKEffectTextureServicingP017setupDefaultImageD0yyF",
-            "moduleName": "BanubaSDKServicing",
-            "genericSig": "<τ_0_0 where τ_0_0 : BanubaSDKServicing.SDKEffectTextureServicing>",
-            "sugared_genericSig": "<Self where Self : BanubaSDKServicing.SDKEffectTextureServicing>",
-            "protocolReq": true,
-            "declAttributes": [
-              "RawDocComment"
-            ],
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "stopVideoTextureIfNeeded",
-            "printedName": "stopVideoTextureIfNeeded()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:18BanubaSDKServicing25SDKEffectTextureServicingP09stopVideoD8IfNeededyyF",
-            "mangledName": "$s18BanubaSDKServicing25SDKEffectTextureServicingP09stopVideoD8IfNeededyyF",
-            "moduleName": "BanubaSDKServicing",
-            "genericSig": "<τ_0_0 where τ_0_0 : BanubaSDKServicing.SDKEffectTextureServicing>",
-            "sugared_genericSig": "<Self where Self : BanubaSDKServicing.SDKEffectTextureServicing>",
-            "protocolReq": true,
-            "declAttributes": [
-              "RawDocComment"
-            ],
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Protocol",
-        "usr": "s:18BanubaSDKServicing25SDKEffectTextureServicingP",
-        "mangledName": "$s18BanubaSDKServicing25SDKEffectTextureServicingP",
-        "moduleName": "BanubaSDKServicing",
-        "declAttributes": [
-          "AccessControl",
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "BanubaSDKServicing",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
-        "moduleName": "BanubaSDKServicing"
+        "moduleName": "BanubaSDKServicing",
+        "declAttributes": [
+          "RawDocComment"
+        ]
       },
       {
         "kind": "TypeDecl",
@@ -9306,12 +9517,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "BanubaSDKServicing.SDKInputServicingDelegate?",
+                "printedName": "(any BanubaSDKServicing.SDKInputServicingDelegate)?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "SDKInputServicingDelegate",
-                    "printedName": "BanubaSDKServicing.SDKInputServicingDelegate",
+                    "printedName": "any BanubaSDKServicing.SDKInputServicingDelegate",
                     "usr": "c:@M@BanubaSDKServicing@objc(pl)SDKInputServicingDelegate"
                   }
                 ],
@@ -9335,12 +9546,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "BanubaSDKServicing.SDKInputServicingDelegate?",
+                    "printedName": "(any BanubaSDKServicing.SDKInputServicingDelegate)?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "SDKInputServicingDelegate",
-                        "printedName": "BanubaSDKServicing.SDKInputServicingDelegate",
+                        "printedName": "any BanubaSDKServicing.SDKInputServicingDelegate",
                         "usr": "c:@M@BanubaSDKServicing@objc(pl)SDKInputServicingDelegate"
                       }
                     ],
@@ -9373,12 +9584,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "BanubaSDKServicing.SDKInputServicingDelegate?",
+                    "printedName": "(any BanubaSDKServicing.SDKInputServicingDelegate)?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "SDKInputServicingDelegate",
-                        "printedName": "BanubaSDKServicing.SDKInputServicingDelegate",
+                        "printedName": "any BanubaSDKServicing.SDKInputServicingDelegate",
                         "usr": "c:@M@BanubaSDKServicing@objc(pl)SDKInputServicingDelegate"
                       }
                     ],
@@ -9810,378 +10021,385 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKOutputServicing.swift",
+      "filePath": "\/Users\/andreysak\/Developer\/ve_sdk_ios_2023\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKOutputServicing.swift",
       "kind": "StringLiteral",
       "offset": 221,
       "length": 26,
       "value": "\"BanubaSDKServicing.ExternalAudioConfiguration\""
     },
     {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
+      "filePath": "\/Users\/andreysak\/Developer\/ve_sdk_ios_2023\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
       "kind": "IntegerLiteral",
       "offset": 267,
       "length": 20,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
+      "filePath": "\/Users\/andreysak\/Developer\/ve_sdk_ios_2023\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
       "kind": "IntegerLiteral",
       "offset": 295,
       "length": 21,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
+      "filePath": "\/Users\/andreysak\/Developer\/ve_sdk_ios_2023\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
       "kind": "IntegerLiteral",
       "offset": 324,
       "length": 20,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
+      "filePath": "\/Users\/andreysak\/Developer\/ve_sdk_ios_2023\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
       "kind": "IntegerLiteral",
       "offset": 352,
       "length": 15,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
+      "filePath": "\/Users\/andreysak\/Developer\/ve_sdk_ios_2023\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
       "kind": "IntegerLiteral",
       "offset": 375,
       "length": 14,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
+      "filePath": "\/Users\/andreysak\/Developer\/ve_sdk_ios_2023\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
       "kind": "IntegerLiteral",
       "offset": 267,
       "length": 20,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
+      "filePath": "\/Users\/andreysak\/Developer\/ve_sdk_ios_2023\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
       "kind": "IntegerLiteral",
       "offset": 295,
       "length": 21,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
+      "filePath": "\/Users\/andreysak\/Developer\/ve_sdk_ios_2023\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
       "kind": "IntegerLiteral",
       "offset": 324,
       "length": 20,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
+      "filePath": "\/Users\/andreysak\/Developer\/ve_sdk_ios_2023\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
       "kind": "IntegerLiteral",
       "offset": 352,
       "length": 15,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
+      "filePath": "\/Users\/andreysak\/Developer\/ve_sdk_ios_2023\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
       "kind": "IntegerLiteral",
       "offset": 375,
       "length": 14,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
+      "filePath": "\/Users\/andreysak\/Developer\/ve_sdk_ios_2023\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
       "kind": "IntegerLiteral",
       "offset": 497,
       "length": 6,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
+      "filePath": "\/Users\/andreysak\/Developer\/ve_sdk_ios_2023\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
       "kind": "IntegerLiteral",
       "offset": 511,
       "length": 8,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
+      "filePath": "\/Users\/andreysak\/Developer\/ve_sdk_ios_2023\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
       "kind": "IntegerLiteral",
       "offset": 527,
       "length": 8,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
+      "filePath": "\/Users\/andreysak\/Developer\/ve_sdk_ios_2023\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
       "kind": "IntegerLiteral",
       "offset": 497,
       "length": 6,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
+      "filePath": "\/Users\/andreysak\/Developer\/ve_sdk_ios_2023\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
       "kind": "IntegerLiteral",
       "offset": 511,
       "length": 8,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
+      "filePath": "\/Users\/andreysak\/Developer\/ve_sdk_ios_2023\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
       "kind": "IntegerLiteral",
       "offset": 527,
       "length": 8,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
+      "filePath": "\/Users\/andreysak\/Developer\/ve_sdk_ios_2023\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
       "kind": "IntegerLiteral",
       "offset": 646,
       "length": 9,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
+      "filePath": "\/Users\/andreysak\/Developer\/ve_sdk_ios_2023\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
       "kind": "IntegerLiteral",
       "offset": 663,
       "length": 5,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
+      "filePath": "\/Users\/andreysak\/Developer\/ve_sdk_ios_2023\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
       "kind": "IntegerLiteral",
       "offset": 676,
       "length": 9,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
+      "filePath": "\/Users\/andreysak\/Developer\/ve_sdk_ios_2023\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
       "kind": "IntegerLiteral",
       "offset": 646,
       "length": 9,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
+      "filePath": "\/Users\/andreysak\/Developer\/ve_sdk_ios_2023\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
       "kind": "IntegerLiteral",
       "offset": 663,
       "length": 5,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
+      "filePath": "\/Users\/andreysak\/Developer\/ve_sdk_ios_2023\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
       "kind": "IntegerLiteral",
       "offset": 676,
       "length": 9,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
+      "filePath": "\/Users\/andreysak\/Developer\/ve_sdk_ios_2023\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
       "kind": "IntegerLiteral",
       "offset": 794,
       "length": 15,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
+      "filePath": "\/Users\/andreysak\/Developer\/ve_sdk_ios_2023\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
       "kind": "IntegerLiteral",
       "offset": 817,
       "length": 17,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
+      "filePath": "\/Users\/andreysak\/Developer\/ve_sdk_ios_2023\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
       "kind": "IntegerLiteral",
       "offset": 842,
       "length": 19,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
+      "filePath": "\/Users\/andreysak\/Developer\/ve_sdk_ios_2023\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
       "kind": "IntegerLiteral",
       "offset": 869,
       "length": 20,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
+      "filePath": "\/Users\/andreysak\/Developer\/ve_sdk_ios_2023\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
       "kind": "IntegerLiteral",
       "offset": 897,
       "length": 3,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
+      "filePath": "\/Users\/andreysak\/Developer\/ve_sdk_ios_2023\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
+      "kind": "IntegerLiteral",
+      "offset": 908,
+      "length": 8,
+      "value": "6"
+    },
+    {
+      "filePath": "\/Users\/andreysak\/Developer\/ve_sdk_ios_2023\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
       "kind": "IntegerLiteral",
       "offset": 794,
       "length": 15,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
+      "filePath": "\/Users\/andreysak\/Developer\/ve_sdk_ios_2023\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
       "kind": "IntegerLiteral",
       "offset": 817,
       "length": 17,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
+      "filePath": "\/Users\/andreysak\/Developer\/ve_sdk_ios_2023\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
       "kind": "IntegerLiteral",
       "offset": 842,
       "length": 19,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
+      "filePath": "\/Users\/andreysak\/Developer\/ve_sdk_ios_2023\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
       "kind": "IntegerLiteral",
       "offset": 869,
       "length": 20,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
+      "filePath": "\/Users\/andreysak\/Developer\/ve_sdk_ios_2023\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
       "kind": "IntegerLiteral",
       "offset": 897,
       "length": 3,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
+      "filePath": "\/Users\/andreysak\/Developer\/ve_sdk_ios_2023\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
       "kind": "IntegerLiteral",
-      "offset": 991,
+      "offset": 908,
+      "length": 8,
+      "value": "6"
+    },
+    {
+      "filePath": "\/Users\/andreysak\/Developer\/ve_sdk_ios_2023\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1007,
       "length": 4,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
+      "filePath": "\/Users\/andreysak\/Developer\/ve_sdk_ios_2023\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
       "kind": "IntegerLiteral",
-      "offset": 1003,
+      "offset": 1019,
       "length": 6,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
+      "filePath": "\/Users\/andreysak\/Developer\/ve_sdk_ios_2023\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
       "kind": "IntegerLiteral",
-      "offset": 1017,
+      "offset": 1033,
       "length": 9,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
+      "filePath": "\/Users\/andreysak\/Developer\/ve_sdk_ios_2023\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
       "kind": "IntegerLiteral",
-      "offset": 1034,
+      "offset": 1050,
       "length": 11,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
+      "filePath": "\/Users\/andreysak\/Developer\/ve_sdk_ios_2023\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
       "kind": "IntegerLiteral",
-      "offset": 991,
+      "offset": 1007,
       "length": 4,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
+      "filePath": "\/Users\/andreysak\/Developer\/ve_sdk_ios_2023\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
       "kind": "IntegerLiteral",
-      "offset": 1003,
+      "offset": 1019,
       "length": 6,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
+      "filePath": "\/Users\/andreysak\/Developer\/ve_sdk_ios_2023\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
       "kind": "IntegerLiteral",
-      "offset": 1017,
+      "offset": 1033,
       "length": 9,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
+      "filePath": "\/Users\/andreysak\/Developer\/ve_sdk_ios_2023\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
       "kind": "IntegerLiteral",
-      "offset": 1034,
+      "offset": 1050,
       "length": 11,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
+      "filePath": "\/Users\/andreysak\/Developer\/ve_sdk_ios_2023\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
       "kind": "StringLiteral",
-      "offset": 1103,
+      "offset": 1119,
       "length": 22,
       "value": "\"BanubaSDKServicing.PIPSwitchLayoutSetting\""
     },
     {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
+      "filePath": "\/Users\/andreysak\/Developer\/ve_sdk_ios_2023\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
       "kind": "StringLiteral",
-      "offset": 2288,
+      "offset": 2304,
       "length": 22,
       "value": "\"BanubaSDKServicing.PIPCameraLayoutSetting\""
     },
     {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
+      "filePath": "\/Users\/andreysak\/Developer\/ve_sdk_ios_2023\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
       "kind": "StringLiteral",
-      "offset": 3111,
+      "offset": 3127,
       "length": 22,
       "value": "\"BanubaSDKServicing.PIPPlayerLayoutSetting\""
     },
     {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
+      "filePath": "\/Users\/andreysak\/Developer\/ve_sdk_ios_2023\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
       "kind": "StringLiteral",
-      "offset": 3907,
+      "offset": 3923,
       "length": 19,
       "value": "\"BanubaSDKServicing.PIPShapeTypeAdapter\""
     },
     {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/CameraModule.swift",
+      "filePath": "\/Users\/andreysak\/Developer\/ve_sdk_ios_2023\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKBackgroundEffectManaging.swift",
+      "kind": "StringLiteral",
+      "offset": 143,
+      "length": 23,
+      "value": "\"BanubaSDKServicing.EmbeddedBackgroundImage\""
+    },
+    {
+      "filePath": "\/Users\/andreysak\/Developer\/ve_sdk_ios_2023\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/CameraModule.swift",
       "kind": "IntegerLiteral",
       "offset": 230,
       "length": 9,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/CameraModule.swift",
+      "filePath": "\/Users\/andreysak\/Developer\/ve_sdk_ios_2023\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/CameraModule.swift",
       "kind": "IntegerLiteral",
       "offset": 247,
       "length": 10,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/CameraModule.swift",
+      "filePath": "\/Users\/andreysak\/Developer\/ve_sdk_ios_2023\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/CameraModule.swift",
       "kind": "IntegerLiteral",
       "offset": 265,
       "length": 9,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/CameraModule.swift",
+      "filePath": "\/Users\/andreysak\/Developer\/ve_sdk_ios_2023\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/CameraModule.swift",
       "kind": "IntegerLiteral",
       "offset": 230,
       "length": 9,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/CameraModule.swift",
+      "filePath": "\/Users\/andreysak\/Developer\/ve_sdk_ios_2023\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/CameraModule.swift",
       "kind": "IntegerLiteral",
       "offset": 247,
       "length": 10,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/CameraModule.swift",
+      "filePath": "\/Users\/andreysak\/Developer\/ve_sdk_ios_2023\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/CameraModule.swift",
       "kind": "IntegerLiteral",
       "offset": 265,
       "length": 9,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/CameraModule.swift",
-      "kind": "FloatLiteral",
-      "offset": 759,
-      "length": 3,
-      "value": "9.0"
-    },
-    {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/CameraModule.swift",
-      "kind": "IntegerLiteral",
-      "offset": 772,
-      "length": 2,
-      "value": "16"
-    },
-    {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Models\/EffectModel.swift",
+      "filePath": "\/Users\/andreysak\/Developer\/ve_sdk_ios_2023\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Models\/EffectModel.swift",
       "kind": "StringLiteral",
       "offset": 130,
       "length": 11,
