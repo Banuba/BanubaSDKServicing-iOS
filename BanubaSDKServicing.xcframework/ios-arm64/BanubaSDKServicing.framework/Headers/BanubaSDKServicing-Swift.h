@@ -383,6 +383,7 @@ SWIFT_PROTOCOL("_TtP18BanubaSDKServicing19SDKEffectsServicing_")
 - (void)effectDidResetApplying;
 - (void)effectDidChangeState;
 - (void)unloadMask;
+- (void)callEffectMethod:(NSString * _Nonnull)method;
 - (void)applyFilter:(id <RenderEffect> _Nonnull)filter;
 - (void)removeFilter:(id <RenderEffect> _Nonnull)filter;
 - (void)removeAllFilters;

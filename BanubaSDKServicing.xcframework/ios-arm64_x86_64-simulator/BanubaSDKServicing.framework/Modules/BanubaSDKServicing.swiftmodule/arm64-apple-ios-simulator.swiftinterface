@@ -31,6 +31,7 @@ import _SwiftConcurrencyShims
   @objc func effectDidResetApplying()
   @objc func effectDidChangeState()
   @objc func unloadMask()
+  @objc func callEffectMethod(_ method: Swift.String)
   @objc func applyFilter(_ filter: any BanubaSDKServicing.RenderEffect)
   @objc func removeFilter(_ filter: any BanubaSDKServicing.RenderEffect)
   @objc func removeAllFilters()
