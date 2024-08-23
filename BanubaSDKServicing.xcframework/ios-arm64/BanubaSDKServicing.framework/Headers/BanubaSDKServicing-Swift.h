@@ -389,6 +389,7 @@ SWIFT_PROTOCOL("_TtP18BanubaSDKServicing19SDKEffectsServicing_")
 - (void)removeAllFilters;
 - (void)setEffectSubtypeModificationsEventListener:(id <EffectSubtypeModificationsEventListener> _Nonnull)listener;
 - (NSArray<NSString *> * _Nonnull)effectsPaths SWIFT_WARN_UNUSED_RESULT;
+- (void)setDoubleTapGestureEnabled:(BOOL)isEnabled;
 @end
 
 @class ExternalAudioConfiguration;

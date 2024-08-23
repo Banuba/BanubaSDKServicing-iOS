@@ -37,6 +37,7 @@ import _SwiftConcurrencyShims
   @objc func removeAllFilters()
   @objc func setEffectSubtypeModificationsEventListener(_ listener: any BanubaSDKServicing.EffectSubtypeModificationsEventListener)
   @objc func effectsPaths() -> [Swift.String]
+  @objc func setDoubleTapGestureEnabled(_ isEnabled: Swift.Bool)
 }
 public protocol EffectsServicing {
   func apply(effect: any BanubaSDKServicing.RenderEffect)
