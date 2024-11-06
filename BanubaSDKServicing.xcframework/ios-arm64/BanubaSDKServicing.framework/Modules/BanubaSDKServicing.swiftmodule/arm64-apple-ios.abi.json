@@ -6775,18 +6775,24 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "SDKPiPMixerServicing",
-        "printedName": "SDKPiPMixerServicing",
+        "name": "SDKMultiCamMixing",
+        "printedName": "SDKMultiCamMixing",
         "children": [
           {
             "kind": "Function",
-            "name": "startPiPMixer",
-            "printedName": "startPiPMixer(completion:)",
+            "name": "startMultiCamMixing",
+            "printedName": "startMultiCamMixing(isPresenterMode:completion:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Void",
                 "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
               },
               {
                 "kind": "TypeNominal",
@@ -6815,11 +6821,11 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@BanubaSDKServicing@objc(pl)SDKPiPMixerServicing(im)startPiPMixerWithCompletion:",
-            "mangledName": "$s18BanubaSDKServicing20SDKPiPMixerServicingP07startPiD010completionyyycSg_tF",
+            "usr": "c:@M@BanubaSDKServicing@objc(pl)SDKMultiCamMixing(im)startMultiCamMixingWithIsPresenterMode:completion:",
+            "mangledName": "$s18BanubaSDKServicing17SDKMultiCamMixingP010startMultidE015isPresenterMode10completionySb_yycSgtF",
             "moduleName": "BanubaSDKServicing",
-            "genericSig": "<τ_0_0 where τ_0_0 : BanubaSDKServicing.SDKPiPMixerServicing>",
-            "sugared_genericSig": "<Self where Self : BanubaSDKServicing.SDKPiPMixerServicing>",
+            "genericSig": "<τ_0_0 where τ_0_0 : BanubaSDKServicing.SDKMultiCamMixing>",
+            "sugared_genericSig": "<Self where Self : BanubaSDKServicing.SDKMultiCamMixing>",
             "protocolReq": true,
             "declAttributes": [
               "ObjC"
@@ -6829,8 +6835,8 @@
           },
           {
             "kind": "Function",
-            "name": "stopPiPMixer",
-            "printedName": "stopPiPMixer(completion:)",
+            "name": "stopMultiCamMixing",
+            "printedName": "stopMultiCamMixing(completion:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -6864,11 +6870,11 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@BanubaSDKServicing@objc(pl)SDKPiPMixerServicing(im)stopPiPMixerWithCompletion:",
-            "mangledName": "$s18BanubaSDKServicing20SDKPiPMixerServicingP06stopPiD010completionyyycSg_tF",
+            "usr": "c:@M@BanubaSDKServicing@objc(pl)SDKMultiCamMixing(im)stopMultiCamMixingWithCompletion:",
+            "mangledName": "$s18BanubaSDKServicing17SDKMultiCamMixingP09stopMultidE010completionyyycSg_tF",
             "moduleName": "BanubaSDKServicing",
-            "genericSig": "<τ_0_0 where τ_0_0 : BanubaSDKServicing.SDKPiPMixerServicing>",
-            "sugared_genericSig": "<Self where Self : BanubaSDKServicing.SDKPiPMixerServicing>",
+            "genericSig": "<τ_0_0 where τ_0_0 : BanubaSDKServicing.SDKMultiCamMixing>",
+            "sugared_genericSig": "<Self where Self : BanubaSDKServicing.SDKMultiCamMixing>",
             "protocolReq": true,
             "declAttributes": [
               "ObjC"
@@ -6878,8 +6884,8 @@
           }
         ],
         "declKind": "Protocol",
-        "usr": "c:@M@BanubaSDKServicing@objc(pl)SDKPiPMixerServicing",
-        "mangledName": "$s18BanubaSDKServicing20SDKPiPMixerServicingP",
+        "usr": "c:@M@BanubaSDKServicing@objc(pl)SDKMultiCamMixing",
+        "mangledName": "$s18BanubaSDKServicing17SDKMultiCamMixingP",
         "moduleName": "BanubaSDKServicing",
         "genericSig": "<τ_0_0 : AnyObject>",
         "sugared_genericSig": "<Self : AnyObject>",
@@ -8144,8 +8150,8 @@
         "usr": "c:@M@BanubaSDKServicing@objc(pl)CameraModule",
         "mangledName": "$s18BanubaSDKServicing12CameraModuleP",
         "moduleName": "BanubaSDKServicing",
-        "genericSig": "<τ_0_0 : BanubaSDKServicing.SDKBackgroundEffectManaging, τ_0_0 : BanubaSDKServicing.SDKBeautyEffectManaging, τ_0_0 : BanubaSDKServicing.SDKEffectsServicing, τ_0_0 : BanubaSDKServicing.SDKInputServicing, τ_0_0 : BanubaSDKServicing.SDKOutputServicing, τ_0_0 : BanubaSDKServicing.SDKPIPServicing, τ_0_0 : BanubaSDKServicing.SDKPiPMixerServicing>",
-        "sugared_genericSig": "<Self : BanubaSDKServicing.SDKBackgroundEffectManaging, Self : BanubaSDKServicing.SDKBeautyEffectManaging, Self : BanubaSDKServicing.SDKEffectsServicing, Self : BanubaSDKServicing.SDKInputServicing, Self : BanubaSDKServicing.SDKOutputServicing, Self : BanubaSDKServicing.SDKPIPServicing, Self : BanubaSDKServicing.SDKPiPMixerServicing>",
+        "genericSig": "<τ_0_0 : BanubaSDKServicing.SDKBackgroundEffectManaging, τ_0_0 : BanubaSDKServicing.SDKBeautyEffectManaging, τ_0_0 : BanubaSDKServicing.SDKEffectsServicing, τ_0_0 : BanubaSDKServicing.SDKInputServicing, τ_0_0 : BanubaSDKServicing.SDKMultiCamMixing, τ_0_0 : BanubaSDKServicing.SDKOutputServicing, τ_0_0 : BanubaSDKServicing.SDKPIPServicing>",
+        "sugared_genericSig": "<Self : BanubaSDKServicing.SDKBackgroundEffectManaging, Self : BanubaSDKServicing.SDKBeautyEffectManaging, Self : BanubaSDKServicing.SDKEffectsServicing, Self : BanubaSDKServicing.SDKInputServicing, Self : BanubaSDKServicing.SDKMultiCamMixing, Self : BanubaSDKServicing.SDKOutputServicing, Self : BanubaSDKServicing.SDKPIPServicing>",
         "declAttributes": [
           "AccessControl",
           "ObjC"
@@ -8160,10 +8166,10 @@
           },
           {
             "kind": "Conformance",
-            "name": "SDKPiPMixerServicing",
-            "printedName": "SDKPiPMixerServicing",
-            "usr": "c:@M@BanubaSDKServicing@objc(pl)SDKPiPMixerServicing",
-            "mangledName": "$s18BanubaSDKServicing20SDKPiPMixerServicingP"
+            "name": "SDKMultiCamMixing",
+            "printedName": "SDKMultiCamMixing",
+            "usr": "c:@M@BanubaSDKServicing@objc(pl)SDKMultiCamMixing",
+            "mangledName": "$s18BanubaSDKServicing17SDKMultiCamMixingP"
           },
           {
             "kind": "Conformance",

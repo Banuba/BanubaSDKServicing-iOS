@@ -315,10 +315,10 @@ SWIFT_PROTOCOL("_TtP18BanubaSDKServicing27SDKBackgroundEffectManaging_")
 @end
 
 
-SWIFT_PROTOCOL("_TtP18BanubaSDKServicing20SDKPiPMixerServicing_")
-@protocol SDKPiPMixerServicing
-- (void)startPiPMixerWithCompletion:(void (^ _Nullable)(void))completion;
-- (void)stopPiPMixerWithCompletion:(void (^ _Nullable)(void))completion;
+SWIFT_PROTOCOL("_TtP18BanubaSDKServicing17SDKMultiCamMixing_")
+@protocol SDKMultiCamMixing
+- (void)startMultiCamMixingWithIsPresenterMode:(BOOL)isPresenterMode completion:(void (^ _Nullable)(void))completion;
+- (void)stopMultiCamMixingWithCompletion:(void (^ _Nullable)(void))completion;
 @end
 
 @class NSURL;
@@ -428,7 +428,7 @@ SWIFT_PROTOCOL("_TtP18BanubaSDKServicing17SDKInputServicing_")
 @class NSAttributedString;
 
 SWIFT_PROTOCOL("_TtP18BanubaSDKServicing12CameraModule_")
-@protocol CameraModule <SDKBackgroundEffectManaging, SDKBeautyEffectManaging, SDKEffectsServicing, SDKInputServicing, SDKOutputServicing, SDKPIPServicing, SDKPiPMixerServicing>
+@protocol CameraModule <SDKBackgroundEffectManaging, SDKBeautyEffectManaging, SDKEffectsServicing, SDKInputServicing, SDKMultiCamMixing, SDKOutputServicing, SDKPIPServicing>
 @property (nonatomic, readonly) BOOL isLoaded;
 @property (nonatomic) BOOL allowProcessing;
 @property (nonatomic) BOOL autoStart;
@@ -972,10 +972,10 @@ SWIFT_PROTOCOL("_TtP18BanubaSDKServicing27SDKBackgroundEffectManaging_")
 @end
 
 
-SWIFT_PROTOCOL("_TtP18BanubaSDKServicing20SDKPiPMixerServicing_")
-@protocol SDKPiPMixerServicing
-- (void)startPiPMixerWithCompletion:(void (^ _Nullable)(void))completion;
-- (void)stopPiPMixerWithCompletion:(void (^ _Nullable)(void))completion;
+SWIFT_PROTOCOL("_TtP18BanubaSDKServicing17SDKMultiCamMixing_")
+@protocol SDKMultiCamMixing
+- (void)startMultiCamMixingWithIsPresenterMode:(BOOL)isPresenterMode completion:(void (^ _Nullable)(void))completion;
+- (void)stopMultiCamMixingWithCompletion:(void (^ _Nullable)(void))completion;
 @end
 
 @class NSURL;
@@ -1085,7 +1085,7 @@ SWIFT_PROTOCOL("_TtP18BanubaSDKServicing17SDKInputServicing_")
 @class NSAttributedString;
 
 SWIFT_PROTOCOL("_TtP18BanubaSDKServicing12CameraModule_")
-@protocol CameraModule <SDKBackgroundEffectManaging, SDKBeautyEffectManaging, SDKEffectsServicing, SDKInputServicing, SDKOutputServicing, SDKPIPServicing, SDKPiPMixerServicing>
+@protocol CameraModule <SDKBackgroundEffectManaging, SDKBeautyEffectManaging, SDKEffectsServicing, SDKInputServicing, SDKMultiCamMixing, SDKOutputServicing, SDKPIPServicing>
 @property (nonatomic, readonly) BOOL isLoaded;
 @property (nonatomic) BOOL allowProcessing;
 @property (nonatomic) BOOL autoStart;

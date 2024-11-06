@@ -239,9 +239,9 @@ public protocol EffectsServicing {
   @objc func enableBackground(completion: @escaping () -> Swift.Void)
   @objc func disableBackground()
 }
-@objc public protocol SDKPiPMixerServicing {
-  @objc func startPiPMixer(completion: (() -> Swift.Void)?)
-  @objc func stopPiPMixer(completion: (() -> Swift.Void)?)
+@objc public protocol SDKMultiCamMixing {
+  @objc func startMultiCamMixing(isPresenterMode: Swift.Bool, completion: (() -> Swift.Void)?)
+  @objc func stopMultiCamMixing(completion: (() -> Swift.Void)?)
 }
 @objc public enum CameraModuleSessionType : Swift.Int {
   case frontVideo
@@ -264,7 +264,7 @@ public struct CameraModuleDefaults {
     get
   }
 }
-@objc public protocol CameraModule : BanubaSDKServicing.SDKBackgroundEffectManaging, BanubaSDKServicing.SDKBeautyEffectManaging, BanubaSDKServicing.SDKEffectsServicing, BanubaSDKServicing.SDKInputServicing, BanubaSDKServicing.SDKOutputServicing, BanubaSDKServicing.SDKPIPServicing, BanubaSDKServicing.SDKPiPMixerServicing {
+@objc public protocol CameraModule : BanubaSDKServicing.SDKBackgroundEffectManaging, BanubaSDKServicing.SDKBeautyEffectManaging, BanubaSDKServicing.SDKEffectsServicing, BanubaSDKServicing.SDKInputServicing, BanubaSDKServicing.SDKMultiCamMixing, BanubaSDKServicing.SDKOutputServicing, BanubaSDKServicing.SDKPIPServicing {
   @objc var isLoaded: Swift.Bool { get }
   @objc var allowProcessing: Swift.Bool { get set }
   @objc var autoStart: Swift.Bool { get set }
