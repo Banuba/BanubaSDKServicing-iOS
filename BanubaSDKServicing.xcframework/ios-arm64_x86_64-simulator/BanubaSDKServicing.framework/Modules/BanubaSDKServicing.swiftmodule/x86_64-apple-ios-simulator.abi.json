@@ -1,8 +1,8 @@
 {
   "ABIRoot": {
     "kind": "Root",
-    "name": "TopLevel",
-    "printedName": "TopLevel",
+    "name": "BanubaSDKServicing",
+    "printedName": "BanubaSDKServicing",
     "children": [
       {
         "kind": "Import",
@@ -96,6 +96,22 @@
         "declAttributes": [
           "AccessControl",
           "ObjC"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -275,6 +291,22 @@
         "declAttributes": [
           "AccessControl",
           "ObjC"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -731,6 +763,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "SDKEffectsTextureServicing",
             "printedName": "SDKEffectsTextureServicing",
             "usr": "c:@M@BanubaSDKServicing@objc(pl)SDKEffectsTextureServicing",
@@ -825,6 +871,22 @@
         "moduleName": "BanubaSDKServicing",
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -1083,6 +1145,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -1459,6 +1535,22 @@
         "declAttributes": [
           "AccessControl",
           "ObjC"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -1745,6 +1837,22 @@
         "declAttributes": [
           "AccessControl",
           "ObjC"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -1831,6 +1939,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -2243,6 +2365,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -2534,6 +2670,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -2823,6 +2973,20 @@
         ],
         "enumRawTypeName": "Int",
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -3239,6 +3403,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -3569,6 +3747,20 @@
         ],
         "enumRawTypeName": "Int",
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -4057,6 +4249,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -4460,6 +4666,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -4861,6 +5081,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -5334,6 +5568,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -6332,6 +6580,22 @@
           "AccessControl",
           "ObjC",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -6518,6 +6782,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -6761,6 +7039,22 @@
         "declAttributes": [
           "AccessControl",
           "ObjC"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -6892,6 +7186,22 @@
         "declAttributes": [
           "AccessControl",
           "ObjC"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -7172,6 +7482,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -7341,6 +7665,22 @@
         "moduleName": "BanubaSDKServicing",
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -7397,6 +7737,22 @@
         "moduleName": "BanubaSDKServicing",
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -8159,6 +8515,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "SDKBackgroundEffectManaging",
             "printedName": "SDKBackgroundEffectManaging",
             "usr": "c:@M@BanubaSDKServicing@objc(pl)SDKBackgroundEffectManaging",
@@ -8648,6 +9018,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -8861,6 +9245,22 @@
         "declAttributes": [
           "AccessControl",
           "ObjC"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -9020,6 +9420,20 @@
           "AccessControl"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -9328,6 +9742,22 @@
         "declAttributes": [
           "AccessControl",
           "ObjC"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -9392,6 +9822,22 @@
         "declAttributes": [
           "AccessControl",
           "ObjC"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -10048,6 +10494,22 @@
         "declAttributes": [
           "AccessControl",
           "ObjC"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       }
     ],
@@ -10055,48 +10517,6 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKOutputServicing.swift",
-      "kind": "StringLiteral",
-      "offset": 221,
-      "length": 26,
-      "value": "\"BanubaSDKServicing.ExternalAudioConfiguration\""
-    },
-    {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
-      "kind": "IntegerLiteral",
-      "offset": 267,
-      "length": 20,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
-      "kind": "IntegerLiteral",
-      "offset": 295,
-      "length": 21,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
-      "kind": "IntegerLiteral",
-      "offset": 324,
-      "length": 20,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
-      "kind": "IntegerLiteral",
-      "offset": 352,
-      "length": 15,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
-      "kind": "IntegerLiteral",
-      "offset": 375,
-      "length": 14,
-      "value": "5"
-    },
-    {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
       "kind": "IntegerLiteral",
       "offset": 267,
@@ -10155,27 +10575,6 @@
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
       "kind": "IntegerLiteral",
-      "offset": 497,
-      "length": 6,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
-      "kind": "IntegerLiteral",
-      "offset": 511,
-      "length": 8,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
-      "kind": "IntegerLiteral",
-      "offset": 527,
-      "length": 8,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
-      "kind": "IntegerLiteral",
       "offset": 646,
       "length": 9,
       "value": "1"
@@ -10193,69 +10592,6 @@
       "offset": 676,
       "length": 9,
       "value": "3"
-    },
-    {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
-      "kind": "IntegerLiteral",
-      "offset": 646,
-      "length": 9,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
-      "kind": "IntegerLiteral",
-      "offset": 663,
-      "length": 5,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
-      "kind": "IntegerLiteral",
-      "offset": 676,
-      "length": 9,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
-      "kind": "IntegerLiteral",
-      "offset": 794,
-      "length": 15,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
-      "kind": "IntegerLiteral",
-      "offset": 817,
-      "length": 17,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
-      "kind": "IntegerLiteral",
-      "offset": 842,
-      "length": 19,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
-      "kind": "IntegerLiteral",
-      "offset": 869,
-      "length": 20,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
-      "kind": "IntegerLiteral",
-      "offset": 897,
-      "length": 3,
-      "value": "5"
-    },
-    {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
-      "kind": "IntegerLiteral",
-      "offset": 908,
-      "length": 8,
-      "value": "6"
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
@@ -10328,69 +10664,6 @@
       "value": "4"
     },
     {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1007,
-      "length": 4,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1019,
-      "length": 6,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1033,
-      "length": 9,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1050,
-      "length": 11,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
-      "kind": "StringLiteral",
-      "offset": 1119,
-      "length": 22,
-      "value": "\"BanubaSDKServicing.PIPSwitchLayoutSetting\""
-    },
-    {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
-      "kind": "StringLiteral",
-      "offset": 2304,
-      "length": 22,
-      "value": "\"BanubaSDKServicing.PIPCameraLayoutSetting\""
-    },
-    {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
-      "kind": "StringLiteral",
-      "offset": 3127,
-      "length": 22,
-      "value": "\"BanubaSDKServicing.PIPPlayerLayoutSetting\""
-    },
-    {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKPIPServicing.swift",
-      "kind": "StringLiteral",
-      "offset": 3923,
-      "length": 19,
-      "value": "\"BanubaSDKServicing.PIPShapeTypeAdapter\""
-    },
-    {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/SDKBackgroundEffectManaging.swift",
-      "kind": "StringLiteral",
-      "offset": 143,
-      "length": 23,
-      "value": "\"BanubaSDKServicing.EmbeddedBackgroundImage\""
-    },
-    {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/CameraModule.swift",
       "kind": "IntegerLiteral",
       "offset": 230,
@@ -10410,34 +10683,6 @@
       "offset": 265,
       "length": 9,
       "value": "3"
-    },
-    {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/CameraModule.swift",
-      "kind": "IntegerLiteral",
-      "offset": 230,
-      "length": 9,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/CameraModule.swift",
-      "kind": "IntegerLiteral",
-      "offset": 247,
-      "length": 10,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Components\/CameraModule.swift",
-      "kind": "IntegerLiteral",
-      "offset": 265,
-      "length": 9,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaCameraModuleSDK\/BanubaSDKServicing\/Models\/EffectModel.swift",
-      "kind": "StringLiteral",
-      "offset": 130,
-      "length": 11,
-      "value": "\"BanubaSDKServicing.EffectModel\""
     }
   ]
 }
