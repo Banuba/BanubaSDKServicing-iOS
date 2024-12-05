@@ -370,6 +370,7 @@ SWIFT_PROTOCOL("_TtP18BanubaSDKServicing26SDKEffectsTextureServicing_")
 - (void)stopVideoTextureIfNeeded;
 - (void)effectAddVideoTextureWithAsset:(AVURLAsset * _Nonnull)asset backgroundColor:(UIColor * _Nonnull)backgroundColor;
 - (void)effectReloadTexturePreviewWithStartTime:(NSTimeInterval)startTime endTime:(NSTimeInterval)endTime itemDuration:(NSTimeInterval)itemDuration;
+- (void)enableBackgroundBlur;
 - (void)unloadEffectTexture;
 @end
 
