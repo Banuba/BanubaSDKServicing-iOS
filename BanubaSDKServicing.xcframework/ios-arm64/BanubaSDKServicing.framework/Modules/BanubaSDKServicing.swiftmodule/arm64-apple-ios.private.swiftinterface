@@ -309,7 +309,6 @@ public enum OutputServiceError : Swift.Error {
 }
 @objc public protocol SDKBeautyEffectManaging {
   @objc var isBeautificationEnabled: Swift.Bool { get set }
-  @objc var supportsIntensity: Swift.Bool { get }
   @objc var intensity: Swift.Double { get set }
   @objc func toggleBeautification() -> Swift.Bool
   @objc func resetIntensity()

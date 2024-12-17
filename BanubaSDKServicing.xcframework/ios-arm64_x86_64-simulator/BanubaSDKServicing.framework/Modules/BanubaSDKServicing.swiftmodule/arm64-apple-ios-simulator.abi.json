@@ -9583,54 +9583,6 @@
           },
           {
             "kind": "Var",
-            "name": "supportsIntensity",
-            "printedName": "supportsIntensity",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@BanubaSDKServicing@objc(pl)SDKBeautyEffectManaging(py)supportsIntensity",
-            "mangledName": "$s18BanubaSDKServicing23SDKBeautyEffectManagingP17supportsIntensitySbvp",
-            "moduleName": "BanubaSDKServicing",
-            "protocolReq": true,
-            "declAttributes": [
-              "ObjC"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@BanubaSDKServicing@objc(pl)SDKBeautyEffectManaging(im)supportsIntensity",
-                "mangledName": "$s18BanubaSDKServicing23SDKBeautyEffectManagingP17supportsIntensitySbvg",
-                "moduleName": "BanubaSDKServicing",
-                "genericSig": "<τ_0_0 where τ_0_0 : BanubaSDKServicing.SDKBeautyEffectManaging>",
-                "sugared_genericSig": "<Self where Self : BanubaSDKServicing.SDKBeautyEffectManaging>",
-                "protocolReq": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
-                "reqNewWitnessTableEntry": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
             "name": "intensity",
             "printedName": "intensity",
             "children": [
