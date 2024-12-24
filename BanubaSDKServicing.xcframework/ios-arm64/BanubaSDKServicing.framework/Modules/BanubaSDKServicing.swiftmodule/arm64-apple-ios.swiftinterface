@@ -21,6 +21,7 @@ import _SwiftConcurrencyShims
   @objc func stopVideoTextureIfNeeded()
   @objc func effectAddVideoTexture(asset: AVFoundation.AVURLAsset, backgroundColor: UIKit.UIColor)
   @objc func effectReloadTexturePreview(startTime: Foundation.TimeInterval, endTime: Foundation.TimeInterval, itemDuration: Foundation.TimeInterval)
+  @objc func enableBackgroundBlur()
   @objc func unloadEffectTexture()
 }
 @objc public protocol SDKEffectsServicing : BanubaSDKServicing.SDKEffectsTextureServicing {
@@ -308,7 +309,6 @@ public enum OutputServiceError : Swift.Error {
 }
 @objc public protocol SDKBeautyEffectManaging {
   @objc var isBeautificationEnabled: Swift.Bool { get set }
-  @objc var supportsIntensity: Swift.Bool { get }
   @objc var intensity: Swift.Double { get set }
   @objc func toggleBeautification() -> Swift.Bool
   @objc func resetIntensity()

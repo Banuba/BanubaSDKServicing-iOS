@@ -354,7 +354,6 @@ SWIFT_PROTOCOL("_TtP18BanubaSDKServicing15SDKPIPServicing_")
 SWIFT_PROTOCOL("_TtP18BanubaSDKServicing23SDKBeautyEffectManaging_")
 @protocol SDKBeautyEffectManaging
 @property (nonatomic) BOOL isBeautificationEnabled;
-@property (nonatomic, readonly) BOOL supportsIntensity;
 @property (nonatomic) double intensity;
 - (BOOL)toggleBeautification SWIFT_WARN_UNUSED_RESULT;
 - (void)resetIntensity;
@@ -370,6 +369,7 @@ SWIFT_PROTOCOL("_TtP18BanubaSDKServicing26SDKEffectsTextureServicing_")
 - (void)stopVideoTextureIfNeeded;
 - (void)effectAddVideoTextureWithAsset:(AVURLAsset * _Nonnull)asset backgroundColor:(UIColor * _Nonnull)backgroundColor;
 - (void)effectReloadTexturePreviewWithStartTime:(NSTimeInterval)startTime endTime:(NSTimeInterval)endTime itemDuration:(NSTimeInterval)itemDuration;
+- (void)enableBackgroundBlur;
 - (void)unloadEffectTexture;
 @end
 
@@ -1015,7 +1015,6 @@ SWIFT_PROTOCOL("_TtP18BanubaSDKServicing15SDKPIPServicing_")
 SWIFT_PROTOCOL("_TtP18BanubaSDKServicing23SDKBeautyEffectManaging_")
 @protocol SDKBeautyEffectManaging
 @property (nonatomic) BOOL isBeautificationEnabled;
-@property (nonatomic, readonly) BOOL supportsIntensity;
 @property (nonatomic) double intensity;
 - (BOOL)toggleBeautification SWIFT_WARN_UNUSED_RESULT;
 - (void)resetIntensity;
@@ -1031,6 +1030,7 @@ SWIFT_PROTOCOL("_TtP18BanubaSDKServicing26SDKEffectsTextureServicing_")
 - (void)stopVideoTextureIfNeeded;
 - (void)effectAddVideoTextureWithAsset:(AVURLAsset * _Nonnull)asset backgroundColor:(UIColor * _Nonnull)backgroundColor;
 - (void)effectReloadTexturePreviewWithStartTime:(NSTimeInterval)startTime endTime:(NSTimeInterval)endTime itemDuration:(NSTimeInterval)itemDuration;
+- (void)enableBackgroundBlur;
 - (void)unloadEffectTexture;
 @end
 
