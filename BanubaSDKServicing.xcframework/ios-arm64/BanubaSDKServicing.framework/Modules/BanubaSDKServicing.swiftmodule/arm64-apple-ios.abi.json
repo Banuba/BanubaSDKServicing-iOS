@@ -424,18 +424,24 @@
           },
           {
             "kind": "Function",
-            "name": "enableBlur",
-            "printedName": "enableBlur()",
+            "name": "loadMask",
+            "printedName": "loadMask(name:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Void",
                 "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@BanubaSDKServicing@objc(pl)SDKEffectsServicing(im)enableBlur",
-            "mangledName": "$s18BanubaSDKServicing19SDKEffectsServicingP10enableBluryyF",
+            "usr": "c:@M@BanubaSDKServicing@objc(pl)SDKEffectsServicing(im)loadMaskWithName:completionHandler:",
+            "mangledName": "$s18BanubaSDKServicing19SDKEffectsServicingP8loadMask4nameySS_tYaF",
             "moduleName": "BanubaSDKServicing",
             "genericSig": "<τ_0_0 where τ_0_0 : BanubaSDKServicing.SDKEffectsServicing>",
             "sugared_genericSig": "<Self where Self : BanubaSDKServicing.SDKEffectsServicing>",
@@ -6991,34 +6997,17 @@
           {
             "kind": "Function",
             "name": "enableBackground",
-            "printedName": "enableBackground(completion:)",
+            "printedName": "enableBackground()",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Void",
                 "printedName": "()"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "() -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ]
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@BanubaSDKServicing@objc(pl)SDKBackgroundEffectManaging(im)enableBackgroundWithCompletion:",
-            "mangledName": "$s18BanubaSDKServicing27SDKBackgroundEffectManagingP16enableBackground10completionyyyc_tF",
+            "usr": "c:@M@BanubaSDKServicing@objc(pl)SDKBackgroundEffectManaging(im)enableBackgroundWithCompletionHandler:",
+            "mangledName": "$s18BanubaSDKServicing27SDKBackgroundEffectManagingP16enableBackgroundyyYaF",
             "moduleName": "BanubaSDKServicing",
             "genericSig": "<τ_0_0 where τ_0_0 : BanubaSDKServicing.SDKBackgroundEffectManaging>",
             "sugared_genericSig": "<Self where Self : BanubaSDKServicing.SDKBackgroundEffectManaging>",
@@ -9548,36 +9537,6 @@
                 ],
                 "reqNewWitnessTableEntry": true,
                 "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@BanubaSDKServicing@objc(pl)SDKBeautyEffectManaging(im)setIsBeautificationEnabled:",
-                "mangledName": "$s18BanubaSDKServicing23SDKBeautyEffectManagingP23isBeautificationEnabledSbvs",
-                "moduleName": "BanubaSDKServicing",
-                "genericSig": "<τ_0_0 where τ_0_0 : BanubaSDKServicing.SDKBeautyEffectManaging>",
-                "sugared_genericSig": "<Self where Self : BanubaSDKServicing.SDKBeautyEffectManaging>",
-                "protocolReq": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
-                "reqNewWitnessTableEntry": true,
-                "accessorKind": "set"
               }
             ]
           },
@@ -9661,19 +9620,42 @@
           },
           {
             "kind": "Function",
-            "name": "toggleBeautification",
-            "printedName": "toggleBeautification()",
+            "name": "enableBeautification",
+            "printedName": "enableBeautification()",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
+                "name": "Void",
+                "printedName": "()"
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@BanubaSDKServicing@objc(pl)SDKBeautyEffectManaging(im)toggleBeautification",
-            "mangledName": "$s18BanubaSDKServicing23SDKBeautyEffectManagingP20toggleBeautificationSbyF",
+            "usr": "c:@M@BanubaSDKServicing@objc(pl)SDKBeautyEffectManaging(im)enableBeautificationWithCompletionHandler:",
+            "mangledName": "$s18BanubaSDKServicing23SDKBeautyEffectManagingP20enableBeautificationyyYaF",
+            "moduleName": "BanubaSDKServicing",
+            "genericSig": "<τ_0_0 where τ_0_0 : BanubaSDKServicing.SDKBeautyEffectManaging>",
+            "sugared_genericSig": "<Self where Self : BanubaSDKServicing.SDKBeautyEffectManaging>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "disableBeautification",
+            "printedName": "disableBeautification()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BanubaSDKServicing@objc(pl)SDKBeautyEffectManaging(im)disableBeautification",
+            "mangledName": "$s18BanubaSDKServicing23SDKBeautyEffectManagingP21disableBeautificationyyF",
             "moduleName": "BanubaSDKServicing",
             "genericSig": "<τ_0_0 where τ_0_0 : BanubaSDKServicing.SDKBeautyEffectManaging>",
             "sugared_genericSig": "<Self where Self : BanubaSDKServicing.SDKBeautyEffectManaging>",

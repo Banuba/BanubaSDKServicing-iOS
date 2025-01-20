@@ -5,7 +5,7 @@ import PackageDescription
 let package = Package(
   name: "BanubaSDKServicing",
   platforms: [
-    .iOS(.v15)
+    .iOS(.v17)
   ],
   products: [
     .library(

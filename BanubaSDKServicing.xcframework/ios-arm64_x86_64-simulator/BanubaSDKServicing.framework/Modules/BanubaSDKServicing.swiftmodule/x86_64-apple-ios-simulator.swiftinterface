@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 6.0.2 effective-5.10 (swiftlang-6.0.2.1.2 clang-1600.0.26.4)
-// swift-module-flags: -target x86_64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name BanubaSDKServicing
+// swift-module-flags: -target x86_64-apple-ios17.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name BanubaSDKServicing
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface
 import AVFoundation
 import AVKit
@@ -27,7 +27,7 @@ import _SwiftConcurrencyShims
 @objc public protocol SDKEffectsServicing : BanubaSDKServicing.SDKEffectsTextureServicing {
   @objc var isMaskLoaded: Swift.Bool { get }
   @objc func loadMask(name: Swift.String, synchronous: Swift.Bool)
-  @objc func enableBlur()
+  @objc func loadMask(name: Swift.String) async
   @objc func effectDidBeginApplying()
   @objc func effectDidEndApplying()
   @objc func effectDidResetApplying()
@@ -238,7 +238,7 @@ public protocol EffectsServicing {
 @objc public protocol SDKBackgroundEffectManaging {
   @objc var isBackgroundEnabled: Swift.Bool { get }
   @objc var embeddedImages: [BanubaSDKServicing.EmbeddedBackgroundImage] { get }
-  @objc func enableBackground(completion: @escaping () -> Swift.Void)
+  @objc func enableBackground() async
   @objc func disableBackground()
 }
 @objc public protocol SDKMultiCamMixing {
@@ -308,9 +308,10 @@ public enum OutputServiceError : Swift.Error {
   }
 }
 @objc public protocol SDKBeautyEffectManaging {
-  @objc var isBeautificationEnabled: Swift.Bool { get set }
+  @objc var isBeautificationEnabled: Swift.Bool { get }
   @objc var intensity: Swift.Double { get set }
-  @objc func toggleBeautification() -> Swift.Bool
+  @objc func enableBeautification() async
+  @objc func disableBeautification()
   @objc func resetIntensity()
 }
 @objc public protocol SDKInputServicingDelegate {

@@ -314,7 +314,7 @@ SWIFT_PROTOCOL("_TtP18BanubaSDKServicing27SDKBackgroundEffectManaging_")
 @protocol SDKBackgroundEffectManaging
 @property (nonatomic, readonly) BOOL isBackgroundEnabled;
 @property (nonatomic, readonly, copy) NSArray<EmbeddedBackgroundImage *> * _Nonnull embeddedImages;
-- (void)enableBackgroundWithCompletion:(void (^ _Nonnull)(void))completion;
+- (void)enableBackgroundWithCompletionHandler:(void (^ _Nonnull)(void))completionHandler;
 - (void)disableBackground;
 @end
 
@@ -353,9 +353,10 @@ SWIFT_PROTOCOL("_TtP18BanubaSDKServicing15SDKPIPServicing_")
 
 SWIFT_PROTOCOL("_TtP18BanubaSDKServicing23SDKBeautyEffectManaging_")
 @protocol SDKBeautyEffectManaging
-@property (nonatomic) BOOL isBeautificationEnabled;
+@property (nonatomic, readonly) BOOL isBeautificationEnabled;
 @property (nonatomic) double intensity;
-- (BOOL)toggleBeautification SWIFT_WARN_UNUSED_RESULT;
+- (void)enableBeautificationWithCompletionHandler:(void (^ _Nonnull)(void))completionHandler;
+- (void)disableBeautification;
 - (void)resetIntensity;
 @end
 
@@ -381,7 +382,7 @@ SWIFT_PROTOCOL("_TtP18BanubaSDKServicing19SDKEffectsServicing_")
 @protocol SDKEffectsServicing <SDKEffectsTextureServicing>
 @property (nonatomic, readonly) BOOL isMaskLoaded;
 - (void)loadMaskWithName:(NSString * _Nonnull)name synchronous:(BOOL)synchronous;
-- (void)enableBlur;
+- (void)loadMaskWithName:(NSString * _Nonnull)name completionHandler:(void (^ _Nonnull)(void))completionHandler;
 - (void)effectDidBeginApplying;
 - (void)effectDidEndApplying;
 - (void)effectDidResetApplying;
@@ -975,7 +976,7 @@ SWIFT_PROTOCOL("_TtP18BanubaSDKServicing27SDKBackgroundEffectManaging_")
 @protocol SDKBackgroundEffectManaging
 @property (nonatomic, readonly) BOOL isBackgroundEnabled;
 @property (nonatomic, readonly, copy) NSArray<EmbeddedBackgroundImage *> * _Nonnull embeddedImages;
-- (void)enableBackgroundWithCompletion:(void (^ _Nonnull)(void))completion;
+- (void)enableBackgroundWithCompletionHandler:(void (^ _Nonnull)(void))completionHandler;
 - (void)disableBackground;
 @end
 
@@ -1014,9 +1015,10 @@ SWIFT_PROTOCOL("_TtP18BanubaSDKServicing15SDKPIPServicing_")
 
 SWIFT_PROTOCOL("_TtP18BanubaSDKServicing23SDKBeautyEffectManaging_")
 @protocol SDKBeautyEffectManaging
-@property (nonatomic) BOOL isBeautificationEnabled;
+@property (nonatomic, readonly) BOOL isBeautificationEnabled;
 @property (nonatomic) double intensity;
-- (BOOL)toggleBeautification SWIFT_WARN_UNUSED_RESULT;
+- (void)enableBeautificationWithCompletionHandler:(void (^ _Nonnull)(void))completionHandler;
+- (void)disableBeautification;
 - (void)resetIntensity;
 @end
 
@@ -1042,7 +1044,7 @@ SWIFT_PROTOCOL("_TtP18BanubaSDKServicing19SDKEffectsServicing_")
 @protocol SDKEffectsServicing <SDKEffectsTextureServicing>
 @property (nonatomic, readonly) BOOL isMaskLoaded;
 - (void)loadMaskWithName:(NSString * _Nonnull)name synchronous:(BOOL)synchronous;
-- (void)enableBlur;
+- (void)loadMaskWithName:(NSString * _Nonnull)name completionHandler:(void (^ _Nonnull)(void))completionHandler;
 - (void)effectDidBeginApplying;
 - (void)effectDidEndApplying;
 - (void)effectDidResetApplying;
