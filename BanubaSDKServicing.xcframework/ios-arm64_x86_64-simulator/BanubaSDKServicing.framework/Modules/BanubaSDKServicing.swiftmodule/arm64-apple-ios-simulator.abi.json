@@ -8380,7 +8380,7 @@
             ],
             "declKind": "Func",
             "usr": "c:@M@BanubaSDKServicing@objc(pl)CameraModule(im)takeSnapshotWithHandler:",
-            "mangledName": "$s18BanubaSDKServicing12CameraModuleP12takeSnapshot7handleryySo7UIImageCSgc_tF",
+            "mangledName": "$s18BanubaSDKServicing12CameraModuleP12takeSnapshot7handleryySo7UIImageCSgScMYcc_tF",
             "moduleName": "BanubaSDKServicing",
             "genericSig": "<τ_0_0 where τ_0_0 : BanubaSDKServicing.CameraModule>",
             "sugared_genericSig": "<Self where Self : BanubaSDKServicing.CameraModule>",

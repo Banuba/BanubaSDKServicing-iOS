@@ -279,7 +279,7 @@ public struct CameraModuleDefaults {
   @objc func stop(completion: (() -> Swift.Void)?)
   @objc func setRenderTarget(view: UIKit.UIView)
   @objc func removeRenderTarget()
-  @objc func takeSnapshot(handler: @escaping (UIKit.UIImage?) -> Swift.Void)
+  @objc func takeSnapshot(handler: @escaping @_Concurrency.MainActor (UIKit.UIImage?) -> Swift.Void)
   @objc func getRendererView() -> UIKit.UIView
   @objc func startRenderLoop()
   @objc func stopRenderLoop()
