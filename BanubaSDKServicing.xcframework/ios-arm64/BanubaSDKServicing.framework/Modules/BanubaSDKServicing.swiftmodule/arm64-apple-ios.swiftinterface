@@ -16,15 +16,7 @@ import _SwiftConcurrencyShims
   @objc func didChangeEffectSubtype(_ subtypeName: Swift.String)
   @objc func didInitiateEffectSubtype(_ subtypeName: Swift.String)
 }
-@objc public protocol SDKEffectsTextureServicing {
-  @objc func effectAddImageTexture(image: UIKit.UIImage, backgroundColor: UIKit.UIColor)
-  @objc func stopVideoTextureIfNeeded()
-  @objc func effectAddVideoTexture(asset: AVFoundation.AVURLAsset, backgroundColor: UIKit.UIColor)
-  @objc func effectReloadTexturePreview(startTime: Foundation.TimeInterval, endTime: Foundation.TimeInterval, itemDuration: Foundation.TimeInterval)
-  @objc func enableBackgroundBlur()
-  @objc func unloadEffectTexture()
-}
-@objc public protocol SDKEffectsServicing : BanubaSDKServicing.SDKEffectsTextureServicing {
+@objc public protocol SDKEffectsServicing {
   @objc var isMaskLoaded: Swift.Bool { get }
   @objc func loadMask(name: Swift.String, synchronous: Swift.Bool)
   @objc func loadMask(name: Swift.String) async
@@ -229,17 +221,20 @@ public protocol EffectsServicing {
   @objc func applyPIPSwitchSettingIfNeeded(_ setting: BanubaSDKServicing.PIPSwitchLayoutSetting, restoreSession: Swift.Bool)
   @objc func setPIPPlayerVolume(_ volume: Swift.Float)
 }
-@objc public class EmbeddedBackgroundImage : ObjectiveC.NSObject {
-  final public let id: Swift.String
-  final public let image: UIKit.UIImage
-  public init(id: Swift.String, image: UIKit.UIImage)
-  @objc deinit
+@objc public protocol SDKWeathermanEffectManaging {
+  @objc func setCameraVideoFrame(_ frame: CoreFoundation.CGRect)
+  @objc func resetCameraVideoFrame()
 }
-@objc public protocol SDKBackgroundEffectManaging {
+@objc public protocol SDKBackgroundEffectManaging : BanubaSDKServicing.SDKWeathermanEffectManaging {
   @objc var isBackgroundEnabled: Swift.Bool { get }
-  @objc var embeddedImages: [BanubaSDKServicing.EmbeddedBackgroundImage] { get }
   @objc func enableBackground() async
   @objc func disableBackground()
+  @objc func effectAddImageTexture(image: UIKit.UIImage, backgroundColor: UIKit.UIColor)
+  @objc func stopVideoTextureIfNeeded()
+  @objc func effectAddVideoTexture(asset: AVFoundation.AVURLAsset, backgroundColor: UIKit.UIColor)
+  @objc func effectReloadTexturePreview(startTime: Foundation.TimeInterval, endTime: Foundation.TimeInterval, itemDuration: Foundation.TimeInterval)
+  @objc func enableBackgroundBlur()
+  @objc func unloadEffectTexture()
 }
 @objc public protocol SDKMultiCamMixing {
   @objc func startMultiCamMixing(isPresenterMode: Swift.Bool, completion: (() -> Swift.Void)?)
@@ -320,6 +315,7 @@ public enum OutputServiceError : Swift.Error {
 @objc public protocol SDKInputServicing {
   @objc var isFrontCamera: Swift.Bool { get }
   @objc var zoomFactor: Swift.Float { get }
+  @objc var defaultZoom: Swift.Float { get }
   @objc var currentCameraSessionType: BanubaSDKServicing.CameraModuleSessionType { get }
   @objc var inputDelegate: (any BanubaSDKServicing.SDKInputServicingDelegate)? { get set }
   @objc var isMultiCamSupported: Swift.Bool { get }

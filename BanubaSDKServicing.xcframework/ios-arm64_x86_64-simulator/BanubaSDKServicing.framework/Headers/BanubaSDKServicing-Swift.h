@@ -308,14 +308,28 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 #if defined(__OBJC__)
-@class EmbeddedBackgroundImage;
+
+SWIFT_PROTOCOL("_TtP18BanubaSDKServicing27SDKWeathermanEffectManaging_")
+@protocol SDKWeathermanEffectManaging
+- (void)setCameraVideoFrame:(CGRect)frame;
+- (void)resetCameraVideoFrame;
+@end
+
+@class UIImage;
+@class UIColor;
+@class AVURLAsset;
 
 SWIFT_PROTOCOL("_TtP18BanubaSDKServicing27SDKBackgroundEffectManaging_")
-@protocol SDKBackgroundEffectManaging
+@protocol SDKBackgroundEffectManaging <SDKWeathermanEffectManaging>
 @property (nonatomic, readonly) BOOL isBackgroundEnabled;
-@property (nonatomic, readonly, copy) NSArray<EmbeddedBackgroundImage *> * _Nonnull embeddedImages;
 - (void)enableBackgroundWithCompletionHandler:(void (^ _Nonnull)(void))completionHandler;
 - (void)disableBackground;
+- (void)effectAddImageTextureWithImage:(UIImage * _Nonnull)image backgroundColor:(UIColor * _Nonnull)backgroundColor;
+- (void)stopVideoTextureIfNeeded;
+- (void)effectAddVideoTextureWithAsset:(AVURLAsset * _Nonnull)asset backgroundColor:(UIColor * _Nonnull)backgroundColor;
+- (void)effectReloadTexturePreviewWithStartTime:(NSTimeInterval)startTime endTime:(NSTimeInterval)endTime itemDuration:(NSTimeInterval)itemDuration;
+- (void)enableBackgroundBlur;
+- (void)unloadEffectTexture;
 @end
 
 
@@ -360,26 +374,12 @@ SWIFT_PROTOCOL("_TtP18BanubaSDKServicing23SDKBeautyEffectManaging_")
 - (void)resetIntensity;
 @end
 
-@class UIImage;
-@class UIColor;
-@class AVURLAsset;
-
-SWIFT_PROTOCOL("_TtP18BanubaSDKServicing26SDKEffectsTextureServicing_")
-@protocol SDKEffectsTextureServicing
-- (void)effectAddImageTextureWithImage:(UIImage * _Nonnull)image backgroundColor:(UIColor * _Nonnull)backgroundColor;
-- (void)stopVideoTextureIfNeeded;
-- (void)effectAddVideoTextureWithAsset:(AVURLAsset * _Nonnull)asset backgroundColor:(UIColor * _Nonnull)backgroundColor;
-- (void)effectReloadTexturePreviewWithStartTime:(NSTimeInterval)startTime endTime:(NSTimeInterval)endTime itemDuration:(NSTimeInterval)itemDuration;
-- (void)enableBackgroundBlur;
-- (void)unloadEffectTexture;
-@end
-
 @class NSString;
 @protocol RenderEffect;
 @protocol EffectSubtypeModificationsEventListener;
 
 SWIFT_PROTOCOL("_TtP18BanubaSDKServicing19SDKEffectsServicing_")
-@protocol SDKEffectsServicing <SDKEffectsTextureServicing>
+@protocol SDKEffectsServicing
 @property (nonatomic, readonly) BOOL isMaskLoaded;
 - (void)loadMaskWithName:(NSString * _Nonnull)name synchronous:(BOOL)synchronous;
 - (void)loadMaskWithName:(NSString * _Nonnull)name completionHandler:(void (^ _Nonnull)(void))completionHandler;
@@ -414,6 +414,7 @@ SWIFT_PROTOCOL("_TtP18BanubaSDKServicing17SDKInputServicing_")
 @protocol SDKInputServicing
 @property (nonatomic, readonly) BOOL isFrontCamera;
 @property (nonatomic, readonly) float zoomFactor;
+@property (nonatomic, readonly) float defaultZoom;
 @property (nonatomic, readonly) enum CameraModuleSessionType currentCameraSessionType;
 @property (nonatomic, strong) id <SDKInputServicingDelegate> _Nullable inputDelegate;
 @property (nonatomic, readonly) BOOL isMultiCamSupported;
@@ -472,13 +473,6 @@ SWIFT_PROTOCOL("_TtP18BanubaSDKServicing39EffectSubtypeModificationsEventListene
 @protocol EffectSubtypeModificationsEventListener
 - (void)didChangeEffectSubtype:(NSString * _Nonnull)subtypeName;
 - (void)didInitiateEffectSubtype:(NSString * _Nonnull)subtypeName;
-@end
-
-
-SWIFT_CLASS("_TtC18BanubaSDKServicing23EmbeddedBackgroundImage")
-@interface EmbeddedBackgroundImage : NSObject
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 
@@ -628,7 +622,6 @@ SWIFT_PROTOCOL("_TtP18BanubaSDKServicing12RenderEffect_")
 
 
 
-
 SWIFT_PROTOCOL("_TtP18BanubaSDKServicing25SDKInputServicingDelegate_")
 @protocol SDKInputServicingDelegate
 - (void)willOutputWithPixelBuffer:(CVPixelBufferRef _Nonnull)pixelBuffer;
@@ -648,6 +641,7 @@ SWIFT_PROTOCOL("_TtP18BanubaSDKServicing27SDKMaskPostprocessServicing_")
 - (void)setEffectSize:(CGSize)size;
 - (void)loadEffectWithPath:(NSString * _Nonnull)path;
 @end
+
 
 
 
@@ -970,14 +964,28 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 #if defined(__OBJC__)
-@class EmbeddedBackgroundImage;
+
+SWIFT_PROTOCOL("_TtP18BanubaSDKServicing27SDKWeathermanEffectManaging_")
+@protocol SDKWeathermanEffectManaging
+- (void)setCameraVideoFrame:(CGRect)frame;
+- (void)resetCameraVideoFrame;
+@end
+
+@class UIImage;
+@class UIColor;
+@class AVURLAsset;
 
 SWIFT_PROTOCOL("_TtP18BanubaSDKServicing27SDKBackgroundEffectManaging_")
-@protocol SDKBackgroundEffectManaging
+@protocol SDKBackgroundEffectManaging <SDKWeathermanEffectManaging>
 @property (nonatomic, readonly) BOOL isBackgroundEnabled;
-@property (nonatomic, readonly, copy) NSArray<EmbeddedBackgroundImage *> * _Nonnull embeddedImages;
 - (void)enableBackgroundWithCompletionHandler:(void (^ _Nonnull)(void))completionHandler;
 - (void)disableBackground;
+- (void)effectAddImageTextureWithImage:(UIImage * _Nonnull)image backgroundColor:(UIColor * _Nonnull)backgroundColor;
+- (void)stopVideoTextureIfNeeded;
+- (void)effectAddVideoTextureWithAsset:(AVURLAsset * _Nonnull)asset backgroundColor:(UIColor * _Nonnull)backgroundColor;
+- (void)effectReloadTexturePreviewWithStartTime:(NSTimeInterval)startTime endTime:(NSTimeInterval)endTime itemDuration:(NSTimeInterval)itemDuration;
+- (void)enableBackgroundBlur;
+- (void)unloadEffectTexture;
 @end
 
 
@@ -1022,26 +1030,12 @@ SWIFT_PROTOCOL("_TtP18BanubaSDKServicing23SDKBeautyEffectManaging_")
 - (void)resetIntensity;
 @end
 
-@class UIImage;
-@class UIColor;
-@class AVURLAsset;
-
-SWIFT_PROTOCOL("_TtP18BanubaSDKServicing26SDKEffectsTextureServicing_")
-@protocol SDKEffectsTextureServicing
-- (void)effectAddImageTextureWithImage:(UIImage * _Nonnull)image backgroundColor:(UIColor * _Nonnull)backgroundColor;
-- (void)stopVideoTextureIfNeeded;
-- (void)effectAddVideoTextureWithAsset:(AVURLAsset * _Nonnull)asset backgroundColor:(UIColor * _Nonnull)backgroundColor;
-- (void)effectReloadTexturePreviewWithStartTime:(NSTimeInterval)startTime endTime:(NSTimeInterval)endTime itemDuration:(NSTimeInterval)itemDuration;
-- (void)enableBackgroundBlur;
-- (void)unloadEffectTexture;
-@end
-
 @class NSString;
 @protocol RenderEffect;
 @protocol EffectSubtypeModificationsEventListener;
 
 SWIFT_PROTOCOL("_TtP18BanubaSDKServicing19SDKEffectsServicing_")
-@protocol SDKEffectsServicing <SDKEffectsTextureServicing>
+@protocol SDKEffectsServicing
 @property (nonatomic, readonly) BOOL isMaskLoaded;
 - (void)loadMaskWithName:(NSString * _Nonnull)name synchronous:(BOOL)synchronous;
 - (void)loadMaskWithName:(NSString * _Nonnull)name completionHandler:(void (^ _Nonnull)(void))completionHandler;
@@ -1076,6 +1070,7 @@ SWIFT_PROTOCOL("_TtP18BanubaSDKServicing17SDKInputServicing_")
 @protocol SDKInputServicing
 @property (nonatomic, readonly) BOOL isFrontCamera;
 @property (nonatomic, readonly) float zoomFactor;
+@property (nonatomic, readonly) float defaultZoom;
 @property (nonatomic, readonly) enum CameraModuleSessionType currentCameraSessionType;
 @property (nonatomic, strong) id <SDKInputServicingDelegate> _Nullable inputDelegate;
 @property (nonatomic, readonly) BOOL isMultiCamSupported;
@@ -1134,13 +1129,6 @@ SWIFT_PROTOCOL("_TtP18BanubaSDKServicing39EffectSubtypeModificationsEventListene
 @protocol EffectSubtypeModificationsEventListener
 - (void)didChangeEffectSubtype:(NSString * _Nonnull)subtypeName;
 - (void)didInitiateEffectSubtype:(NSString * _Nonnull)subtypeName;
-@end
-
-
-SWIFT_CLASS("_TtC18BanubaSDKServicing23EmbeddedBackgroundImage")
-@interface EmbeddedBackgroundImage : NSObject
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 
@@ -1290,7 +1278,6 @@ SWIFT_PROTOCOL("_TtP18BanubaSDKServicing12RenderEffect_")
 
 
 
-
 SWIFT_PROTOCOL("_TtP18BanubaSDKServicing25SDKInputServicingDelegate_")
 @protocol SDKInputServicingDelegate
 - (void)willOutputWithPixelBuffer:(CVPixelBufferRef _Nonnull)pixelBuffer;
@@ -1310,6 +1297,7 @@ SWIFT_PROTOCOL("_TtP18BanubaSDKServicing27SDKMaskPostprocessServicing_")
 - (void)setEffectSize:(CGSize)size;
 - (void)loadEffectWithPath:(NSString * _Nonnull)path;
 @end
+
 
 
 

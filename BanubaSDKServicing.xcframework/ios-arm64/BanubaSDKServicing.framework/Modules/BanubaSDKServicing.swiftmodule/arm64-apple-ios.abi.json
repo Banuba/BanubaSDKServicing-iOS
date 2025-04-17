@@ -116,225 +116,6 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "SDKEffectsTextureServicing",
-        "printedName": "SDKEffectsTextureServicing",
-        "children": [
-          {
-            "kind": "Function",
-            "name": "effectAddImageTexture",
-            "printedName": "effectAddImageTexture(image:backgroundColor:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UIImage",
-                "printedName": "UIKit.UIImage",
-                "usr": "c:objc(cs)UIImage"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UIColor",
-                "printedName": "UIKit.UIColor",
-                "usr": "c:objc(cs)UIColor"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@BanubaSDKServicing@objc(pl)SDKEffectsTextureServicing(im)effectAddImageTextureWithImage:backgroundColor:",
-            "mangledName": "$s18BanubaSDKServicing26SDKEffectsTextureServicingP014effectAddImageD05image15backgroundColorySo7UIImageC_So7UIColorCtF",
-            "moduleName": "BanubaSDKServicing",
-            "genericSig": "<τ_0_0 where τ_0_0 : BanubaSDKServicing.SDKEffectsTextureServicing>",
-            "sugared_genericSig": "<Self where Self : BanubaSDKServicing.SDKEffectsTextureServicing>",
-            "protocolReq": true,
-            "declAttributes": [
-              "ObjC"
-            ],
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "stopVideoTextureIfNeeded",
-            "printedName": "stopVideoTextureIfNeeded()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@BanubaSDKServicing@objc(pl)SDKEffectsTextureServicing(im)stopVideoTextureIfNeeded",
-            "mangledName": "$s18BanubaSDKServicing26SDKEffectsTextureServicingP09stopVideoD8IfNeededyyF",
-            "moduleName": "BanubaSDKServicing",
-            "genericSig": "<τ_0_0 where τ_0_0 : BanubaSDKServicing.SDKEffectsTextureServicing>",
-            "sugared_genericSig": "<Self where Self : BanubaSDKServicing.SDKEffectsTextureServicing>",
-            "protocolReq": true,
-            "declAttributes": [
-              "ObjC"
-            ],
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "effectAddVideoTexture",
-            "printedName": "effectAddVideoTexture(asset:backgroundColor:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "AVURLAsset",
-                "printedName": "AVFoundation.AVURLAsset",
-                "usr": "c:objc(cs)AVURLAsset"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UIColor",
-                "printedName": "UIKit.UIColor",
-                "usr": "c:objc(cs)UIColor"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@BanubaSDKServicing@objc(pl)SDKEffectsTextureServicing(im)effectAddVideoTextureWithAsset:backgroundColor:",
-            "mangledName": "$s18BanubaSDKServicing26SDKEffectsTextureServicingP014effectAddVideoD05asset15backgroundColorySo10AVURLAssetC_So7UIColorCtF",
-            "moduleName": "BanubaSDKServicing",
-            "genericSig": "<τ_0_0 where τ_0_0 : BanubaSDKServicing.SDKEffectsTextureServicing>",
-            "sugared_genericSig": "<Self where Self : BanubaSDKServicing.SDKEffectsTextureServicing>",
-            "protocolReq": true,
-            "declAttributes": [
-              "ObjC"
-            ],
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "effectReloadTexturePreview",
-            "printedName": "effectReloadTexturePreview(startTime:endTime:itemDuration:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Double",
-                "printedName": "Swift.Double",
-                "usr": "s:Sd"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Double",
-                "printedName": "Swift.Double",
-                "usr": "s:Sd"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Double",
-                "printedName": "Swift.Double",
-                "usr": "s:Sd"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@BanubaSDKServicing@objc(pl)SDKEffectsTextureServicing(im)effectReloadTexturePreviewWithStartTime:endTime:itemDuration:",
-            "mangledName": "$s18BanubaSDKServicing26SDKEffectsTextureServicingP012effectReloadD7Preview9startTime03endJ012itemDurationySd_S2dtF",
-            "moduleName": "BanubaSDKServicing",
-            "genericSig": "<τ_0_0 where τ_0_0 : BanubaSDKServicing.SDKEffectsTextureServicing>",
-            "sugared_genericSig": "<Self where Self : BanubaSDKServicing.SDKEffectsTextureServicing>",
-            "protocolReq": true,
-            "declAttributes": [
-              "ObjC"
-            ],
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "enableBackgroundBlur",
-            "printedName": "enableBackgroundBlur()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@BanubaSDKServicing@objc(pl)SDKEffectsTextureServicing(im)enableBackgroundBlur",
-            "mangledName": "$s18BanubaSDKServicing26SDKEffectsTextureServicingP20enableBackgroundBluryyF",
-            "moduleName": "BanubaSDKServicing",
-            "genericSig": "<τ_0_0 where τ_0_0 : BanubaSDKServicing.SDKEffectsTextureServicing>",
-            "sugared_genericSig": "<Self where Self : BanubaSDKServicing.SDKEffectsTextureServicing>",
-            "protocolReq": true,
-            "declAttributes": [
-              "ObjC"
-            ],
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "unloadEffectTexture",
-            "printedName": "unloadEffectTexture()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@BanubaSDKServicing@objc(pl)SDKEffectsTextureServicing(im)unloadEffectTexture",
-            "mangledName": "$s18BanubaSDKServicing26SDKEffectsTextureServicingP012unloadEffectD0yyF",
-            "moduleName": "BanubaSDKServicing",
-            "genericSig": "<τ_0_0 where τ_0_0 : BanubaSDKServicing.SDKEffectsTextureServicing>",
-            "sugared_genericSig": "<Self where Self : BanubaSDKServicing.SDKEffectsTextureServicing>",
-            "protocolReq": true,
-            "declAttributes": [
-              "ObjC"
-            ],
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Protocol",
-        "usr": "c:@M@BanubaSDKServicing@objc(pl)SDKEffectsTextureServicing",
-        "mangledName": "$s18BanubaSDKServicing26SDKEffectsTextureServicingP",
-        "moduleName": "BanubaSDKServicing",
-        "genericSig": "<τ_0_0 : AnyObject>",
-        "sugared_genericSig": "<Self : AnyObject>",
-        "declAttributes": [
-          "AccessControl",
-          "ObjC"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
         "name": "SDKEffectsServicing",
         "printedName": "SDKEffectsServicing",
         "children": [
@@ -784,8 +565,8 @@
         "usr": "c:@M@BanubaSDKServicing@objc(pl)SDKEffectsServicing",
         "mangledName": "$s18BanubaSDKServicing19SDKEffectsServicingP",
         "moduleName": "BanubaSDKServicing",
-        "genericSig": "<τ_0_0 : BanubaSDKServicing.SDKEffectsTextureServicing>",
-        "sugared_genericSig": "<Self : BanubaSDKServicing.SDKEffectsTextureServicing>",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
         "declAttributes": [
           "AccessControl",
           "ObjC"
@@ -804,13 +585,6 @@
             "printedName": "Copyable",
             "usr": "s:s8CopyableP",
             "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "SDKEffectsTextureServicing",
-            "printedName": "SDKEffectsTextureServicing",
-            "usr": "c:@M@BanubaSDKServicing@objc(pl)SDKEffectsTextureServicing",
-            "mangledName": "$s18BanubaSDKServicing26SDKEffectsTextureServicingP"
           }
         ]
       },
@@ -6640,185 +6414,75 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "EmbeddedBackgroundImage",
-        "printedName": "EmbeddedBackgroundImage",
+        "name": "SDKWeathermanEffectManaging",
+        "printedName": "SDKWeathermanEffectManaging",
         "children": [
           {
-            "kind": "Var",
-            "name": "id",
-            "printedName": "id",
+            "kind": "Function",
+            "name": "setCameraVideoFrame",
+            "printedName": "setCameraVideoFrame(_:)",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:18BanubaSDKServicing23EmbeddedBackgroundImageC2idSSvp",
-            "mangledName": "$s18BanubaSDKServicing23EmbeddedBackgroundImageC2idSSvp",
-            "moduleName": "BanubaSDKServicing",
-            "declAttributes": [
-              "Final",
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:18BanubaSDKServicing23EmbeddedBackgroundImageC2idSSvg",
-                "mangledName": "$s18BanubaSDKServicing23EmbeddedBackgroundImageC2idSSvg",
-                "moduleName": "BanubaSDKServicing",
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "image",
-            "printedName": "image",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "UIImage",
-                "printedName": "UIKit.UIImage",
-                "usr": "c:objc(cs)UIImage"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:18BanubaSDKServicing23EmbeddedBackgroundImageC5imageSo7UIImageCvp",
-            "mangledName": "$s18BanubaSDKServicing23EmbeddedBackgroundImageC5imageSo7UIImageCvp",
-            "moduleName": "BanubaSDKServicing",
-            "declAttributes": [
-              "Final",
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "UIImage",
-                    "printedName": "UIKit.UIImage",
-                    "usr": "c:objc(cs)UIImage"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:18BanubaSDKServicing23EmbeddedBackgroundImageC5imageSo7UIImageCvg",
-                "mangledName": "$s18BanubaSDKServicing23EmbeddedBackgroundImageC5imageSo7UIImageCvg",
-                "moduleName": "BanubaSDKServicing",
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(id:image:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "EmbeddedBackgroundImage",
-                "printedName": "BanubaSDKServicing.EmbeddedBackgroundImage",
-                "usr": "c:@M@BanubaSDKServicing@objc(cs)EmbeddedBackgroundImage"
+                "name": "Void",
+                "printedName": "()"
               },
               {
                 "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UIImage",
-                "printedName": "UIKit.UIImage",
-                "usr": "c:objc(cs)UIImage"
+                "name": "CGRect",
+                "printedName": "CoreFoundation.CGRect",
+                "usr": "c:@S@CGRect"
               }
             ],
-            "declKind": "Constructor",
-            "usr": "s:18BanubaSDKServicing23EmbeddedBackgroundImageC2id5imageACSS_So7UIImageCtcfc",
-            "mangledName": "$s18BanubaSDKServicing23EmbeddedBackgroundImageC2id5imageACSS_So7UIImageCtcfc",
+            "declKind": "Func",
+            "usr": "c:@M@BanubaSDKServicing@objc(pl)SDKWeathermanEffectManaging(im)setCameraVideoFrame:",
+            "mangledName": "$s18BanubaSDKServicing27SDKWeathermanEffectManagingP19setCameraVideoFrameyySo6CGRectVF",
             "moduleName": "BanubaSDKServicing",
+            "genericSig": "<τ_0_0 where τ_0_0 : BanubaSDKServicing.SDKWeathermanEffectManaging>",
+            "sugared_genericSig": "<Self where Self : BanubaSDKServicing.SDKWeathermanEffectManaging>",
+            "protocolReq": true,
             "declAttributes": [
-              "AccessControl"
+              "ObjC"
             ],
-            "init_kind": "Designated"
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
           },
           {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init()",
+            "kind": "Function",
+            "name": "resetCameraVideoFrame",
+            "printedName": "resetCameraVideoFrame()",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "EmbeddedBackgroundImage",
-                "printedName": "BanubaSDKServicing.EmbeddedBackgroundImage",
-                "usr": "c:@M@BanubaSDKServicing@objc(cs)EmbeddedBackgroundImage"
+                "name": "Void",
+                "printedName": "()"
               }
             ],
-            "declKind": "Constructor",
-            "usr": "c:@M@BanubaSDKServicing@objc(cs)EmbeddedBackgroundImage(im)init",
-            "mangledName": "$s18BanubaSDKServicing23EmbeddedBackgroundImageCACycfc",
+            "declKind": "Func",
+            "usr": "c:@M@BanubaSDKServicing@objc(pl)SDKWeathermanEffectManaging(im)resetCameraVideoFrame",
+            "mangledName": "$s18BanubaSDKServicing27SDKWeathermanEffectManagingP21resetCameraVideoFrameyyF",
             "moduleName": "BanubaSDKServicing",
-            "overriding": true,
-            "implicit": true,
-            "objc_name": "init",
+            "genericSig": "<τ_0_0 where τ_0_0 : BanubaSDKServicing.SDKWeathermanEffectManaging>",
+            "sugared_genericSig": "<Self where Self : BanubaSDKServicing.SDKWeathermanEffectManaging>",
+            "protocolReq": true,
             "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Override"
+              "ObjC"
             ],
-            "init_kind": "Designated"
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
-        "declKind": "Class",
-        "usr": "c:@M@BanubaSDKServicing@objc(cs)EmbeddedBackgroundImage",
-        "mangledName": "$s18BanubaSDKServicing23EmbeddedBackgroundImageC",
+        "declKind": "Protocol",
+        "usr": "c:@M@BanubaSDKServicing@objc(pl)SDKWeathermanEffectManaging",
+        "mangledName": "$s18BanubaSDKServicing27SDKWeathermanEffectManagingP",
         "moduleName": "BanubaSDKServicing",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
         "declAttributes": [
           "AccessControl",
           "ObjC"
         ],
-        "superclassUsr": "c:objc(cs)NSObject",
-        "superclassNames": [
-          "ObjectiveC.NSObject"
-        ],
         "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
           {
             "kind": "Conformance",
             "name": "Escapable",
@@ -6828,52 +6492,10 @@
           },
           {
             "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
           }
         ]
       },
@@ -6918,70 +6540,6 @@
                 "declKind": "Accessor",
                 "usr": "c:@M@BanubaSDKServicing@objc(pl)SDKBackgroundEffectManaging(im)isBackgroundEnabled",
                 "mangledName": "$s18BanubaSDKServicing27SDKBackgroundEffectManagingP19isBackgroundEnabledSbvg",
-                "moduleName": "BanubaSDKServicing",
-                "genericSig": "<τ_0_0 where τ_0_0 : BanubaSDKServicing.SDKBackgroundEffectManaging>",
-                "sugared_genericSig": "<Self where Self : BanubaSDKServicing.SDKBackgroundEffectManaging>",
-                "protocolReq": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
-                "reqNewWitnessTableEntry": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "embeddedImages",
-            "printedName": "embeddedImages",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[BanubaSDKServicing.EmbeddedBackgroundImage]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "EmbeddedBackgroundImage",
-                    "printedName": "BanubaSDKServicing.EmbeddedBackgroundImage",
-                    "usr": "c:@M@BanubaSDKServicing@objc(cs)EmbeddedBackgroundImage"
-                  }
-                ],
-                "usr": "s:Sa"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@BanubaSDKServicing@objc(pl)SDKBackgroundEffectManaging(py)embeddedImages",
-            "mangledName": "$s18BanubaSDKServicing27SDKBackgroundEffectManagingP14embeddedImagesSayAA23EmbeddedBackgroundImageCGvp",
-            "moduleName": "BanubaSDKServicing",
-            "protocolReq": true,
-            "declAttributes": [
-              "ObjC"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Array",
-                    "printedName": "[BanubaSDKServicing.EmbeddedBackgroundImage]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "EmbeddedBackgroundImage",
-                        "printedName": "BanubaSDKServicing.EmbeddedBackgroundImage",
-                        "usr": "c:@M@BanubaSDKServicing@objc(cs)EmbeddedBackgroundImage"
-                      }
-                    ],
-                    "usr": "s:Sa"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@BanubaSDKServicing@objc(pl)SDKBackgroundEffectManaging(im)embeddedImages",
-                "mangledName": "$s18BanubaSDKServicing27SDKBackgroundEffectManagingP14embeddedImagesSayAA23EmbeddedBackgroundImageCGvg",
                 "moduleName": "BanubaSDKServicing",
                 "genericSig": "<τ_0_0 where τ_0_0 : BanubaSDKServicing.SDKBackgroundEffectManaging>",
                 "sugared_genericSig": "<Self where Self : BanubaSDKServicing.SDKBackgroundEffectManaging>",
@@ -7041,14 +6599,200 @@
             ],
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "effectAddImageTexture",
+            "printedName": "effectAddImageTexture(image:backgroundColor:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIImage",
+                "printedName": "UIKit.UIImage",
+                "usr": "c:objc(cs)UIImage"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIColor",
+                "printedName": "UIKit.UIColor",
+                "usr": "c:objc(cs)UIColor"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BanubaSDKServicing@objc(pl)SDKBackgroundEffectManaging(im)effectAddImageTextureWithImage:backgroundColor:",
+            "mangledName": "$s18BanubaSDKServicing27SDKBackgroundEffectManagingP21effectAddImageTexture5image15backgroundColorySo7UIImageC_So7UIColorCtF",
+            "moduleName": "BanubaSDKServicing",
+            "genericSig": "<τ_0_0 where τ_0_0 : BanubaSDKServicing.SDKBackgroundEffectManaging>",
+            "sugared_genericSig": "<Self where Self : BanubaSDKServicing.SDKBackgroundEffectManaging>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "stopVideoTextureIfNeeded",
+            "printedName": "stopVideoTextureIfNeeded()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BanubaSDKServicing@objc(pl)SDKBackgroundEffectManaging(im)stopVideoTextureIfNeeded",
+            "mangledName": "$s18BanubaSDKServicing27SDKBackgroundEffectManagingP24stopVideoTextureIfNeededyyF",
+            "moduleName": "BanubaSDKServicing",
+            "genericSig": "<τ_0_0 where τ_0_0 : BanubaSDKServicing.SDKBackgroundEffectManaging>",
+            "sugared_genericSig": "<Self where Self : BanubaSDKServicing.SDKBackgroundEffectManaging>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "effectAddVideoTexture",
+            "printedName": "effectAddVideoTexture(asset:backgroundColor:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AVURLAsset",
+                "printedName": "AVFoundation.AVURLAsset",
+                "usr": "c:objc(cs)AVURLAsset"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIColor",
+                "printedName": "UIKit.UIColor",
+                "usr": "c:objc(cs)UIColor"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BanubaSDKServicing@objc(pl)SDKBackgroundEffectManaging(im)effectAddVideoTextureWithAsset:backgroundColor:",
+            "mangledName": "$s18BanubaSDKServicing27SDKBackgroundEffectManagingP21effectAddVideoTexture5asset15backgroundColorySo10AVURLAssetC_So7UIColorCtF",
+            "moduleName": "BanubaSDKServicing",
+            "genericSig": "<τ_0_0 where τ_0_0 : BanubaSDKServicing.SDKBackgroundEffectManaging>",
+            "sugared_genericSig": "<Self where Self : BanubaSDKServicing.SDKBackgroundEffectManaging>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "effectReloadTexturePreview",
+            "printedName": "effectReloadTexturePreview(startTime:endTime:itemDuration:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BanubaSDKServicing@objc(pl)SDKBackgroundEffectManaging(im)effectReloadTexturePreviewWithStartTime:endTime:itemDuration:",
+            "mangledName": "$s18BanubaSDKServicing27SDKBackgroundEffectManagingP26effectReloadTexturePreview9startTime03endK012itemDurationySd_S2dtF",
+            "moduleName": "BanubaSDKServicing",
+            "genericSig": "<τ_0_0 where τ_0_0 : BanubaSDKServicing.SDKBackgroundEffectManaging>",
+            "sugared_genericSig": "<Self where Self : BanubaSDKServicing.SDKBackgroundEffectManaging>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "enableBackgroundBlur",
+            "printedName": "enableBackgroundBlur()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BanubaSDKServicing@objc(pl)SDKBackgroundEffectManaging(im)enableBackgroundBlur",
+            "mangledName": "$s18BanubaSDKServicing27SDKBackgroundEffectManagingP20enableBackgroundBluryyF",
+            "moduleName": "BanubaSDKServicing",
+            "genericSig": "<τ_0_0 where τ_0_0 : BanubaSDKServicing.SDKBackgroundEffectManaging>",
+            "sugared_genericSig": "<Self where Self : BanubaSDKServicing.SDKBackgroundEffectManaging>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "unloadEffectTexture",
+            "printedName": "unloadEffectTexture()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BanubaSDKServicing@objc(pl)SDKBackgroundEffectManaging(im)unloadEffectTexture",
+            "mangledName": "$s18BanubaSDKServicing27SDKBackgroundEffectManagingP06unloadD7TextureyyF",
+            "moduleName": "BanubaSDKServicing",
+            "genericSig": "<τ_0_0 where τ_0_0 : BanubaSDKServicing.SDKBackgroundEffectManaging>",
+            "sugared_genericSig": "<Self where Self : BanubaSDKServicing.SDKBackgroundEffectManaging>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Protocol",
         "usr": "c:@M@BanubaSDKServicing@objc(pl)SDKBackgroundEffectManaging",
         "mangledName": "$s18BanubaSDKServicing27SDKBackgroundEffectManagingP",
         "moduleName": "BanubaSDKServicing",
-        "genericSig": "<τ_0_0 : AnyObject>",
-        "sugared_genericSig": "<Self : AnyObject>",
+        "genericSig": "<τ_0_0 : BanubaSDKServicing.SDKWeathermanEffectManaging>",
+        "sugared_genericSig": "<Self : BanubaSDKServicing.SDKWeathermanEffectManaging>",
         "declAttributes": [
           "AccessControl",
           "ObjC"
@@ -7067,6 +6811,13 @@
             "printedName": "Copyable",
             "usr": "s:s8CopyableP",
             "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SDKWeathermanEffectManaging",
+            "printedName": "SDKWeathermanEffectManaging",
+            "usr": "c:@M@BanubaSDKServicing@objc(pl)SDKWeathermanEffectManaging",
+            "mangledName": "$s18BanubaSDKServicing27SDKWeathermanEffectManagingP"
           }
         ]
       },
@@ -8549,6 +8300,13 @@
           },
           {
             "kind": "Conformance",
+            "name": "SDKWeathermanEffectManaging",
+            "printedName": "SDKWeathermanEffectManaging",
+            "usr": "c:@M@BanubaSDKServicing@objc(pl)SDKWeathermanEffectManaging",
+            "mangledName": "$s18BanubaSDKServicing27SDKWeathermanEffectManagingP"
+          },
+          {
+            "kind": "Conformance",
             "name": "SDKMultiCamMixing",
             "printedName": "SDKMultiCamMixing",
             "usr": "c:@M@BanubaSDKServicing@objc(pl)SDKMultiCamMixing",
@@ -8574,13 +8332,6 @@
             "printedName": "SDKEffectsServicing",
             "usr": "c:@M@BanubaSDKServicing@objc(pl)SDKEffectsServicing",
             "mangledName": "$s18BanubaSDKServicing19SDKEffectsServicingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "SDKEffectsTextureServicing",
-            "printedName": "SDKEffectsTextureServicing",
-            "usr": "c:@M@BanubaSDKServicing@objc(pl)SDKEffectsTextureServicing",
-            "mangledName": "$s18BanubaSDKServicing26SDKEffectsTextureServicingP"
           },
           {
             "kind": "Conformance",
@@ -9887,6 +9638,54 @@
                 "declKind": "Accessor",
                 "usr": "c:@M@BanubaSDKServicing@objc(pl)SDKInputServicing(im)zoomFactor",
                 "mangledName": "$s18BanubaSDKServicing17SDKInputServicingP10zoomFactorSfvg",
+                "moduleName": "BanubaSDKServicing",
+                "genericSig": "<τ_0_0 where τ_0_0 : BanubaSDKServicing.SDKInputServicing>",
+                "sugared_genericSig": "<Self where Self : BanubaSDKServicing.SDKInputServicing>",
+                "protocolReq": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "defaultZoom",
+            "printedName": "defaultZoom",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@BanubaSDKServicing@objc(pl)SDKInputServicing(py)defaultZoom",
+            "mangledName": "$s18BanubaSDKServicing17SDKInputServicingP11defaultZoomSfvp",
+            "moduleName": "BanubaSDKServicing",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BanubaSDKServicing@objc(pl)SDKInputServicing(im)defaultZoom",
+                "mangledName": "$s18BanubaSDKServicing17SDKInputServicingP11defaultZoomSfvg",
                 "moduleName": "BanubaSDKServicing",
                 "genericSig": "<τ_0_0 where τ_0_0 : BanubaSDKServicing.SDKInputServicing>",
                 "sugared_genericSig": "<Self where Self : BanubaSDKServicing.SDKInputServicing>",
