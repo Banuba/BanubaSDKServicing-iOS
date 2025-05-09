@@ -422,6 +422,7 @@ SWIFT_PROTOCOL("_TtP18BanubaSDKServicing17SDKInputServicing_")
 - (void)focusAt:(CGPoint)point useContinuousDetection:(BOOL)useContinuousDetection;
 - (float)setZoomFactor:(float)zoomFactor SWIFT_WARN_UNUSED_RESULT;
 - (void)toggleCameraWithCompletion:(void (^ _Nonnull)(void))completion;
+- (void)switchToFrontCameraWithCompletion:(void (^ _Nonnull)(void))completion;
 - (void)startCamera;
 - (void)startAudioCapturing;
 - (void)stopAudioCapturing;
@@ -436,7 +437,6 @@ SWIFT_PROTOCOL("_TtP18BanubaSDKServicing17SDKInputServicing_")
 SWIFT_PROTOCOL("_TtP18BanubaSDKServicing12CameraModule_")
 @protocol CameraModule <SDKBackgroundEffectManaging, SDKBeautyEffectManaging, SDKEffectsServicing, SDKInputServicing, SDKMultiCamMixing, SDKOutputServicing, SDKPIPServicing>
 @property (nonatomic, readonly) BOOL isLoaded;
-@property (nonatomic) BOOL allowProcessing;
 @property (nonatomic) BOOL autoStart;
 @property (nonatomic) BOOL isCameraEnabled;
 @property (nonatomic, readonly, strong) dispatch_queue_t _Nullable renderQueue;

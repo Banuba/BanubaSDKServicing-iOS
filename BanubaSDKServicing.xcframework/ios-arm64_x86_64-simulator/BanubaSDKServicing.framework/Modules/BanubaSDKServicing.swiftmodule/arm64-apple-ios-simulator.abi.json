@@ -7574,84 +7574,6 @@
           },
           {
             "kind": "Var",
-            "name": "allowProcessing",
-            "printedName": "allowProcessing",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@BanubaSDKServicing@objc(pl)CameraModule(py)allowProcessing",
-            "mangledName": "$s18BanubaSDKServicing12CameraModuleP15allowProcessingSbvp",
-            "moduleName": "BanubaSDKServicing",
-            "protocolReq": true,
-            "declAttributes": [
-              "ObjC"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@BanubaSDKServicing@objc(pl)CameraModule(im)allowProcessing",
-                "mangledName": "$s18BanubaSDKServicing12CameraModuleP15allowProcessingSbvg",
-                "moduleName": "BanubaSDKServicing",
-                "genericSig": "<τ_0_0 where τ_0_0 : BanubaSDKServicing.CameraModule>",
-                "sugared_genericSig": "<Self where Self : BanubaSDKServicing.CameraModule>",
-                "protocolReq": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
-                "reqNewWitnessTableEntry": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@BanubaSDKServicing@objc(pl)CameraModule(im)setAllowProcessing:",
-                "mangledName": "$s18BanubaSDKServicing12CameraModuleP15allowProcessingSbvs",
-                "moduleName": "BanubaSDKServicing",
-                "genericSig": "<τ_0_0 where τ_0_0 : BanubaSDKServicing.CameraModule>",
-                "sugared_genericSig": "<Self where Self : BanubaSDKServicing.CameraModule>",
-                "protocolReq": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
-                "reqNewWitnessTableEntry": true,
-                "accessorKind": "set"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
             "name": "autoStart",
             "printedName": "autoStart",
             "children": [
@@ -10072,6 +9994,47 @@
             "declKind": "Func",
             "usr": "c:@M@BanubaSDKServicing@objc(pl)SDKInputServicing(im)toggleCameraWithCompletion:",
             "mangledName": "$s18BanubaSDKServicing17SDKInputServicingP12toggleCamera10completionyyyc_tF",
+            "moduleName": "BanubaSDKServicing",
+            "genericSig": "<τ_0_0 where τ_0_0 : BanubaSDKServicing.SDKInputServicing>",
+            "sugared_genericSig": "<Self where Self : BanubaSDKServicing.SDKInputServicing>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "switchToFrontCamera",
+            "printedName": "switchToFrontCamera(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "() -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BanubaSDKServicing@objc(pl)SDKInputServicing(im)switchToFrontCameraWithCompletion:",
+            "mangledName": "$s18BanubaSDKServicing17SDKInputServicingP19switchToFrontCamera10completionyyyc_tF",
             "moduleName": "BanubaSDKServicing",
             "genericSig": "<τ_0_0 where τ_0_0 : BanubaSDKServicing.SDKInputServicing>",
             "sugared_genericSig": "<Self where Self : BanubaSDKServicing.SDKInputServicing>",

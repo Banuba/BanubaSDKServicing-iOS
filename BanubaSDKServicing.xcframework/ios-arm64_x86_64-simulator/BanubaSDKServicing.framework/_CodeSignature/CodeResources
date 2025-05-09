@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/BanubaSDKServicing-Swift.h</key>
 		<data>
-		ziz6olEa3eKBNPb5ArZB7fGPyos=
+		afUMx9/RZIMtvg4pzOboiqO0fwE=
 		</data>
 		<key>Headers/BanubaSDKServicing.h</key>
 		<data>
@@ -22,15 +22,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		ISPyOScXuPBOTvG/R1AQN3O1wBk=
+		B2i8Jx1bTqXAi5di6eV3UC4DP8c=
 		</data>
 		<key>Modules/BanubaSDKServicing.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		5/UCGnORq1FckQ9HVAsXa64oOQM=
+		fTLTYVv00W3QAKS+x7fAEP5bvf4=
 		</data>
 		<key>Modules/BanubaSDKServicing.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		RjC2jdifY4uCI7b1g2NwDoOQd3w=
+		usXd8adBVlWuFxNt6x4b+kWv4Ps=
 		</data>
 		<key>Modules/BanubaSDKServicing.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -38,19 +38,19 @@
 		</data>
 		<key>Modules/BanubaSDKServicing.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		RjC2jdifY4uCI7b1g2NwDoOQd3w=
+		usXd8adBVlWuFxNt6x4b+kWv4Ps=
 		</data>
 		<key>Modules/BanubaSDKServicing.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		J9pakqdHebM0bqL/rzTrjUAqYhs=
+		RqrUamA8CJjGDwgLs89fimqPWfw=
 		</data>
 		<key>Modules/BanubaSDKServicing.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		5/UCGnORq1FckQ9HVAsXa64oOQM=
+		fTLTYVv00W3QAKS+x7fAEP5bvf4=
 		</data>
 		<key>Modules/BanubaSDKServicing.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		chHpwubOwnGKeAa3FRKkTmxjQEI=
+		RiklrllL7bG2IfYCvXxgsdPqMSA=
 		</data>
 		<key>Modules/BanubaSDKServicing.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -58,11 +58,11 @@
 		</data>
 		<key>Modules/BanubaSDKServicing.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		chHpwubOwnGKeAa3FRKkTmxjQEI=
+		RiklrllL7bG2IfYCvXxgsdPqMSA=
 		</data>
 		<key>Modules/BanubaSDKServicing.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		PsQsJsmRrvYAYmHtPWe8G8g6uKw=
+		NJp5A3k0o4yOBRKTV/IqdrRCjU8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -79,7 +79,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			xsYkzFXztaobgkF/srbIpDcbDjB960+f/9KdjwIc4hk=
+			tPTLiWuzza6iuWJ81KkY3FiTnSi0sSdULzQRVMdp8K4=
 			</data>
 		</dict>
 		<key>Headers/BanubaSDKServicing.h</key>
@@ -107,14 +107,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			jpypjndtZ2XFNnIilTjkJCfEFp3XM0Qon47Yl0lBY1g=
+			Fseu6KZTs9EmpABCIj2lqC/Z4M9oPTNJ00WU4Z+jAXE=
 			</data>
 		</dict>
 		<key>Modules/BanubaSDKServicing.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/epmUobLdiS33AMkZ94mh+9NXGcNr6WI4O6SWHFJa6k=
+			KJBM7+oI9j+HiUZ2nqQiPgonPznXff9JVCZ7prk4J3o=
 			</data>
 		</dict>
 		<key>Modules/BanubaSDKServicing.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -128,28 +128,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			/epmUobLdiS33AMkZ94mh+9NXGcNr6WI4O6SWHFJa6k=
+			KJBM7+oI9j+HiUZ2nqQiPgonPznXff9JVCZ7prk4J3o=
 			</data>
 		</dict>
 		<key>Modules/BanubaSDKServicing.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/y+2yFwGR086yOn0kuGq3BAbCj6bX8QwuT2v+O0e2K0=
+			cbS3+zKqFz+wBICMxlG09kDQA1FVfUpLwVfXHgYY5/o=
 			</data>
 		</dict>
 		<key>Modules/BanubaSDKServicing.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			jpypjndtZ2XFNnIilTjkJCfEFp3XM0Qon47Yl0lBY1g=
+			Fseu6KZTs9EmpABCIj2lqC/Z4M9oPTNJ00WU4Z+jAXE=
 			</data>
 		</dict>
 		<key>Modules/BanubaSDKServicing.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4BC+QfIQjblzWQn7pvjqMc70SBO02WLPhQEVrsNPXk4=
+			FK3Y5LQcA76JxPy3qDRGrxCdN4sdVIE7E9ZjGLR/i5w=
 			</data>
 		</dict>
 		<key>Modules/BanubaSDKServicing.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -163,14 +163,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			4BC+QfIQjblzWQn7pvjqMc70SBO02WLPhQEVrsNPXk4=
+			FK3Y5LQcA76JxPy3qDRGrxCdN4sdVIE7E9ZjGLR/i5w=
 			</data>
 		</dict>
 		<key>Modules/BanubaSDKServicing.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			q3m8HK+XJY2UDbVwIoLTNquuu9WZsk/XWdYy5qjXefA=
+			SNya5sWYOdEf9JBzFG78iHqN1HDeXETuFHkNGeY5VfE=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
